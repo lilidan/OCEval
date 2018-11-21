@@ -7,15 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OCLexer.h"
-#import "OCToken.h"
-#import "OCScopeNode.h"
-#import "OCTokenReader.h"
 
 @interface OCEval : NSObject
 
 + (id)eval:(NSString *)str;
 
 + (id)eval:(NSString *)str context:(NSMutableDictionary *)context;
+
++ (void)hookClass:(Class)cls
+         selector:(SEL)selector
+         argNames:(NSArray<__kindof NSString *> *)argNames //original parameters variable name
+          isClass:(BOOL)isClass //hook class method or instance method
+   implementation:(NSString *)imp;
 
 @end

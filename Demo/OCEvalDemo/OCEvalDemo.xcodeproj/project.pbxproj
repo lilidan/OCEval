@@ -51,6 +51,7 @@
 		D688321521A5916500FA72C3 /* OCMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = D688320621A5916500FA72C3 /* OCMethodSignature.m */; };
 		D688321621A5916500FA72C3 /* OCMethodNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D688320721A5916500FA72C3 /* OCMethodNode.m */; };
 		D688321721A5916500FA72C3 /* OCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D688320921A5916500FA72C3 /* OCExtension.m */; };
+		D688321A21A59F0A00FA72C3 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = D688321921A59F0A00FA72C3 /* Aspects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,8 @@
 		D688320821A5916500FA72C3 /* OCIterateNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCIterateNode.h; sourceTree = "<group>"; };
 		D688320921A5916500FA72C3 /* OCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCExtension.m; sourceTree = "<group>"; };
 		D688320A21A5916500FA72C3 /* OCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCExtension.h; sourceTree = "<group>"; };
+		D688321821A59F0A00FA72C3 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		D688321921A59F0A00FA72C3 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +282,8 @@
 				D687040E21A575AC0005D457 /* OCCfuntionHelper.m */,
 				D687040C21A575AC0005D457 /* OCBlockWrapper.h */,
 				D687040F21A575AC0005D457 /* OCBlockWrapper.m */,
+				D688321821A59F0A00FA72C3 /* Aspects.h */,
+				D688321921A59F0A00FA72C3 /* Aspects.m */,
 				D687041021A575AC0005D457 /* libffi */,
 			);
 			path = helper;
@@ -409,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D688321A21A59F0A00FA72C3 /* Aspects.m in Sources */,
 				D688320F21A5916500FA72C3 /* OCMethodNode+invoke.m in Sources */,
 				D688320E21A5916500FA72C3 /* OCLiteralNode.m in Sources */,
 				D687042221A575AC0005D457 /* OCToken.m in Sources */,
