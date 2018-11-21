@@ -7,11 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "OCMethodNode.h"
-#import "OCReturnNode.h"
-#import "OCScopeNode.h"
-#import "OCControlNode.h"
-#import "OCLexer.h"
+#import "OCEval.h"
 
 
 @interface OCControlTest : XCTestCase
@@ -26,10 +22,7 @@
     if (str.length == 0) {\
     return str;\
     }}";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSString *result = [rootNode excuteWithCtx:@{}];
+    NSString *result = [OCEval eval:inputStr];
     NSAssert([result isEqualToString:@""], nil);
 }
 
@@ -40,10 +33,7 @@
     }else if(str.length == 0){\
     return str;\
     }";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSString *result = [rootNode excuteWithCtx:@{}];
+    NSString *result = [OCEval eval:inputStr];
     NSAssert([result isEqualToString:@""], nil);
 }
 
@@ -55,10 +45,7 @@
     }else if(str.length == 0){\
     return str;\
     }else{}}";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSString *result = [rootNode excuteWithCtx:@{}];
+    NSString *result = [OCEval eval:inputStr];
     NSAssert([result isEqualToString:@""], nil);
 }
 
@@ -68,10 +55,7 @@
         i = i + 1;\
     } while (i < 10);\
     return i;}";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSNumber *result = [rootNode excuteWithCtx:@{}];
+    NSNumber *result = [OCEval eval:inputStr];
     NSAssert(result.integerValue == 10, nil);
 }
 
@@ -81,10 +65,7 @@
         i = i + 1;\
     }\
     return i;}";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSNumber *result = [rootNode excuteWithCtx:@{}];
+    NSNumber *result = [OCEval eval:inputStr];
     NSAssert(result.integerValue == 10, nil);
 }
 
@@ -96,10 +77,7 @@
         value = value + num;\
     }\
     return value;}";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSNumber *result = [rootNode excuteWithCtx:@{}];
+    NSNumber *result = [OCEval eval:inputStr];
     NSAssert(result.integerValue == 6, nil);
 }
 
@@ -110,10 +88,7 @@
         j = j + i;\
     }\
     return j;}";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSNumber *result = [rootNode excuteWithCtx:@{}];
+    NSNumber *result = [OCEval eval:inputStr];
     NSAssert(result.integerValue == -1, nil);
     //TODO i++,i+=1
 }

@@ -12,6 +12,7 @@
 #import "OCScopeNode.h"
 #import "OCControlNode.h"
 #import "OCLexer.h"
+#import "OCEval.h"
 
 @interface OCParserTest : XCTestCase
 
@@ -28,26 +29,20 @@
 
 - (void)testReturnNodeExpression {
     NSString *inputStr = @"5-(1+2*4);";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    OCReturnNode *rootNode = [[OCReturnNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:[lexer allTokens:NO]]];
-    NSAssert([[rootNode excuteWithCtx:@{}] integerValue] == -4, nil);
-    NSLog(@"%@",rootNode);
+    NSNumber *result = [OCEval eval:inputStr];
+    NSAssert([result integerValue] == -4, nil);
 }
 
 - (void)testReturnNodePredicate {
     NSString *inputStr = @"alpha + 3 <= 4 && 6 + 3 < 10;";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    OCReturnNode *rootNode = [[OCReturnNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:[lexer allTokens:NO]]];
-    NSAssert([[rootNode excuteWithCtx:@{@"alpha":@(0)}] boolValue] == YES, nil);
-    NSLog(@"%@",rootNode);
+    NSNumber *result = [OCEval eval:inputStr context:[@{@"alpha":@(0)} mutableCopy]];
+    NSAssert([result boolValue] == YES, nil);
 }
 
 - (void)testReturnNodeMethod {
     NSString *inputStr = @"alpha + 3 <= 4 && [NSString string] != nil;";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    OCReturnNode *rootNode = [[OCReturnNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:[lexer allTokens:NO]]];
-    NSAssert([[rootNode excuteWithCtx:@{@"alpha":@(0)}] boolValue] == YES, nil);
-    NSLog(@"%@",rootNode);
+    NSNumber *result = [OCEval eval:inputStr context:[@{@"alpha":@(0)} mutableCopy]];
+    NSAssert([result boolValue] == YES, nil);
 }
 
 - (void)testScopeVariable{
@@ -59,10 +54,7 @@
     }\
         return str;\
     }";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSString *result = [rootNode excuteWithCtx:@{}];
+    NSString *result = [OCEval eval:inputStr];
     NSAssert(result == nil, nil);
 }
 
@@ -70,20 +62,14 @@
     NSString *inputStr = @"{     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];\
     formatter.dateFormat = @\"HH:MM:SS\";\
     return [formatter stringFromDate:[NSDate date]];}";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSString *result = [rootNode excuteWithCtx:@{}];
+    NSString *result = [OCEval eval:inputStr];
     NSAssert(result != nil, nil);
 }
 
 
 - (void)testLine{
     NSString *inputStr = @"{;;;;}";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    [rootNode excuteWithCtx:@{}];
+    NSString *result = [OCEval eval:inputStr];
 }
 
 

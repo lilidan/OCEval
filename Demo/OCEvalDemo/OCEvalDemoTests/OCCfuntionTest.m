@@ -22,7 +22,7 @@
     return cls;\
     }";
     id result = [OCEval eval:inputStr];
-    NSAssert(result == [NSObject class], nil);
+    NSAssert(result == [NSObject class],nil);
 }
 
 
@@ -34,7 +34,7 @@ CGPoint (*_CGPointMake)(CGFloat x, CGFloat y) = CGPointMake;
     CGPoint point = CGPointMake(1, 2);\
     return point;\
     }";
-    id result = [OCEval eval:inputStr];
+    CGPoint result = [[OCEval eval:inputStr] CGPointValue];
     NSAssert(result.x == 1, nil);
 }
 

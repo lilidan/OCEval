@@ -7,11 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "OCMethodNode.h"
-#import "OCReturnNode.h"
-#import "OCScopeNode.h"
-#import "OCControlNode.h"
-#import "OCLexer.h"
+#import "OCEval.h"
 
 @interface OCLiteralTest : XCTestCase
 
@@ -24,10 +20,7 @@
     NSString *str2 = [str stringByAppendingString:@\"b\"];\
     return str2;\
     }";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSString *result = [rootNode excuteWithCtx:@{}];
+    NSString *result = [OCEval eval:inputStr];
     NSAssert([result isEqualToString:@"ab"], nil);
 }
 
@@ -36,10 +29,7 @@
     NSString *str2 = [str stringByAppendingFormat:@\"%@,%@\",@\"2\",@(4 + 5*2)];\
     return str2;\
     }";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSString *result = [rootNode excuteWithCtx:@{}];
+    NSString *result = [OCEval eval:inputStr];
     NSAssert([result isEqualToString:@"a2,14"], nil);
     //TODO format:%d
 }
@@ -50,10 +40,7 @@
     mutaArray[5] = @\"d\";\
     return mutaArray[5];\
     }";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSString *result = [rootNode excuteWithCtx:@{}];
+    NSString *result = [OCEval eval:inputStr];
     NSAssert([result isEqualToString:@"d"], nil);
 }
 
@@ -64,10 +51,7 @@
     mutaDic[@\"w\"] = @\"xyz\";\
     return mutaDic[@\"w\"];\
     }";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSString *result = [rootNode excuteWithCtx:@{}];
+    NSString *result = [OCEval eval:inputStr];
     NSAssert([result isEqualToString:@"xyz"], nil);
 }
 

@@ -16,7 +16,6 @@
 		D68703CA21A575830005D457 /* OCEvalDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703C921A575830005D457 /* OCEvalDemoTests.m */; };
 		D68703DB21A5759D0005D457 /* OCBlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703D421A5759D0005D457 /* OCBlockTest.m */; };
 		D68703DC21A5759D0005D457 /* OCCfuntionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703D521A5759D0005D457 /* OCCfuntionTest.m */; };
-		D68703DD21A5759D0005D457 /* OCEvalDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703D621A5759D0005D457 /* OCEvalDemoTests.m */; };
 		D68703DE21A5759D0005D457 /* OCLexerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703D721A5759D0005D457 /* OCLexerTest.m */; };
 		D68703DF21A5759D0005D457 /* OCParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703D821A5759D0005D457 /* OCParserTest.m */; };
 		D68703E021A5759D0005D457 /* OCLiteralTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703D921A5759D0005D457 /* OCLiteralTest.m */; };
@@ -31,32 +30,6 @@
 		D687042321A575AC0005D457 /* OCToken.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703EA21A575AC0005D457 /* OCToken.m */; };
 		D687042421A575AC0005D457 /* OCEval.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703EC21A575AC0005D457 /* OCEval.m */; };
 		D687042521A575AC0005D457 /* OCEval.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703EC21A575AC0005D457 /* OCEval.m */; };
-		D687042621A575AC0005D457 /* OCScopeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703EE21A575AC0005D457 /* OCScopeNode.m */; };
-		D687042721A575AC0005D457 /* OCScopeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703EE21A575AC0005D457 /* OCScopeNode.m */; };
-		D687042821A575AC0005D457 /* OCIterateNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703F021A575AC0005D457 /* OCIterateNode.m */; };
-		D687042921A575AC0005D457 /* OCIterateNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703F021A575AC0005D457 /* OCIterateNode.m */; };
-		D687042A21A575AC0005D457 /* OCPropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703F421A575AC0005D457 /* OCPropertyNode.m */; };
-		D687042B21A575AC0005D457 /* OCPropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703F421A575AC0005D457 /* OCPropertyNode.m */; };
-		D687042C21A575AC0005D457 /* OCBlockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703F521A575AC0005D457 /* OCBlockNode.m */; };
-		D687042D21A575AC0005D457 /* OCBlockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703F521A575AC0005D457 /* OCBlockNode.m */; };
-		D687042E21A575AC0005D457 /* OCLiteralNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703F721A575AC0005D457 /* OCLiteralNode.m */; };
-		D687042F21A575AC0005D457 /* OCLiteralNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703F721A575AC0005D457 /* OCLiteralNode.m */; };
-		D687043021A575AC0005D457 /* OCMethodNode+invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703F921A575AC0005D457 /* OCMethodNode+invoke.m */; };
-		D687043121A575AC0005D457 /* OCMethodNode+invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703F921A575AC0005D457 /* OCMethodNode+invoke.m */; };
-		D687043221A575AC0005D457 /* OCReturnNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703FA21A575AC0005D457 /* OCReturnNode.m */; };
-		D687043321A575AC0005D457 /* OCReturnNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703FA21A575AC0005D457 /* OCReturnNode.m */; };
-		D687043421A575AC0005D457 /* OCControlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703FC21A575AC0005D457 /* OCControlNode.m */; };
-		D687043521A575AC0005D457 /* OCControlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703FC21A575AC0005D457 /* OCControlNode.m */; };
-		D687043621A575AC0005D457 /* OCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703FE21A575AC0005D457 /* OCExtension.m */; };
-		D687043721A575AC0005D457 /* OCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703FE21A575AC0005D457 /* OCExtension.m */; };
-		D687043821A575AC0005D457 /* OCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703FF21A575AC0005D457 /* OCNode.m */; };
-		D687043921A575AC0005D457 /* OCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703FF21A575AC0005D457 /* OCNode.m */; };
-		D687043A21A575AC0005D457 /* OCMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = D687040021A575AC0005D457 /* OCMethodSignature.m */; };
-		D687043B21A575AC0005D457 /* OCMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = D687040021A575AC0005D457 /* OCMethodSignature.m */; };
-		D687043C21A575AC0005D457 /* OCMethodNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D687040121A575AC0005D457 /* OCMethodNode.m */; };
-		D687043D21A575AC0005D457 /* OCMethodNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D687040121A575AC0005D457 /* OCMethodNode.m */; };
-		D687043E21A575AC0005D457 /* OCLineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D687040321A575AC0005D457 /* OCLineNode.m */; };
-		D687043F21A575AC0005D457 /* OCLineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D687040321A575AC0005D457 /* OCLineNode.m */; };
 		D687044021A575AC0005D457 /* OCCFuntionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D687040D21A575AC0005D457 /* OCCFuntionWrapper.m */; };
 		D687044121A575AC0005D457 /* OCCFuntionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D687040D21A575AC0005D457 /* OCCFuntionWrapper.m */; };
 		D687044221A575AC0005D457 /* OCCfuntionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D687040E21A575AC0005D457 /* OCCfuntionHelper.m */; };
@@ -65,6 +38,19 @@
 		D687044521A575AC0005D457 /* OCBlockWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D687040F21A575AC0005D457 /* OCBlockWrapper.m */; };
 		D687044B21A578E40005D457 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D687044A21A578E40005D457 /* libffi.a */; };
 		D687044C21A578E40005D457 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D687044A21A578E40005D457 /* libffi.a */; };
+		D688320B21A5916500FA72C3 /* OCLineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68831F121A5916300FA72C3 /* OCLineNode.m */; };
+		D688320C21A5916500FA72C3 /* OCPropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68831F221A5916300FA72C3 /* OCPropertyNode.m */; };
+		D688320D21A5916500FA72C3 /* OCIterateNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68831F321A5916300FA72C3 /* OCIterateNode.m */; };
+		D688320E21A5916500FA72C3 /* OCLiteralNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68831F421A5916300FA72C3 /* OCLiteralNode.m */; };
+		D688320F21A5916500FA72C3 /* OCMethodNode+invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = D68831FB21A5916400FA72C3 /* OCMethodNode+invoke.m */; };
+		D688321021A5916500FA72C3 /* OCReturnNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68831FD21A5916400FA72C3 /* OCReturnNode.m */; };
+		D688321121A5916500FA72C3 /* OCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68831FE21A5916400FA72C3 /* OCNode.m */; };
+		D688321221A5916500FA72C3 /* OCControlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D68831FF21A5916400FA72C3 /* OCControlNode.m */; };
+		D688321321A5916500FA72C3 /* OCBlockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D688320021A5916400FA72C3 /* OCBlockNode.m */; };
+		D688321421A5916500FA72C3 /* OCScopeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D688320221A5916500FA72C3 /* OCScopeNode.m */; };
+		D688321521A5916500FA72C3 /* OCMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = D688320621A5916500FA72C3 /* OCMethodSignature.m */; };
+		D688321621A5916500FA72C3 /* OCMethodNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D688320721A5916500FA72C3 /* OCMethodNode.m */; };
+		D688321721A5916500FA72C3 /* OCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D688320921A5916500FA72C3 /* OCExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +79,6 @@
 		D68703CB21A575830005D457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D68703D421A5759D0005D457 /* OCBlockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBlockTest.m; sourceTree = "<group>"; };
 		D68703D521A5759D0005D457 /* OCCfuntionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCfuntionTest.m; sourceTree = "<group>"; };
-		D68703D621A5759D0005D457 /* OCEvalDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCEvalDemoTests.m; path = ../../../../OCParser/OCEvalDemoTests.m; sourceTree = "<group>"; };
 		D68703D721A5759D0005D457 /* OCLexerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCLexerTest.m; sourceTree = "<group>"; };
 		D68703D821A5759D0005D457 /* OCParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCParserTest.m; sourceTree = "<group>"; };
 		D68703D921A5759D0005D457 /* OCLiteralTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCLiteralTest.m; sourceTree = "<group>"; };
@@ -107,32 +92,6 @@
 		D68703EA21A575AC0005D457 /* OCToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCToken.m; sourceTree = "<group>"; };
 		D68703EB21A575AC0005D457 /* OCReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCReader.h; sourceTree = "<group>"; };
 		D68703EC21A575AC0005D457 /* OCEval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCEval.m; sourceTree = "<group>"; };
-		D68703EE21A575AC0005D457 /* OCScopeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCScopeNode.m; sourceTree = "<group>"; };
-		D68703EF21A575AC0005D457 /* OCControlNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCControlNode.h; sourceTree = "<group>"; };
-		D68703F021A575AC0005D457 /* OCIterateNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCIterateNode.m; sourceTree = "<group>"; };
-		D68703F121A575AC0005D457 /* OCMethodSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMethodSignature.h; sourceTree = "<group>"; };
-		D68703F221A575AC0005D457 /* OCNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCNode.h; sourceTree = "<group>"; };
-		D68703F321A575AC0005D457 /* OCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCExtension.h; sourceTree = "<group>"; };
-		D68703F421A575AC0005D457 /* OCPropertyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPropertyNode.m; sourceTree = "<group>"; };
-		D68703F521A575AC0005D457 /* OCBlockNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBlockNode.m; sourceTree = "<group>"; };
-		D68703F621A575AC0005D457 /* OCLineNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCLineNode.h; sourceTree = "<group>"; };
-		D68703F721A575AC0005D457 /* OCLiteralNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCLiteralNode.m; sourceTree = "<group>"; };
-		D68703F821A575AC0005D457 /* OCMethodNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMethodNode.h; sourceTree = "<group>"; };
-		D68703F921A575AC0005D457 /* OCMethodNode+invoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OCMethodNode+invoke.m"; sourceTree = "<group>"; };
-		D68703FA21A575AC0005D457 /* OCReturnNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCReturnNode.m; sourceTree = "<group>"; };
-		D68703FB21A575AC0005D457 /* OCIterateNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCIterateNode.h; sourceTree = "<group>"; };
-		D68703FC21A575AC0005D457 /* OCControlNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCControlNode.m; sourceTree = "<group>"; };
-		D68703FD21A575AC0005D457 /* OCScopeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCScopeNode.h; sourceTree = "<group>"; };
-		D68703FE21A575AC0005D457 /* OCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCExtension.m; sourceTree = "<group>"; };
-		D68703FF21A575AC0005D457 /* OCNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNode.m; sourceTree = "<group>"; };
-		D687040021A575AC0005D457 /* OCMethodSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMethodSignature.m; sourceTree = "<group>"; };
-		D687040121A575AC0005D457 /* OCMethodNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMethodNode.m; sourceTree = "<group>"; };
-		D687040221A575AC0005D457 /* OCLiteralNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCLiteralNode.h; sourceTree = "<group>"; };
-		D687040321A575AC0005D457 /* OCLineNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCLineNode.m; sourceTree = "<group>"; };
-		D687040421A575AC0005D457 /* OCBlockNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCBlockNode.h; sourceTree = "<group>"; };
-		D687040521A575AC0005D457 /* OCPropertyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPropertyNode.h; sourceTree = "<group>"; };
-		D687040621A575AC0005D457 /* OCReturnNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCReturnNode.h; sourceTree = "<group>"; };
-		D687040721A575AC0005D457 /* OCMethodNode+invoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCMethodNode+invoke.h"; sourceTree = "<group>"; };
 		D687040821A575AC0005D457 /* OCEval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCEval.h; sourceTree = "<group>"; };
 		D687040A21A575AC0005D457 /* OCCFuntionWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCFuntionWrapper.h; sourceTree = "<group>"; };
 		D687040B21A575AC0005D457 /* OCCfuntionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCfuntionHelper.h; sourceTree = "<group>"; };
@@ -151,6 +110,32 @@
 		D687041A21A575AC0005D457 /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
 		D687041B21A575AC0005D457 /* ffi_arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi_arm64.h; sourceTree = "<group>"; };
 		D687044A21A578E40005D457 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffi.a; sourceTree = "<group>"; };
+		D68831F121A5916300FA72C3 /* OCLineNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCLineNode.m; sourceTree = "<group>"; };
+		D68831F221A5916300FA72C3 /* OCPropertyNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPropertyNode.m; sourceTree = "<group>"; };
+		D68831F321A5916300FA72C3 /* OCIterateNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCIterateNode.m; sourceTree = "<group>"; };
+		D68831F421A5916300FA72C3 /* OCLiteralNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCLiteralNode.m; sourceTree = "<group>"; };
+		D68831F521A5916400FA72C3 /* OCControlNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCControlNode.h; sourceTree = "<group>"; };
+		D68831F621A5916400FA72C3 /* OCMethodNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMethodNode.h; sourceTree = "<group>"; };
+		D68831F721A5916400FA72C3 /* OCLineNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCLineNode.h; sourceTree = "<group>"; };
+		D68831F821A5916400FA72C3 /* OCMethodNode+invoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCMethodNode+invoke.h"; sourceTree = "<group>"; };
+		D68831F921A5916400FA72C3 /* OCScopeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCScopeNode.h; sourceTree = "<group>"; };
+		D68831FA21A5916400FA72C3 /* OCBlockNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCBlockNode.h; sourceTree = "<group>"; };
+		D68831FB21A5916400FA72C3 /* OCMethodNode+invoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OCMethodNode+invoke.m"; sourceTree = "<group>"; };
+		D68831FC21A5916400FA72C3 /* OCNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCNode.h; sourceTree = "<group>"; };
+		D68831FD21A5916400FA72C3 /* OCReturnNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCReturnNode.m; sourceTree = "<group>"; };
+		D68831FE21A5916400FA72C3 /* OCNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCNode.m; sourceTree = "<group>"; };
+		D68831FF21A5916400FA72C3 /* OCControlNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCControlNode.m; sourceTree = "<group>"; };
+		D688320021A5916400FA72C3 /* OCBlockNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBlockNode.m; sourceTree = "<group>"; };
+		D688320121A5916400FA72C3 /* OCPropertyNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPropertyNode.h; sourceTree = "<group>"; };
+		D688320221A5916500FA72C3 /* OCScopeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCScopeNode.m; sourceTree = "<group>"; };
+		D688320321A5916500FA72C3 /* OCReturnNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCReturnNode.h; sourceTree = "<group>"; };
+		D688320421A5916500FA72C3 /* OCLiteralNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCLiteralNode.h; sourceTree = "<group>"; };
+		D688320521A5916500FA72C3 /* OCMethodSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMethodSignature.h; sourceTree = "<group>"; };
+		D688320621A5916500FA72C3 /* OCMethodSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMethodSignature.m; sourceTree = "<group>"; };
+		D688320721A5916500FA72C3 /* OCMethodNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMethodNode.m; sourceTree = "<group>"; };
+		D688320821A5916500FA72C3 /* OCIterateNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCIterateNode.h; sourceTree = "<group>"; };
+		D688320921A5916500FA72C3 /* OCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCExtension.m; sourceTree = "<group>"; };
+		D688320A21A5916500FA72C3 /* OCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCExtension.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,7 +201,6 @@
 				D68703C921A575830005D457 /* OCEvalDemoTests.m */,
 				D68703D421A5759D0005D457 /* OCBlockTest.m */,
 				D68703D521A5759D0005D457 /* OCCfuntionTest.m */,
-				D68703D621A5759D0005D457 /* OCEvalDemoTests.m */,
 				D68703D721A5759D0005D457 /* OCLexerTest.m */,
 				D68703D921A5759D0005D457 /* OCLiteralTest.m */,
 				D68703D821A5759D0005D457 /* OCParserTest.m */,
@@ -228,10 +212,10 @@
 		D68703E221A575AC0005D457 /* OCEval */ = {
 			isa = PBXGroup;
 			children = (
-				D68703E321A575AC0005D457 /* lexer */,
-				D68703EC21A575AC0005D457 /* OCEval.m */,
-				D68703ED21A575AC0005D457 /* parser */,
 				D687040821A575AC0005D457 /* OCEval.h */,
+				D68703EC21A575AC0005D457 /* OCEval.m */,
+				D68703E321A575AC0005D457 /* lexer */,
+				D68703ED21A575AC0005D457 /* parser */,
 				D687040921A575AC0005D457 /* helper */,
 			);
 			name = OCEval;
@@ -256,32 +240,32 @@
 		D68703ED21A575AC0005D457 /* parser */ = {
 			isa = PBXGroup;
 			children = (
-				D68703EE21A575AC0005D457 /* OCScopeNode.m */,
-				D68703EF21A575AC0005D457 /* OCControlNode.h */,
-				D68703F021A575AC0005D457 /* OCIterateNode.m */,
-				D68703F121A575AC0005D457 /* OCMethodSignature.h */,
-				D68703F221A575AC0005D457 /* OCNode.h */,
-				D68703F321A575AC0005D457 /* OCExtension.h */,
-				D68703F421A575AC0005D457 /* OCPropertyNode.m */,
-				D68703F521A575AC0005D457 /* OCBlockNode.m */,
-				D68703F621A575AC0005D457 /* OCLineNode.h */,
-				D68703F721A575AC0005D457 /* OCLiteralNode.m */,
-				D68703F821A575AC0005D457 /* OCMethodNode.h */,
-				D68703F921A575AC0005D457 /* OCMethodNode+invoke.m */,
-				D68703FA21A575AC0005D457 /* OCReturnNode.m */,
-				D68703FB21A575AC0005D457 /* OCIterateNode.h */,
-				D68703FC21A575AC0005D457 /* OCControlNode.m */,
-				D68703FD21A575AC0005D457 /* OCScopeNode.h */,
-				D68703FE21A575AC0005D457 /* OCExtension.m */,
-				D68703FF21A575AC0005D457 /* OCNode.m */,
-				D687040021A575AC0005D457 /* OCMethodSignature.m */,
-				D687040121A575AC0005D457 /* OCMethodNode.m */,
-				D687040221A575AC0005D457 /* OCLiteralNode.h */,
-				D687040321A575AC0005D457 /* OCLineNode.m */,
-				D687040421A575AC0005D457 /* OCBlockNode.h */,
-				D687040521A575AC0005D457 /* OCPropertyNode.h */,
-				D687040621A575AC0005D457 /* OCReturnNode.h */,
-				D687040721A575AC0005D457 /* OCMethodNode+invoke.h */,
+				D68831FA21A5916400FA72C3 /* OCBlockNode.h */,
+				D688320021A5916400FA72C3 /* OCBlockNode.m */,
+				D68831F521A5916400FA72C3 /* OCControlNode.h */,
+				D68831FF21A5916400FA72C3 /* OCControlNode.m */,
+				D688320A21A5916500FA72C3 /* OCExtension.h */,
+				D688320921A5916500FA72C3 /* OCExtension.m */,
+				D688320821A5916500FA72C3 /* OCIterateNode.h */,
+				D68831F321A5916300FA72C3 /* OCIterateNode.m */,
+				D68831F721A5916400FA72C3 /* OCLineNode.h */,
+				D68831F121A5916300FA72C3 /* OCLineNode.m */,
+				D688320421A5916500FA72C3 /* OCLiteralNode.h */,
+				D68831F421A5916300FA72C3 /* OCLiteralNode.m */,
+				D68831F621A5916400FA72C3 /* OCMethodNode.h */,
+				D688320721A5916500FA72C3 /* OCMethodNode.m */,
+				D68831F821A5916400FA72C3 /* OCMethodNode+invoke.h */,
+				D68831FB21A5916400FA72C3 /* OCMethodNode+invoke.m */,
+				D688320521A5916500FA72C3 /* OCMethodSignature.h */,
+				D688320621A5916500FA72C3 /* OCMethodSignature.m */,
+				D68831FC21A5916400FA72C3 /* OCNode.h */,
+				D68831FE21A5916400FA72C3 /* OCNode.m */,
+				D688320121A5916400FA72C3 /* OCPropertyNode.h */,
+				D68831F221A5916300FA72C3 /* OCPropertyNode.m */,
+				D688320321A5916500FA72C3 /* OCReturnNode.h */,
+				D68831FD21A5916400FA72C3 /* OCReturnNode.m */,
+				D68831F921A5916400FA72C3 /* OCScopeNode.h */,
+				D688320221A5916500FA72C3 /* OCScopeNode.m */,
 			);
 			path = parser;
 			sourceTree = "<group>";
@@ -290,10 +274,10 @@
 			isa = PBXGroup;
 			children = (
 				D687040A21A575AC0005D457 /* OCCFuntionWrapper.h */,
-				D687040B21A575AC0005D457 /* OCCfuntionHelper.h */,
-				D687040C21A575AC0005D457 /* OCBlockWrapper.h */,
 				D687040D21A575AC0005D457 /* OCCFuntionWrapper.m */,
+				D687040B21A575AC0005D457 /* OCCfuntionHelper.h */,
 				D687040E21A575AC0005D457 /* OCCfuntionHelper.m */,
+				D687040C21A575AC0005D457 /* OCBlockWrapper.h */,
 				D687040F21A575AC0005D457 /* OCBlockWrapper.m */,
 				D687041021A575AC0005D457 /* libffi */,
 			);
@@ -425,30 +409,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D687043621A575AC0005D457 /* OCExtension.m in Sources */,
+				D688320F21A5916500FA72C3 /* OCMethodNode+invoke.m in Sources */,
+				D688320E21A5916500FA72C3 /* OCLiteralNode.m in Sources */,
 				D687042221A575AC0005D457 /* OCToken.m in Sources */,
-				D687042E21A575AC0005D457 /* OCLiteralNode.m in Sources */,
 				D687044021A575AC0005D457 /* OCCFuntionWrapper.m in Sources */,
 				D687042021A575AC0005D457 /* OCLexer.m in Sources */,
-				D687043421A575AC0005D457 /* OCControlNode.m in Sources */,
-				D687042621A575AC0005D457 /* OCScopeNode.m in Sources */,
-				D687043C21A575AC0005D457 /* OCMethodNode.m in Sources */,
-				D687043A21A575AC0005D457 /* OCMethodSignature.m in Sources */,
 				D687044421A575AC0005D457 /* OCBlockWrapper.m in Sources */,
 				D68703B521A575830005D457 /* ViewController.m in Sources */,
-				D687043821A575AC0005D457 /* OCNode.m in Sources */,
-				D687043221A575AC0005D457 /* OCReturnNode.m in Sources */,
+				D688321121A5916500FA72C3 /* OCNode.m in Sources */,
 				D68703C021A575830005D457 /* main.m in Sources */,
+				D688320D21A5916500FA72C3 /* OCIterateNode.m in Sources */,
 				D687041C21A575AC0005D457 /* OCReader.m in Sources */,
+				D688321321A5916500FA72C3 /* OCBlockNode.m in Sources */,
+				D688321621A5916500FA72C3 /* OCMethodNode.m in Sources */,
+				D688320B21A5916500FA72C3 /* OCLineNode.m in Sources */,
+				D688321521A5916500FA72C3 /* OCMethodSignature.m in Sources */,
 				D687042421A575AC0005D457 /* OCEval.m in Sources */,
-				D687042C21A575AC0005D457 /* OCBlockNode.m in Sources */,
 				D68703B221A575830005D457 /* AppDelegate.m in Sources */,
-				D687043E21A575AC0005D457 /* OCLineNode.m in Sources */,
-				D687042A21A575AC0005D457 /* OCPropertyNode.m in Sources */,
-				D687042821A575AC0005D457 /* OCIterateNode.m in Sources */,
-				D687043021A575AC0005D457 /* OCMethodNode+invoke.m in Sources */,
 				D687041E21A575AC0005D457 /* OCTokenReader.m in Sources */,
+				D688321221A5916500FA72C3 /* OCControlNode.m in Sources */,
+				D688320C21A5916500FA72C3 /* OCPropertyNode.m in Sources */,
+				D688321021A5916500FA72C3 /* OCReturnNode.m in Sources */,
 				D687044221A575AC0005D457 /* OCCfuntionHelper.m in Sources */,
+				D688321421A5916500FA72C3 /* OCScopeNode.m in Sources */,
+				D688321721A5916500FA72C3 /* OCExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,31 +442,17 @@
 			files = (
 				D687044121A575AC0005D457 /* OCCFuntionWrapper.m in Sources */,
 				D687042121A575AC0005D457 /* OCLexer.m in Sources */,
-				D687043521A575AC0005D457 /* OCControlNode.m in Sources */,
 				D687041D21A575AC0005D457 /* OCReader.m in Sources */,
 				D68703CA21A575830005D457 /* OCEvalDemoTests.m in Sources */,
-				D687042921A575AC0005D457 /* OCIterateNode.m in Sources */,
 				D687042321A575AC0005D457 /* OCToken.m in Sources */,
-				D687043321A575AC0005D457 /* OCReturnNode.m in Sources */,
 				D68703E021A5759D0005D457 /* OCLiteralTest.m in Sources */,
 				D687044321A575AC0005D457 /* OCCfuntionHelper.m in Sources */,
-				D687042D21A575AC0005D457 /* OCBlockNode.m in Sources */,
 				D687042521A575AC0005D457 /* OCEval.m in Sources */,
-				D687042721A575AC0005D457 /* OCScopeNode.m in Sources */,
 				D687044521A575AC0005D457 /* OCBlockWrapper.m in Sources */,
-				D687043B21A575AC0005D457 /* OCMethodSignature.m in Sources */,
-				D687042F21A575AC0005D457 /* OCLiteralNode.m in Sources */,
-				D687042B21A575AC0005D457 /* OCPropertyNode.m in Sources */,
 				D68703DC21A5759D0005D457 /* OCCfuntionTest.m in Sources */,
-				D687043121A575AC0005D457 /* OCMethodNode+invoke.m in Sources */,
 				D687041F21A575AC0005D457 /* OCTokenReader.m in Sources */,
 				D68703DF21A5759D0005D457 /* OCParserTest.m in Sources */,
-				D687043921A575AC0005D457 /* OCNode.m in Sources */,
-				D68703DD21A5759D0005D457 /* OCEvalDemoTests.m in Sources */,
 				D68703E121A5759D0005D457 /* OCControlTest.m in Sources */,
-				D687043F21A575AC0005D457 /* OCLineNode.m in Sources */,
-				D687043D21A575AC0005D457 /* OCMethodNode.m in Sources */,
-				D687043721A575AC0005D457 /* OCExtension.m in Sources */,
 				D68703DB21A5759D0005D457 /* OCBlockTest.m in Sources */,
 				D68703DE21A5759D0005D457 /* OCLexerTest.m in Sources */,
 			);
@@ -637,6 +607,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7LUMTSRB5;
 				INFOPLIST_FILE = OCEvalDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -655,6 +626,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7LUMTSRB5;
 				INFOPLIST_FILE = OCEvalDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -678,6 +650,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../OCEval/helper/libffi/\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sgcy.OCEvalDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -697,6 +670,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../OCEval/helper/libffi/\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sgcy.OCEvalDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

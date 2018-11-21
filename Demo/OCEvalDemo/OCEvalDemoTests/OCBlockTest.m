@@ -7,11 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "OCMethodNode.h"
-#import "OCReturnNode.h"
-#import "OCScopeNode.h"
-#import "OCControlNode.h"
-#import "OCLexer.h"
+#import "OCEval.h"
 
 @interface OCBlockTest : XCTestCase
 
@@ -27,10 +23,7 @@
     [content sortedArrayUsingComparator:comparison];\
     return content;\
     }";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSArray *result = [rootNode excuteWithCtx:@{}];
+    NSArray *result = [OCEval eval:inputStr];
     NSAssert([result[6] intValue] == 8, nil);
     
 }
@@ -44,10 +37,7 @@
     }];\
     return result;\
     }";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSNumber *result = [rootNode excuteWithCtx:@{}];
+    NSNumber *result = [OCEval eval:inputStr];
     NSAssert(result.doubleValue == 8, nil);
 }
 
@@ -59,10 +49,7 @@
     blk(3);\
     return result;\
     }";
-    OCLexer *lexer = [OCLexer lexerWithString:inputStr];
-    NSArray *tokens = [lexer allTokens:NO];
-    OCRootNode *rootNode = [[OCRootNode alloc] initWithReader:[[OCTokenReader alloc] initWithTokens:tokens]];
-    NSNumber *result = [rootNode excuteWithCtx:@{}];
+    NSNumber *result = [OCEval eval:inputStr];
     NSAssert(result.doubleValue == 3, nil);
 }
 
