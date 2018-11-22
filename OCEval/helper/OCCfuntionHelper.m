@@ -85,7 +85,20 @@ return [NSNumber _selector:v];\
             return [NSValue value:&src withObjCType:typeString];
         }
         case '^': {
-            return (__bridge id)(*(void**)src);
+            char c = typeString[1];
+            if (c == '?') {
+                NSValue *value = [NSValue valueWithPointer:(*(void**)src)];
+                return value;
+            }else{
+                return (__bridge id)(*(void**)src);
+            }
+        }
+        case '*':{
+            return [NSString stringWithUTF8String:src];
+        }
+        case ':':{
+            NSValue *value = [NSValue valueWithPointer:(*(void**)src)];
+            return value;
         }
         default:
             return nil;
@@ -120,17 +133,33 @@ break;\
             *(void **)dist = (__bridge void *)(ptr);
             break;
         }
+        case ':':{
+            SEL sel = [object pointerValue];
+            (*(void**)dist) = sel;
+            break;
+        }
         case '{': {
             [object getValue:&dist];
             break;
         }
-        case '^':{
-            id ptr = object;
-            *(void **)dist = (__bridge void *)(ptr); // special bridge
+        case '*':{
+            (*(void**)dist) = [object UTF8String];
             break;
         }
+        case '^':{
+            char c = typeString[1];
+            if (c == '?') {
+                IMP imp = [object pointerValue];
+                (*(void**)dist) = imp;
+                break;
+            }else{
+                id ptr = object;
+                *(void **)dist = (__bridge void *)(ptr); // special bridge
+                break;
+            }
+        }
         default:
-            break;
+            abort();
     }
 }
 
@@ -147,6 +176,10 @@ break;\
     NSUInteger argCount = funcSignature.argumentTypes.count;
     if (argCount != [arguments count]){
         abort();
+    }
+    
+    if ([funcName isEqualToString:@"class_addMethod"]) {
+        NSLog(@"");
     }
     
     ffi_type **ffiArgTypes = alloca(sizeof(ffi_type *) *argCount);

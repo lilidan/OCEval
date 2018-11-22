@@ -165,6 +165,10 @@
             return &ffi_type_pointer;
         case '#':
             return &ffi_type_pointer;
+        case ':':
+            return &ffi_type_pointer;
+        case '*':
+            return &ffi_type_pointer;
         case '{': //c struct support ?
         {
             NSString *typeStr = [NSString stringWithCString:c encoding:NSASCIIStringEncoding];
@@ -190,6 +194,11 @@
                 return type;
             }
         }
+        default:
+        {
+            abort();
+        }
+            
     }
     return NULL;
 }
@@ -233,9 +242,12 @@ static NSMutableDictionary *_typeLengthDict;
         JP_DEFINE_TYPE_LENGTH(NSComparisonResult);
         JP_DEFINE_TYPE_LENGTH(Class);
         JP_DEFINE_TYPE_LENGTH(SEL);
+        JP_DEFINE_TYPE_LENGTH(IMP);
         JP_DEFINE_TYPE_LENGTH(void*);
         JP_DEFINE_TYPE_LENGTH(void *);
         JP_DEFINE_TYPE_LENGTH(id *);
+        JP_DEFINE_TYPE_LENGTH(char *);
+        JP_DEFINE_TYPE_LENGTH(char*);
     }
     return [_typeLengthDict[typeName] intValue];
 }
@@ -275,8 +287,11 @@ static NSMutableDictionary *_typeLengthDict;
         JP_DEFINE_TYPE_ENCODE_CASE(NSComparisonResult);
         JP_DEFINE_TYPE_ENCODE_CASE(Class);
         JP_DEFINE_TYPE_ENCODE_CASE(SEL);
+        JP_DEFINE_TYPE_ENCODE_CASE(IMP);
         JP_DEFINE_TYPE_ENCODE_CASE(void*);
         JP_DEFINE_TYPE_ENCODE_CASE(void *);
+        JP_DEFINE_TYPE_ENCODE_CASE(char *);
+        JP_DEFINE_TYPE_ENCODE_CASE(char*);
         [_typeEncodeDict setObject:@"@?" forKey:@"block"];
         [_typeEncodeDict setObject:@"^@" forKey:@"id*"];
     }
