@@ -19,10 +19,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [OCEval eval:@"SEL selector = NSSelectorFromString(@\"viewDidLoad\");\
+     IMP imp = class_getMethodImplementation([ViewController class], selector);\
+     SEL selector = NSSelectorFromString(@\"tableView:numberOfRowsInSection:\");\
+     class_addMethod([ViewController class], selector,imp ,\"i@:@i\");\
+     selector = NSSelectorFromString(@\"tableView:cellForRowAtIndexPath:\");\
+     class_addMethod([ViewController class], selector,imp,\"@@:@@\");\
+     [OCCfuntionHelper defineCFunction:@\"objc_setAssociatedObject\" types:@\"void,id,void *,id,unsigned int\"];\
+     [OCCfuntionHelper defineCFunction:@\"objc_getAssociatedObject\" types:@\"id,id,void *\"];"];
+    
     // Override point for customization after application launch.
     NSString *viewDidload = @"{\
-    [OCCfuntionHelper defineCFunction:@\"objc_setAssociatedObject\" types:@\"void,id,void *,id,unsigned int\"];\
-    [OCCfuntionHelper defineCFunction:@\"objc_getAssociatedObject\" types:@\"id,id,void *\"];\
     [originalInvocation invoke];\
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:0];\
     [self.view addSubview:tableView];\
@@ -51,7 +59,7 @@
     if (array != nil) {\
         return array.count;\
     }else{\
-        return 3;\
+        return 0;\
     }\
     }";
     
@@ -61,8 +69,23 @@
               isClass:NO
        implementation:numberOfRowsInSection];
     
+    NSString *cellForRowAtIndexPath = @"{\
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@\"cell\"];\
+    if (cell == nil) {\
+        cell = [[UITableViewCell alloc] initWithStyle:3 reuseIdentifier:@\"cell\"];\
+    }\
+    NSArray *array = objc_getAssociatedObject(self, @\"data\");\
+    NSDictionary *model = array[indexPath.row];\
+    cell.textLabel.text = model[@\"date\"];\
+    cell.detailTextLabel.text = [NSString stringWithFormat:@\"%@~%@ %@\",model[@\"low\"],model[@\"high\"],model[@\"text\"]];\
+    return cell;\
+    ";
     
-    
+    [OCEval hookClass:@"ViewController"
+             selector:@"tableView:cellForRowAtIndexPath:"
+             argNames:@[@"tableView",@"indexPath"]
+              isClass:NO
+       implementation:cellForRowAtIndexPath];
     
     return YES;
     
