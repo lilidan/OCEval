@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "OCEval.h"
+#import <objc/runtime.h>
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,27 +21,46 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSString *viewDidload = @"{\
+    [OCCfuntionHelper defineCFunction:@\"objc_setAssociatedObject\" types:@\"void,id,void *,id,unsigned int\"];\
+    [OCCfuntionHelper defineCFunction:@\"objc_getAssociatedObject\" types:@\"id,id,void *\"];\
     [originalInvocation invoke];\
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:0];\
     [self.view addSubview:tableView];\
     tableView.delegate = self;\
     tableView.dataSource = self;\
-    self.view.backgroundColor = [UIColor yellowColor];\
-    tableView.backgroundColor = [UIColor redColor];\
     NSURL *url = [NSURL URLWithString:@\"https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22nome%2C%20ak%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys\"];\
     NSURLRequest *request = [NSURLRequest requestWithURL:url];\
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {\
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];\
     NSArray *array = dic[@\"query\"][@\"results\"][@\"channel\"][@\"item\"][@\"forecast\"];\
-    self.data = array;\
+    objc_setAssociatedObject(self, @\"data\", array, 1);\
     [tableView reloadData];\
     }];}\
 ";
+    
     [OCEval hookClass:@"ViewController"
              selector:@"viewDidLoad"
              argNames:@[]
               isClass:NO
        implementation:viewDidload];
+    
+    
+    NSString *numberOfRowsInSection = @"{NSArray *array = objc_getAssociatedObject(self, @\"data\");\
+    if (array != nil) {\
+        return array.count;\
+    }else{\
+        return 3;\
+    }\
+    }";
+    
+    [OCEval hookClass:@"ViewController"
+             selector:@"tableView:numberOfRowsInSection:"
+             argNames:@[@"tableView",@"section"]
+              isClass:NO
+       implementation:numberOfRowsInSection];
+    
+    
+    
     
     return YES;
     

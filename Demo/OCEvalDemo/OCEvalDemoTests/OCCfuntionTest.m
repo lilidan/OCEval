@@ -40,14 +40,15 @@
     NSString *inputStr = @"\
     [OCCfuntionHelper defineCFunction:@\"objc_setAssociatedObject\" types:@\"void,id,void *,id,unsigned int\"];\
     [OCCfuntionHelper defineCFunction:@\"objc_getAssociatedObject\" types:@\"id,id,void *\"];\
-    objc_setAssociatedObject(object, @\"key\", @\"3\", 1);\
-    return objc_getAssociatedObject(object, @\"key\");\
+    NSObject *object = [[NSObject alloc] init];\
+    objc_setAssociatedObject(object, [@\"key\" UTF8String], @\"3\", 1);\
+    return objc_getAssociatedObject(object, [@\"key\" UTF8String]);\
     ";
-//    NSObject *object = [[NSObject alloc] init];
-//    objc_setAssociatedObject(object, (__bridge void *)@"key", @"3", 1);
-//    NSString *result2 = objc_getAssociatedObject(object, (__bridge void *)@"key");
-//    NSString *result = [OCEval eval:inputStr context:[@{@"object":object} mutableCopy]];
-//    NSAssert([result isEqualToString:result2], nil);
+    NSObject *object = [[NSObject alloc] init];
+    objc_setAssociatedObject(object, [@"key" UTF8String], @"3", 1);
+    NSString *result2 = objc_getAssociatedObject(object, [@"key" UTF8String]);
+    NSString *result = [OCEval eval:inputStr context:[@{@"object":object} mutableCopy]];
+    NSAssert([result isEqualToString:result2], nil);
 }
 
 

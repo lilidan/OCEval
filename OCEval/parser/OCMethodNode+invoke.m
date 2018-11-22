@@ -73,6 +73,7 @@ static NSObject *_nilObj;
                 JP_CALL_ARG_CASE('d', double, doubleValue)
                 JP_CALL_ARG_CASE('B', BOOL, boolValue)
                 
+                
             case ':': {
                 SEL value = nil;
                 if (valObj != _nilObj) {
@@ -82,7 +83,9 @@ static NSObject *_nilObj;
                 break;
             }
             case '{': {
-                [invocation setArgument:&valObj atIndex:i];
+                void *pointer = NULL;
+                [valObj getValue:&pointer];
+                [invocation setArgument:&pointer atIndex:i];
                 break;
             }
             default: {

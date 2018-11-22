@@ -84,6 +84,9 @@ return [NSNumber _selector:v];\
         case '{': {
             return [NSValue value:&src withObjCType:typeString];
         }
+        case '^': {
+            return (__bridge id)(*(void**)src);
+        }
         default:
             return nil;
     }
@@ -122,7 +125,8 @@ break;\
             break;
         }
         case '^':{
-            dist = (__bridge void *)(object);
+            id ptr = object;
+            *(void **)dist = (__bridge void *)(ptr); // special bridge
             break;
         }
         default:
