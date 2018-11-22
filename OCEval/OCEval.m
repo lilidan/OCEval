@@ -11,6 +11,8 @@
 #import "OCToken.h"
 #import "OCScopeNode.h"
 #import "OCTokenReader.h"
+#import "OCMethodNode+invoke.h"
+
 #import "Aspects.h"
 #import <objc/runtime.h>
 
@@ -57,10 +59,60 @@
             NSString *name = argNames[idx];
             [context setObject:obj forKey:name];
         }];
+        
         id result = [rootNode excuteWithCtx:context];
-        if (result) {
-            [aspectInfo.originalInvocation setReturnValue:&result];
+        
+        const char *argumentType = aspectInfo.originalInvocation.methodSignature.methodReturnType;
+        
+        switch (argumentType[0] == 'r' ? argumentType[1] : argumentType[0]) {
+                
+#define OC_CALL_ARG_CASE(_typeString, _type, _selector) \
+case _typeString: {                              \
+_type value = [result _selector];                     \
+[aspectInfo.originalInvocation setReturnValue:&value];\
+break; \
+}
+                OC_CALL_ARG_CASE('c', char, charValue)
+                OC_CALL_ARG_CASE('C', unsigned char, unsignedCharValue)
+                OC_CALL_ARG_CASE('s', short, shortValue)
+                OC_CALL_ARG_CASE('S', unsigned short, unsignedShortValue)
+                OC_CALL_ARG_CASE('i', int, intValue)
+                OC_CALL_ARG_CASE('I', unsigned int, unsignedIntValue)
+                OC_CALL_ARG_CASE('l', long, longValue)
+                OC_CALL_ARG_CASE('L', unsigned long, unsignedLongValue)
+                OC_CALL_ARG_CASE('q', long long, longLongValue)
+                OC_CALL_ARG_CASE('Q', unsigned long long, unsignedLongLongValue)
+                OC_CALL_ARG_CASE('f', float, floatValue)
+                OC_CALL_ARG_CASE('d', double, doubleValue)
+                OC_CALL_ARG_CASE('B', BOOL, boolValue)
+                
+            case ':': {
+                SEL value = nil;
+                if (result != [OCMethodNode nilObj]) {
+                    value = NSSelectorFromString(result);
+                }
+                [aspectInfo.originalInvocation setReturnValue:&value];
+                break;
+            }
+            case '{': {
+                void *pointer = NULL;
+                [result getValue:&pointer];
+                [aspectInfo.originalInvocation setReturnValue:&pointer];
+                break;
+            }
+            default: {
+                if (result == [OCMethodNode nilObj] ||
+                    ([result isKindOfClass:[NSNumber class]] && strcmp([result objCType], "c") == 0 && ![result boolValue])) {
+                    result = nil;
+                    [aspectInfo.originalInvocation setReturnValue:&result];
+                    break;
+                }
+                if (result) {
+                    [aspectInfo.originalInvocation setReturnValue:&result];
+                }
+            }
         }
+        
     } error:&error];
 }
 
