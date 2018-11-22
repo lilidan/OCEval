@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D676805021A66DEE007BBDDE /* demo in Resources */ = {isa = PBXBuildFile; fileRef = D676804F21A66DEE007BBDDE /* demo */; };
 		D68703B221A575830005D457 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703B121A575830005D457 /* AppDelegate.m */; };
 		D68703B521A575830005D457 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703B421A575830005D457 /* ViewController.m */; };
 		D68703B821A575830005D457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68703B621A575830005D457 /* Main.storyboard */; };
 		D68703BA21A575830005D457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D68703B921A575830005D457 /* Assets.xcassets */; };
 		D68703BD21A575830005D457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68703BB21A575830005D457 /* LaunchScreen.storyboard */; };
 		D68703C021A575830005D457 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703BF21A575830005D457 /* main.m */; };
-		D68703CA21A575830005D457 /* OCEvalDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703C921A575830005D457 /* OCEvalDemoTests.m */; };
 		D68703DB21A5759D0005D457 /* OCBlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703D421A5759D0005D457 /* OCBlockTest.m */; };
 		D68703DC21A5759D0005D457 /* OCCfuntionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703D521A5759D0005D457 /* OCCfuntionTest.m */; };
 		D68703DE21A5759D0005D457 /* OCLexerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703D721A5759D0005D457 /* OCLexerTest.m */; };
@@ -66,7 +64,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D676804F21A66DEE007BBDDE /* demo */ = {isa = PBXFileReference; lastKnownFileType = text; path = demo; sourceTree = "<group>"; };
 		D68703AD21A575830005D457 /* OCEvalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCEvalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D68703B021A575830005D457 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D68703B121A575830005D457 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,7 +75,6 @@
 		D68703BE21A575830005D457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D68703BF21A575830005D457 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D68703C521A575830005D457 /* OCEvalDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCEvalDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D68703C921A575830005D457 /* OCEvalDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCEvalDemoTests.m; sourceTree = "<group>"; };
 		D68703CB21A575830005D457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D68703D421A5759D0005D457 /* OCBlockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCBlockTest.m; sourceTree = "<group>"; };
 		D68703D521A5759D0005D457 /* OCCfuntionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCfuntionTest.m; sourceTree = "<group>"; };
@@ -188,7 +184,6 @@
 				D68703E221A575AC0005D457 /* OCEval */,
 				D68703B021A575830005D457 /* AppDelegate.h */,
 				D68703B121A575830005D457 /* AppDelegate.m */,
-				D676804F21A66DEE007BBDDE /* demo */,
 				D68703B321A575830005D457 /* ViewController.h */,
 				D68703B421A575830005D457 /* ViewController.m */,
 				D68703B621A575830005D457 /* Main.storyboard */,
@@ -204,7 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				D68703DA21A5759D0005D457 /* OCControlTest.m */,
-				D68703C921A575830005D457 /* OCEvalDemoTests.m */,
 				D68703D421A5759D0005D457 /* OCBlockTest.m */,
 				D68703D521A5759D0005D457 /* OCCfuntionTest.m */,
 				D68703D721A5759D0005D457 /* OCLexerTest.m */,
@@ -398,7 +392,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D68703BD21A575830005D457 /* LaunchScreen.storyboard in Resources */,
-				D676805021A66DEE007BBDDE /* demo in Resources */,
 				D68703BA21A575830005D457 /* Assets.xcassets in Resources */,
 				D68703B821A575830005D457 /* Main.storyboard in Resources */,
 			);
@@ -453,7 +446,6 @@
 				D687044121A575AC0005D457 /* OCCFuntionWrapper.m in Sources */,
 				D687042121A575AC0005D457 /* OCLexer.m in Sources */,
 				D687041D21A575AC0005D457 /* OCReader.m in Sources */,
-				D68703CA21A575830005D457 /* OCEvalDemoTests.m in Sources */,
 				D687042321A575AC0005D457 /* OCToken.m in Sources */,
 				D68703E021A5759D0005D457 /* OCLiteralTest.m in Sources */,
 				D687044321A575AC0005D457 /* OCCfuntionHelper.m in Sources */,

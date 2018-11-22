@@ -26,6 +26,19 @@
     NSAssert(result == [NSObject class],nil);
 }
 
+// TODO:
+// [OCCfuntionHelper defineCFunction:@\"class_getMethodImplementation\" types:@\"IMP,Class,SEL\"];\
+// [OCCfuntionHelper defineCFunction:@\"class_addMethod\" types:@\"BOOL,Class,SEL,IMP,char *\"];\
+
+//- (void)testNSSelectorFromString{
+//    NSString *inputStr = @"{\
+//    [OCCfuntionHelper defineCFunction:@\"NSSelectorFromString\" types:@\"id,NSString *\"];\
+//    id sel = NSSelectorFromString(@\"alloc\");\
+//    return sel;\
+//    }";
+//    id result = [OCEval eval:inputStr];
+//    NSAssert(result == @"alloc",nil);
+//}
 
 - (void)testCfuntionCallWithStruct{
     NSString *inputStr = @"{\

@@ -17,20 +17,35 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//TODO :Dynamically call runtime funtions.
+//    [OCEval eval:@"    [OCCfuntionHelper defineCFunction:@\"objc_setAssociatedObject\" types:@\"void,id,void *,id,unsigned int\"];\
+//     [OCCfuntionHelper defineCFunction:@\"objc_getAssociatedObject\" types:@\"id,id,void *\"];\
+//     [OCCfuntionHelper defineCFunction:@\"NSSelectorFromString\" types:@\"SEL,NSString *\"];\
+//     [OCCfuntionHelper defineCFunction:@\"class_getMethodImplementation\" types:@\"IMP,Class,SEL\"];\
+//     [OCCfuntionHelper defineCFunction:@\"class_addMethod\" types:@\"BOOL,Class,SEL,IMP,char *\"];\
+//     [OCCfuntionHelper defineCFunction:@\"objc_getAssociatedObject\" types:@\"id,id,void *\"];\
+//     SEL viewDidLoad = NSSelectorFromString(@\"viewDidLoad\");\
+//     IMP imp = class_getMethodImplementation([ViewController class], viewDidLoad);\
+//     SEL selector = NSSelectorFromString(@\"tableView:numberOfRowsInSection:\");\
+//     class_addMethod([ViewController class], selector,imp ,\"i@:@i\");\
+//     selector = NSSelectorFromString(@\"tableView:cellForRowAtIndexPath:\");\
+//     class_addMethod([ViewController class], selector,imp,\"@@:@@\");"];
     
-    [OCEval eval:@"SEL selector = NSSelectorFromString(@\"viewDidLoad\");\
-     IMP imp = class_getMethodImplementation([ViewController class], selector);\
-     SEL selector = NSSelectorFromString(@\"tableView:numberOfRowsInSection:\");\
-     class_addMethod([ViewController class], selector,imp ,\"i@:@i\");\
-     selector = NSSelectorFromString(@\"tableView:cellForRowAtIndexPath:\");\
-     class_addMethod([ViewController class], selector,imp,\"@@:@@\");\
-     [OCCfuntionHelper defineCFunction:@\"objc_setAssociatedObject\" types:@\"void,id,void *,id,unsigned int\"];\
-     [OCCfuntionHelper defineCFunction:@\"objc_getAssociatedObject\" types:@\"id,id,void *\"];"];
     
-    // Override point for customization after application launch.
+    //add methods for Class to hook
+    SEL viewDidLoad = NSSelectorFromString(@"viewDidLoad");
+    IMP imp = class_getMethodImplementation([ViewController class], viewDidLoad);
+    SEL selector = NSSelectorFromString(@"tableView:numberOfRowsInSection:");
+    class_addMethod([ViewController class], selector,imp ,"i@:@i");
+    selector = NSSelectorFromString(@"tableView:cellForRowAtIndexPath:");
+    class_addMethod([ViewController class], selector,imp,"@@:@@");
+    
+    
+    //call method
     NSString *viewDidload = @"{\
+    [OCCfuntionHelper defineCFunction:@\"objc_setAssociatedObject\" types:@\"void,id,void *,id,unsigned int\"];\
+    [OCCfuntionHelper defineCFunction:@\"objc_getAssociatedObject\" types:@\"id,id,void *\"];\
     [originalInvocation invoke];\
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:0];\
     [self.view addSubview:tableView];\

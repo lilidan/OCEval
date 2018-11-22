@@ -1,4 +1,0 @@
-UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:0];
-[self.view addSubview:tableView];
-tableView.delegate = self;
-tableView.dataSource = self;

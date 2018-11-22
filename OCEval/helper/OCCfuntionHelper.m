@@ -146,7 +146,7 @@ break;\
     
     NSUInteger argCount = funcSignature.argumentTypes.count;
     if (argCount != [arguments count]){
-        return nil;
+        abort();
     }
     
     ffi_type **ffiArgTypes = alloca(sizeof(ffi_type *) *argCount);
