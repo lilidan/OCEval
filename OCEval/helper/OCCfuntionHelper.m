@@ -121,6 +121,10 @@ break;\
             [object getValue:&dist];
             break;
         }
+        case '^':{
+            dist = (__bridge void *)(object);
+            break;
+        }
         default:
             break;
     }

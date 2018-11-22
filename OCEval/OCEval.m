@@ -31,12 +31,15 @@
     return [rootNode excuteWithCtx:context];;
 }
 
-+ (void)hookClass:(Class)class
-         selector:(SEL)selector
++ (void)hookClass:(NSString *)clsName
+         selector:(NSString *)selName
          argNames:(NSArray<__kindof NSString *> *)argNames
           isClass:(BOOL)isClass
    implementation:(NSString *)imp
 {
+    Class class = NSClassFromString(clsName);
+    SEL selector = NSSelectorFromString(selName);
+    
     if (isClass) {
          class = objc_getMetaClass([NSStringFromClass(class) UTF8String]);
     }
@@ -55,7 +58,9 @@
             [context setObject:obj forKey:name];
         }];
         id result = [rootNode excuteWithCtx:context];
-        [aspectInfo.originalInvocation setReturnValue:&result];
+        if (result) {
+            [aspectInfo.originalInvocation setReturnValue:&result];
+        }
     } error:&error];
 }
 

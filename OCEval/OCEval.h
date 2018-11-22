@@ -14,8 +14,8 @@
 
 + (id)eval:(NSString *)str context:(NSMutableDictionary *)context;
 
-+ (void)hookClass:(Class)cls
-         selector:(SEL)selector
++ (void)hookClass:(NSString *)clsName
+         selector:(NSString *)selName
          argNames:(NSArray<__kindof NSString *> *)argNames //original parameters variable name
           isClass:(BOOL)isClass //hook class method or instance method
    implementation:(NSString *)imp;

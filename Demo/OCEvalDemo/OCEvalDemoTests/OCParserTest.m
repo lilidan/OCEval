@@ -28,19 +28,19 @@
 }
 
 - (void)testReturnNodeExpression {
-    NSString *inputStr = @"5-(1+2*4);";
+    NSString *inputStr = @"return 5-(1+2*4);";
     NSNumber *result = [OCEval eval:inputStr];
     NSAssert([result integerValue] == -4, nil);
 }
 
 - (void)testReturnNodePredicate {
-    NSString *inputStr = @"alpha + 3 <= 4 && 6 + 3 < 10;";
+    NSString *inputStr = @"return alpha + 3 <= 4 && 6 + 3 < 10;";
     NSNumber *result = [OCEval eval:inputStr context:[@{@"alpha":@(0)} mutableCopy]];
     NSAssert([result boolValue] == YES, nil);
 }
 
 - (void)testReturnNodeMethod {
-    NSString *inputStr = @"alpha + 3 <= 4 && [NSString string] != nil;";
+    NSString *inputStr = @"return alpha + 3 <= 4 && [NSString string] != nil;";
     NSNumber *result = [OCEval eval:inputStr context:[@{@"alpha":@(0)} mutableCopy]];
     NSAssert([result boolValue] == YES, nil);
 }
@@ -64,6 +64,14 @@
     return [formatter stringFromDate:[NSDate date]];}";
     NSString *result = [OCEval eval:inputStr];
     NSAssert(result != nil, nil);
+}
+
+- (void)testPointGetter{
+    NSString *inputStr = @"{     UIView *view = [[UIView alloc] init];\
+    CGRect frame = [view bounds];\
+    return frame;}";
+    NSValue *result = [OCEval eval:inputStr];
+    NSAssert([result CGRectValue].origin.x == 0, nil);
 }
 
 

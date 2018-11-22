@@ -55,6 +55,14 @@
     NSAssert([result isEqualToString:@"xyz"], nil);
 }
 
+- (void)testJson{
+    NSString *inputStr = @"{NSDictionary *dic = @{@\"aaa\":@(1),@\"6666\":@{@\"bbb\":@\"cccc\"}};\
+    return dic[@\"6666\"][\"bbb\"];\
+    }";
+    NSString *result = [OCEval eval:inputStr];
+    NSAssert([result isEqualToString:@"cccc"], nil);
+}
+
 
 
 @end

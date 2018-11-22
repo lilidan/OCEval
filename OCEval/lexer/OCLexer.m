@@ -127,7 +127,7 @@
             
         case'?': case'[': case']':case '(':case ')':case '{':case '}':
         case '.'://肯定不为数字，考虑为. 语法
-        case '%': case ',':case '@':case '~':
+        case '%': case ',':case '@':case '~':case ';':
             //都是单一symbol
             return [OCToken tokenWithTokenType:OCTokenTypeSymbol stringValue:self.stringbuf doubleValue:0];
             
@@ -135,7 +135,7 @@
         case '/'://可以是除法，可以是注释。二期考虑注释。
         case '<': case '>': case '!':            //考虑单独出现和等于出现的情况。考虑位移计算的情况。
         case '|': case '&': //考虑为指针转换和逻辑运算符情况。
-        case ':': case ';'://单独出现和连续出现的情况
+        case ':': //单独出现和连续出现的情况
         case '=':
             return [self readSymbol:c];
         case ' ':

@@ -59,7 +59,7 @@
     }else{
         [self.typeNames addObject:current.value];
         current = [self.reader read];
-        while (current.tokenSubType == OCSymbolSubTypeStar || current.tokenSubType == OCWordSubTypeNonnull) {
+        while (current.tokenSubType == OCSymbolSubTypeStar || current.tokenSubType == OCWordSubTypeNonnull || current.tokenSubType == OCWordSubTypenullable) {
             current = [self.reader read];
         }
         NSAssert(current.tokenType == OCTokenTypeWord, nil);

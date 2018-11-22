@@ -32,7 +32,7 @@
     return nil;\
     }else if(str.length == 0){\
     return str;\
-    }";
+    }}";
     NSString *result = [OCEval eval:inputStr];
     NSAssert([result isEqualToString:@""], nil);
 }

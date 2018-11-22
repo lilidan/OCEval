@@ -104,7 +104,6 @@
     id obj = [ctx objectForKey:self.token.value];
     for (NSString *propertyName in self.propertyNames) {
         obj = [OCMethodNode invokeWithCaller:obj selectorName:propertyName argments:@[]];
-//        obj = [obj valueForKey:propertyName];
     }
     return obj;
 }

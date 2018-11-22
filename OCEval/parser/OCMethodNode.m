@@ -208,7 +208,7 @@
 {
     NSArray *children = self.children;
     id obj = [children[0] excuteWithCtx:ctx];
-    for (int i = 1; i < children.count - 2; i++) {
+    for (int i = 1; i < children.count - 1; i++) {
         OCSimpleNode *node = children[i];
         obj = [OCMethodNode invokeWithCaller:obj selectorName:node.token.value argments:@[]];
     }

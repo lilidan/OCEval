@@ -18,7 +18,7 @@ typedef NS_ENUM(NSUInteger, OCTokenType) {
     OCTokenTypeComment = 6
 };
 
-#define SUB_TYPES @[@"if",@"else",@"do",@"while",@"for",@"in",@"continue",@"break",@"return",@"selector",@"self",@"super",@"nil",@"YES",@"NO",@"__weak",@"__strong",@"__block",@"_Nonnull",\
+#define SUB_TYPES @[@"if",@"else",@"do",@"while",@"for",@"in",@"continue",@"break",@"return",@"selector",@"self",@"super",@"nil",@"YES",@"NO",@"__weak",@"__strong",@"__block",@"_Nonnull",@"_Nullable",\
 @"(",@")",@"[",@"]",@"{",@"}",@";",@"=",@".",@",",@":",@"+",@"-",@"*",@"/",@"&",@"|",@"!",@">",@">=",@"<",@"<=",@"==",@"!=",@"&&",@"||",@"@",@"^" \
 ]
 
@@ -43,6 +43,7 @@ typedef NS_ENUM(NSUInteger, OCTokenSubType) {
     OCWordSubTypeStrong,
     OCWordSubTypeBlock,
     OCWordSubTypeNonnull,
+    OCWordSubTypenullable,
     //
     OCSymbolSubTypeLeftParen,
     OCSymbolSubTypeRightParen,

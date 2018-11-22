@@ -145,7 +145,7 @@ break; \
                 case '{': {
                     void *result;
                     [invocation getReturnValue:&result];
-                    return  [NSValue value:result withObjCType:returnType];
+                    return  [NSValue value:&result withObjCType:returnType];
                     break;
                 }
                 case '#': {

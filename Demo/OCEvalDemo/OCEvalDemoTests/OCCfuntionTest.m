@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "OCEval.h"
+#import <objc/runtime.h>
 
 @interface OCCfuntionTest : XCTestCase
 
@@ -26,9 +27,6 @@
 }
 
 
-CGRect (*_CGRectMake)(CGFloat x, CGFloat y, CGFloat width, CGFloat height) = CGRectMake;
-CGPoint (*_CGPointMake)(CGFloat x, CGFloat y) = CGPointMake;
-
 - (void)testCfuntionCallWithStruct{
     NSString *inputStr = @"{\
     CGPoint point = CGPointMake(1, 2);\
@@ -36,6 +34,20 @@ CGPoint (*_CGPointMake)(CGFloat x, CGFloat y) = CGPointMake;
     }";
     CGPoint result = [[OCEval eval:inputStr] CGPointValue];
     NSAssert(result.x == 1, nil);
+}
+
+- (void)testAssocateObject{
+    NSString *inputStr = @"\
+    [OCCfuntionHelper defineCFunction:@\"objc_setAssociatedObject\" types:@\"void,id,void *,id,unsigned int\"];\
+    [OCCfuntionHelper defineCFunction:@\"objc_getAssociatedObject\" types:@\"id,id,void *\"];\
+    objc_setAssociatedObject(object, @\"key\", @\"3\", 1);\
+    return objc_getAssociatedObject(object, @\"key\");\
+    ";
+//    NSObject *object = [[NSObject alloc] init];
+//    objc_setAssociatedObject(object, (__bridge void *)@"key", @"3", 1);
+//    NSString *result2 = objc_getAssociatedObject(object, (__bridge void *)@"key");
+//    NSString *result = [OCEval eval:inputStr context:[@{@"object":object} mutableCopy]];
+//    NSAssert([result isEqualToString:result2], nil);
 }
 
 
