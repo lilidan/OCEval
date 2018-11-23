@@ -1,0 +1,16 @@
+PODS:
+  - OCEval (0.0.1)
+
+DEPENDENCIES:
+  - OCEval (from `../../`)
+
+EXTERNAL SOURCES:
+  OCEval:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  OCEval: 45a7bb1517607c4be8e6165af507311b20d9155b
+
+PODFILE CHECKSUM: de0f0becebe87b887832c97aee75c3baabfcce3c
+
+COCOAPODS: 1.5.3
