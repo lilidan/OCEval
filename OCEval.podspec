@@ -15,18 +15,18 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "Buggy"
+  s.name         = "OCEval"
   s.version      = "0.0.1"
-  s.summary      = "A short description of Buggy."
+  s.summary      = "OCEval"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "iOS crash reporter and handler"
+  s.description  = "OCEval"
 
-  s.homepage     = "https://github.com/lilidan/Buggy"
+  s.homepage     = "https://github.com/lilidan/OCEval"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/lilidan/Buggy.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/lilidan/OCEval.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,8 +89,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Buggy", "Buggy/**/*.{h,m}"
-  s.exclude_files = "Buggy/Exclude"
+  s.source_files  = "OCEval", "OCEval/**/*.{h,m}"
+  s.exclude_files = "OCEval/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -131,7 +131,5 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "Sentry", "~> 4.1.0"
-  s.dependency "CocoaLumberjack"
-  s.dependency "FBAllocationTracker"
+
 end

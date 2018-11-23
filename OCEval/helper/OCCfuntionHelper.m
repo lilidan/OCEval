@@ -177,11 +177,7 @@ break;\
     if (argCount != [arguments count]){
         abort();
     }
-    
-    if ([funcName isEqualToString:@"class_addMethod"]) {
-        NSLog(@"");
-    }
-    
+
     ffi_type **ffiArgTypes = alloca(sizeof(ffi_type *) *argCount);
     void **ffiArgs = alloca(sizeof(void *) *argCount);
     for (int i = 0; i < argCount; i ++) {
