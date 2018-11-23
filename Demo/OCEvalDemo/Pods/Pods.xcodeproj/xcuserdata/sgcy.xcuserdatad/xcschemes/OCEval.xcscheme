@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CA3CAFAC47ECF6737C8879118E63DCB7"
+               BlueprintIdentifier = "48E7EF975DB32D84973D9E46E2315AD6"
                BlueprintName = "OCEval"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "OCEval.framework">

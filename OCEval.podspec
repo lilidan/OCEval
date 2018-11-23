@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "OCEval", "OCEval/**/*.{h,m}"
+  s.source_files  = "OCEval", "OCEval/**/*.{h,m,c}"
   s.exclude_files = "OCEval/Exclude"
   s.vendored_libraries = 'OCEval/helper/libffi/libffi.a'
   # s.public_header_files = "Classes/**/*.h"

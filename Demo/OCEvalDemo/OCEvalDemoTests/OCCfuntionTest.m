@@ -9,12 +9,21 @@
 #import <XCTest/XCTest.h>
 #import "OCEval.h"
 #import <objc/runtime.h>
-
+#import "FuntionSearch.h"
+#import <dlfcn.h>
 @interface OCCfuntionTest : XCTestCase
 
 @end
 
 @implementation OCCfuntionTest
+
+- (void)testCfunctionSearch{
+    const char *funcName = "NSClassFromString";
+    void* functionPtr = dlsym(RTLD_DEFAULT,funcName); //might be rejected by AppStore
+    void* functionPtr2 = NULL;
+    find_function((struct Function[1]){funcName, &functionPtr2}, 1);
+    NSAssert(functionPtr == functionPtr2, nil);
+}
 
 - (void)testCfuntionCall {
     NSString *inputStr = @"{\

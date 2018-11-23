@@ -12,6 +12,7 @@
 
 #import "OCEval.h"
 #import "Aspects.h"
+#import "FuntionSearch.h"
 #import "ffi.h"
 #import "ffitarget.h"
 #import "ffitarget_arm.h"

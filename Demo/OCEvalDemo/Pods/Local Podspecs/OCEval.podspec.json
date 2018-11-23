@@ -16,7 +16,7 @@
   },
   "source_files": [
     "OCEval",
-    "OCEval/**/*.{h,m}"
+    "OCEval/**/*.{h,m,c}"
   ],
   "exclude_files": "OCEval/Exclude",
   "vendored_libraries": "OCEval/helper/libffi/libffi.a"
