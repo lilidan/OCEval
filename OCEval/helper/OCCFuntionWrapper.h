@@ -6,7 +6,11 @@
 //  Copyright © 2018年 sgcy. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#if TARGET_OS_IPHONE
+@import UIKit;
+#else
+@import AppKit;
+#endif
 
 @interface OCCFuntionWrapper : NSObject
 

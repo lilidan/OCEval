@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F60087A0275AD88B85B7066 /* Pods_OCEvalMacTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA669CA3F99A0A00A96F0755 /* Pods_OCEvalMacTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B4AF6500AE6961C8C95281D4 /* Pods_OCEvalMacDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD65BD6C41A479BE295A2807 /* Pods_OCEvalMacDemo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D688325021A969F200FA72C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D688324F21A969F200FA72C3 /* main.m */; };
+		D688325D21A96A0B00FA72C3 /* OCEvalMacTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D688325C21A96A0B00FA72C3 /* OCEvalMacTest.m */; };
+		D688326821A971B400FA72C3 /* OCBlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D688326221A971B300FA72C3 /* OCBlockTest.m */; };
+		D688326921A971B400FA72C3 /* OCLexerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D688326321A971B300FA72C3 /* OCLexerTest.m */; };
+		D688326A21A971B400FA72C3 /* OCControlTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D688326421A971B300FA72C3 /* OCControlTest.m */; };
+		D688326B21A971B400FA72C3 /* OCCfuntionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D688326521A971B300FA72C3 /* OCCfuntionTest.m */; };
+		D688326C21A971B400FA72C3 /* OCLiteralTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D688326621A971B300FA72C3 /* OCLiteralTest.m */; };
+		D688326D21A971B400FA72C3 /* OCParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D688326721A971B400FA72C3 /* OCParserTest.m */; };
+		D69AF71521A974EB0089F065 /* OCEval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69AF71421A974EB0089F065 /* OCEval.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D69AF71721A9750B0089F065 /* OCEval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69AF71621A9750B0089F065 /* OCEval.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D69AF71821A975340089F065 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D688324421A969F200FA72C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D688324B21A969F200FA72C3;
+			remoteInfo = OCEvalMacDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D688324A21A969F200FA72C3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0FE9C200CEF76AF3A8B5E426 /* Pods-OCEvalMacDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCEvalMacDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCEvalMacDemo/Pods-OCEvalMacDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		46B1031AEB928CBBC7B410DC /* Pods-OCEvalMacTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCEvalMacTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCEvalMacTest/Pods-OCEvalMacTest.debug.xcconfig"; sourceTree = "<group>"; };
+		AA669CA3F99A0A00A96F0755 /* Pods_OCEvalMacTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCEvalMacTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D688324C21A969F200FA72C3 /* OCEvalMacDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OCEvalMacDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		D688324F21A969F200FA72C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D688325A21A96A0B00FA72C3 /* OCEvalMacTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCEvalMacTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D688325C21A96A0B00FA72C3 /* OCEvalMacTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCEvalMacTest.m; sourceTree = "<group>"; };
+		D688325E21A96A0B00FA72C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D688326221A971B300FA72C3 /* OCBlockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCBlockTest.m; path = ../../OCEvalDemo/OCEvalDemoTests/OCBlockTest.m; sourceTree = "<group>"; };
+		D688326321A971B300FA72C3 /* OCLexerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCLexerTest.m; path = ../../OCEvalDemo/OCEvalDemoTests/OCLexerTest.m; sourceTree = "<group>"; };
+		D688326421A971B300FA72C3 /* OCControlTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCControlTest.m; path = ../../OCEvalDemo/OCEvalDemoTests/OCControlTest.m; sourceTree = "<group>"; };
+		D688326521A971B300FA72C3 /* OCCfuntionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCCfuntionTest.m; path = ../../OCEvalDemo/OCEvalDemoTests/OCCfuntionTest.m; sourceTree = "<group>"; };
+		D688326621A971B300FA72C3 /* OCLiteralTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCLiteralTest.m; path = ../../OCEvalDemo/OCEvalDemoTests/OCLiteralTest.m; sourceTree = "<group>"; };
+		D688326721A971B400FA72C3 /* OCParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCParserTest.m; path = ../../OCEvalDemo/OCEvalDemoTests/OCParserTest.m; sourceTree = "<group>"; };
+		D69AF71421A974EB0089F065 /* OCEval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OCEval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D69AF71621A9750B0089F065 /* OCEval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OCEval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD65BD6C41A479BE295A2807 /* Pods_OCEvalMacDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCEvalMacDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E93BB444C43CB64A14DA40D6 /* Pods-OCEvalMacTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCEvalMacTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCEvalMacTest/Pods-OCEvalMacTest.release.xcconfig"; sourceTree = "<group>"; };
+		EB84A6F68BDA470D55F14B3F /* Pods-OCEvalMacDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCEvalMacDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCEvalMacDemo/Pods-OCEvalMacDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D688324921A969F200FA72C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69AF71521A974EB0089F065 /* OCEval.framework in Frameworks */,
+				B4AF6500AE6961C8C95281D4 /* Pods_OCEvalMacDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D688325721A96A0B00FA72C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69AF71721A9750B0089F065 /* OCEval.framework in Frameworks */,
+				3F60087A0275AD88B85B7066 /* Pods_OCEvalMacTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		472BD7478721A8790527E0D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FE9C200CEF76AF3A8B5E426 /* Pods-OCEvalMacDemo.debug.xcconfig */,
+				EB84A6F68BDA470D55F14B3F /* Pods-OCEvalMacDemo.release.xcconfig */,
+				46B1031AEB928CBBC7B410DC /* Pods-OCEvalMacTest.debug.xcconfig */,
+				E93BB444C43CB64A14DA40D6 /* Pods-OCEvalMacTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4BD924548DD28BDB20D3E275 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D69AF71621A9750B0089F065 /* OCEval.framework */,
+				D69AF71421A974EB0089F065 /* OCEval.framework */,
+				DD65BD6C41A479BE295A2807 /* Pods_OCEvalMacDemo.framework */,
+				AA669CA3F99A0A00A96F0755 /* Pods_OCEvalMacTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D688324321A969F200FA72C3 = {
+			isa = PBXGroup;
+			children = (
+				D688324E21A969F200FA72C3 /* OCEvalMacDemo */,
+				D688325B21A96A0B00FA72C3 /* OCEvalMacTest */,
+				D688324D21A969F200FA72C3 /* Products */,
+				472BD7478721A8790527E0D5 /* Pods */,
+				4BD924548DD28BDB20D3E275 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D688324D21A969F200FA72C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D688324C21A969F200FA72C3 /* OCEvalMacDemo */,
+				D688325A21A96A0B00FA72C3 /* OCEvalMacTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D688324E21A969F200FA72C3 /* OCEvalMacDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D688324F21A969F200FA72C3 /* main.m */,
+			);
+			path = OCEvalMacDemo;
+			sourceTree = "<group>";
+		};
+		D688325B21A96A0B00FA72C3 /* OCEvalMacTest */ = {
+			isa = PBXGroup;
+			children = (
+				D688326221A971B300FA72C3 /* OCBlockTest.m */,
+				D688326521A971B300FA72C3 /* OCCfuntionTest.m */,
+				D688326421A971B300FA72C3 /* OCControlTest.m */,
+				D688326321A971B300FA72C3 /* OCLexerTest.m */,
+				D688326621A971B300FA72C3 /* OCLiteralTest.m */,
+				D688326721A971B400FA72C3 /* OCParserTest.m */,
+				D688325C21A96A0B00FA72C3 /* OCEvalMacTest.m */,
+				D688325E21A96A0B00FA72C3 /* Info.plist */,
+			);
+			path = OCEvalMacTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D688324B21A969F200FA72C3 /* OCEvalMacDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D688325321A969F200FA72C3 /* Build configuration list for PBXNativeTarget "OCEvalMacDemo" */;
+			buildPhases = (
+				017ECF57EF62AE287EF07AA4 /* [CP] Check Pods Manifest.lock */,
+				D688324821A969F200FA72C3 /* Sources */,
+				D688324921A969F200FA72C3 /* Frameworks */,
+				D688324A21A969F200FA72C3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCEvalMacDemo;
+			productName = OCEvalMacDemo;
+			productReference = D688324C21A969F200FA72C3 /* OCEvalMacDemo */;
+			productType = "com.apple.product-type.tool";
+		};
+		D688325921A96A0B00FA72C3 /* OCEvalMacTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D688325F21A96A0B00FA72C3 /* Build configuration list for PBXNativeTarget "OCEvalMacTest" */;
+			buildPhases = (
+				FFD2C4CDFFD50C8C110E96E5 /* [CP] Check Pods Manifest.lock */,
+				D688325621A96A0B00FA72C3 /* Sources */,
+				D688325721A96A0B00FA72C3 /* Frameworks */,
+				D688325821A96A0B00FA72C3 /* Resources */,
+				BCD7F82B46E154CF1019ED79 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D69AF71921A975340089F065 /* PBXTargetDependency */,
+			);
+			name = OCEvalMacTest;
+			productName = OCEvalMacTest;
+			productReference = D688325A21A96A0B00FA72C3 /* OCEvalMacTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D688324421A969F200FA72C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = sgcy;
+				TargetAttributes = {
+					D688324B21A969F200FA72C3 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					D688325921A96A0B00FA72C3 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D688324721A969F200FA72C3 /* Build configuration list for PBXProject "OCEvalMacDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D688324321A969F200FA72C3;
+			productRefGroup = D688324D21A969F200FA72C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D688324B21A969F200FA72C3 /* OCEvalMacDemo */,
+				D688325921A96A0B00FA72C3 /* OCEvalMacTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D688325821A96A0B00FA72C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		017ECF57EF62AE287EF07AA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCEvalMacDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCD7F82B46E154CF1019ED79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OCEvalMacTest/Pods-OCEvalMacTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OCEval/OCEval.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCEval.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCEvalMacTest/Pods-OCEvalMacTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD2C4CDFFD50C8C110E96E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCEvalMacTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D688324821A969F200FA72C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D688325021A969F200FA72C3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D688325621A96A0B00FA72C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D688325D21A96A0B00FA72C3 /* OCEvalMacTest.m in Sources */,
+				D688326A21A971B400FA72C3 /* OCControlTest.m in Sources */,
+				D688326B21A971B400FA72C3 /* OCCfuntionTest.m in Sources */,
+				D688326C21A971B400FA72C3 /* OCLiteralTest.m in Sources */,
+				D688326921A971B400FA72C3 /* OCLexerTest.m in Sources */,
+				D688326821A971B400FA72C3 /* OCBlockTest.m in Sources */,
+				D688326D21A971B400FA72C3 /* OCParserTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D69AF71921A975340089F065 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D688324B21A969F200FA72C3 /* OCEvalMacDemo */;
+			targetProxy = D69AF71821A975340089F065 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D688325121A969F200FA72C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D688325221A969F200FA72C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D688325421A969F200FA72C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE9C200CEF76AF3A8B5E426 /* Pods-OCEvalMacDemo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D688325521A969F200FA72C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB84A6F68BDA470D55F14B3F /* Pods-OCEvalMacDemo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D688326021A96A0B00FA72C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B1031AEB928CBBC7B410DC /* Pods-OCEvalMacTest.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OCEvalMacTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aa.OCEvalMacTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D688326121A96A0B00FA72C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E93BB444C43CB64A14DA40D6 /* Pods-OCEvalMacTest.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OCEvalMacTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = aa.OCEvalMacTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D688324721A969F200FA72C3 /* Build configuration list for PBXProject "OCEvalMacDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D688325121A969F200FA72C3 /* Debug */,
+				D688325221A969F200FA72C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D688325321A969F200FA72C3 /* Build configuration list for PBXNativeTarget "OCEvalMacDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D688325421A969F200FA72C3 /* Debug */,
+				D688325521A969F200FA72C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D688325F21A96A0B00FA72C3 /* Build configuration list for PBXNativeTarget "OCEvalMacTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D688326021A96A0B00FA72C3 /* Debug */,
+				D688326121A96A0B00FA72C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D688324421A969F200FA72C3 /* Project object */;
+}

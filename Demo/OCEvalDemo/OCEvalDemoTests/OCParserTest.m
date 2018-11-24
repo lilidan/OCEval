@@ -67,11 +67,11 @@
 }
 
 - (void)testPointGetter{
-    NSString *inputStr = @"{     UIView *view = [[UIView alloc] init];\
-    CGRect frame = [view bounds];\
+    NSString *inputStr = @"{     NSView *view = [[NSView alloc] init];\
+    NSRect frame = [view bounds];\
     return frame;}";
     NSValue *result = [OCEval eval:inputStr];
-    NSAssert([result CGRectValue].origin.x == 0, nil);
+    NSAssert([result rectValue].origin.x == 0, nil);
 }
 
 

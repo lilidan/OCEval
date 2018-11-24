@@ -51,7 +51,11 @@ typedef struct _AspectBlock {
 @property (nonatomic, assign) SEL selector;
 @property (nonatomic, strong) id block;
 @property (nonatomic, strong) NSMethodSignature *blockSignature;
+#if TARGET_OS_IPHONE
 @property (nonatomic, weak) id object;
+#else
+@property (nonatomic, assign) id object;
+#endif
 @property (nonatomic, assign) AspectOptions options;
 @end
 

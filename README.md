@@ -8,17 +8,19 @@
 * [x] array[0] or dic[@""]
 * [x] block
 * [x] call C external function
+* [x] support Mac
 
 ### harder part
 
-* [ ] support Mac
-* [ ] C struct: frame.origin.x  look at YYModel
+* [ ] Memory management: 声明在作用域里的变量，作用域结束的时候才被释放; 解引用和取地址。因为都是堆变量，block不会强引用self，所以strong-weak dance 没有意义。
+* [ ] performance: CPU time/Memory
 * [ ] [super dosth];
+* [ ] C struct: frame.origin.x  look at YYModel
 * [ ] @interface @property @implementation
 * [ ] -(void)foo
-* [ ] Memory management
 * [ ] macro like #define xx or typedef
 * [ ] call C inline function
+* [ ] strong weak dance
 
 ### easy parter
 
