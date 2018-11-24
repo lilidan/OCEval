@@ -9,10 +9,10 @@
 * [x] block
 * [x] call C external function
 * [x] support Mac
+* [x] Memory management: 声明在作用域里的变量，作用域结束的时候才被释放; 因为都是堆变量，block不会强引用self，所以strong-weak dance 没有意义?
 
 ### harder part
 
-* [ ] Memory management: 声明在作用域里的变量，作用域结束的时候才被释放; 解引用和取地址。因为都是堆变量，block不会强引用self，所以strong-weak dance 没有意义。
 * [ ] performance: CPU time/Memory
 * [ ] [super dosth];
 * [ ] C struct: frame.origin.x  look at YYModel
@@ -21,6 +21,8 @@
 * [ ] macro like #define xx or typedef
 * [ ] call C inline function
 * [ ] strong weak dance
+* [ ] 解引用和取地址。
+* [ ] return value
 
 ### easy parter
 

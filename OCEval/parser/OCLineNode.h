@@ -20,5 +20,6 @@ typedef NS_ENUM(NSUInteger, OCLineNodeType) {
 
 @property (nonatomic,assign) OCLineNodeType type;
 @property (nonatomic,strong) NSString *assigneeName;
+@property (nonatomic,assign) BOOL isStatement;
 
 @end

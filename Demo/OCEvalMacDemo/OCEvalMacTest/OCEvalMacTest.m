@@ -7,6 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "OCEval.h"
+#import <JavaScriptCore/JavaScriptCore.h>
+
 
 @interface OCEvalMacTest : XCTestCase
 
@@ -14,27 +17,97 @@
 
 @implementation OCEvalMacTest
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
+- (void)testPerformance {
     // This is an example of a performance test case.
-    [self measureBlock:^{
-        NSLog(@"");
-        // Put the code you want to measure the time of here.
-    }];
+    NSDate *date = [NSDate date];
+    int j = 0;
+    for (int i = 0; i < 100000000; i++) {
+        j++;
+    }
+    NSLog(@"------%f",[[NSDate date] timeIntervalSinceDate:date]);
+    
+    
+    NSString *inputStr = @"{\
+    [OCCfuntionHelper defineCFunction:@\"NSLog\" types:@\"void, NSString *,float\"];\
+    NSDate *date = [NSDate date];\
+    int j = 0;\
+    for (int i = 0; i< 10000; i = i + 1) {\
+        j = j + i;\
+    }\
+    return [[NSDate date] timeIntervalSinceDate:date];\
+    }";
+    NSNumber *value = [OCEval eval:inputStr];
+    NSLog(@"======%f",value.doubleValue);
+    
+    JSContext *ctx = [[JSContext alloc] init];
+    ctx.exceptionHandler = ^(JSContext *con, JSValue *exception) {
+        NSLog(@"%@", exception);
+        con.exception = exception;
+    };
+    
+    [ctx evaluateScript:@"function go() {var j = 0;\
+     for (var i=0;i<100000000;i++)\
+     {\
+     j = j+1; \
+     }\
+     return j;\
+     }"];
+    date = [NSDate date];
+    JSValue *n = [ctx[@"go"] callWithArguments:@[]];
+    NSLog(@"xxxxxxx%f xxxxxx%d",[[NSDate date] timeIntervalSinceDate:date],[n toInt32]);
+}
+
+
+- (void)testPerformance2 {
+    // This is an example of a performance test case.
+    NSDate *date = [NSDate date];
+    NSDate *date1 = [NSDate date];
+    date1 = [NSDate date];
+    date1 = [NSDate date];
+    date1 =  [NSDate date];
+    date1 = [NSDate date];
+    date1 = [NSDate date];
+    date1 = [NSDate date];
+    date1 = [NSDate date];
+    date1 = [NSDate date];
+    date1 = [NSDate date];
+    NSLog(@"------%f",[[NSDate date] timeIntervalSinceDate:date]);
+    
+    
+    NSString *inputStr = @"{\
+    NSDate *date = [NSDate date];\
+    NSDate *date1 = [NSDate date];\
+    NSDate *date1 = [NSDate date];\
+    NSDate *date1 = [NSDate date];\
+    NSDate *date1 = [NSDate date];\
+    NSDate *date1 = [NSDate date];\
+    NSDate *date1 = [NSDate date];\
+    NSDate *date1 = [NSDate date];\
+    NSDate *date1 = [NSDate date];\
+    NSDate *date1 = [NSDate date];\
+    NSDate *date1 = [NSDate date];\
+    return [[NSDate date] timeIntervalSinceDate:date];\
+    }";
+    NSNumber *value = [OCEval eval:inputStr];
+    NSLog(@"======%f",value.doubleValue);
+    
+    
+    JSContext *ctx = [[JSContext alloc] init];
+    ctx.exceptionHandler = ^(JSContext *con, JSValue *exception) {
+        NSLog(@"%@", exception);
+        con.exception = exception;
+    };
+
+     [ctx evaluateScript:@"function go() { var date = Date()}"];
+    date = [NSDate date];
+    [ctx evaluateScript:@"\
+     for (var i=0;i<10;i++)\
+     {\
+     go(); \
+     }"];
+    NSLog(@"xxxxxxx%f",[[NSDate date] timeIntervalSinceDate:date]);
+    
 }
 
 @end

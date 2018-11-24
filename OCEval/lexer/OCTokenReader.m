@@ -42,7 +42,7 @@
         result = [self.tokens objectAtIndex:self.offset];
     }
     self.offset ++;
-    NSLog(@"READ:%@",result.value);
+//    NSLog(@"READ:%@",result.value);
     return result;
 }
 

@@ -73,6 +73,7 @@
         if (token2.tokenType == OCTokenTypeWord) {
             self.type = OCLineNodeTypeAssign;
             self.assigneeName = token2.value;
+            self.isStatement = YES;
             NSAssert([self.reader read].tokenSubType == OCSymbolSubTypeEqual, nil);
             [self addChild:[[OCReturnNode alloc] initWithReader:self.reader]];
         }else if (token2.tokenSubType == OCSymbolSubTypeEqual){
@@ -96,6 +97,7 @@
             if ([self.reader read].tokenSubType == OCSymbolSubTypeCaret) {
                 //define block
                 self.assigneeName = [self.reader read].value;
+                self.isStatement = YES;
                 while ([self.reader read].tokenSubType != OCSymbolSubTypeEqual) {}
                 self.type = OCLineNodeTypeAssign;
                 [self addChild:[[OCReturnNode alloc] initWithReader:self.reader]];

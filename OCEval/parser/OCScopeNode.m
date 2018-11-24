@@ -44,19 +44,19 @@
 
 - (id)excuteWithCtx:(NSDictionary *)ctx
 {
-//    NSMutableArray *toRemove = [[NSMutableArray alloc] init];
+    NSMutableArray *toRemove = [[NSMutableArray alloc] init];
     for (OCNode *node in self.children) {
-//        if ([node isKindOfClass:[OCLineNode class]]) {
-//            OCLineNode *lineNode = (OCLineNode *)node;
-//            if (lineNode.type == OCLineNodeTypeAssign && [ctx objectForKey:lineNode.assigneeName] == nil) {
-//                [toRemove addObject:lineNode.assigneeName];
-//            }
-//        }
+        if ([node isKindOfClass:[OCLineNode class]]) {
+            OCLineNode *lineNode = (OCLineNode *)node;
+            if (lineNode.isStatement == YES) {
+                [toRemove addObject:lineNode.assigneeName];
+            }
+        }
         EXCUTE(node,ctx);
     }
-//    for (NSString *assigneeName in toRemove) {
-//        [ctx setValue:nil forKey:assigneeName];
-//    }
+    for (NSString *assigneeName in toRemove) {
+        [ctx setValue:nil forKey:assigneeName];
+    }
     return nil;
 }
 
