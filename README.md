@@ -11,6 +11,7 @@
 
 ### harder part
 
+* [ ] support Mac
 * [ ] C struct: frame.origin.x  look at YYModel
 * [ ] [super dosth];
 * [ ] @interface @property @implementation
