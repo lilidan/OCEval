@@ -46,6 +46,8 @@
         con.exception = exception;
     };
     
+    
+    
     [ctx evaluateScript:@"function go() {var j = 0;\
      for (var i=0;i<100000000;i++)\
      {\
@@ -99,7 +101,11 @@
         con.exception = exception;
     };
 
-     [ctx evaluateScript:@"function go() { var date = Date()}"];
+    ctx[@"go"] = ^() {
+        NSDate *date = [NSDate date];
+    };
+    
+//     [ctx evaluateScript:@"function go() { var date = Date()}"];
     date = [NSDate date];
     [ctx evaluateScript:@"\
      for (var i=0;i<10;i++)\
