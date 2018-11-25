@@ -50,7 +50,6 @@
         
         b += [[NSDate date] timeIntervalSinceDate:date];
         date = [NSDate date];
-        
 
         NSPredicate *pre = [NSPredicate predicateWithFormat:[mutaStr2 copy]];
         [pre evaluateWithObject:nil];
