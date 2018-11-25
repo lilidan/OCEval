@@ -20,12 +20,11 @@
     NSComparisonResult (^comparison)(id obj1, id obj2) = ^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {\
     return [obj1 doubleValue] > [obj2 doubleValue];\
     };\
-    [content sortedArrayUsingComparator:comparison];\
+    content = [content sortedArrayUsingComparator:comparison];\
     return content;\
     }";
     NSArray *result = [OCEval eval:inputStr];
     NSAssert([result[6] intValue] == 8, nil);
-    
 }
 
 

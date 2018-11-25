@@ -81,9 +81,9 @@
         self.hasInit = YES;
         return [self.children[1] excuteWithCtx:ctx];
     }
-    
     [self.children[2] excuteWithCtx:ctx];
-    return [self.children[1] excuteWithCtx:ctx];
+    NSNumber *result = [self.children[1] excuteWithCtx:ctx];
+    return result;
 }
 
 @end

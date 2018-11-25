@@ -13,6 +13,7 @@
 #import "OCMethodNode+invoke.h"
 
 #import "OCReturnNode.h"
+#import <objc/message.h>
 
 @interface OCMethodNode()
 
@@ -72,18 +73,26 @@
     }
 }
 
+
+static id (*new_msgSend1)(id, SEL,...) = (id (*)(id, SEL, ...)) objc_msgSend;
+
 - (id)excuteWithCtx:(NSDictionary *)ctx
 {
     id caller = [self.caller excuteWithCtx:ctx];
-    NSMutableArray *argumentsList = [[NSMutableArray alloc] init];
-    [self.children enumerateObjectsUsingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        id result = [obj excuteWithCtx:ctx];
-        if (result == nil) {
-            result = [OCMethodNode nilObj];
-        }
-        [argumentsList addObject:result];
-    }];
-    return [[self class] invokeWithCaller:caller selectorName:self.selectorName.copy argments:[argumentsList copy]];
+    if (caller == NSString.class) {
+        return new_msgSend1(caller,NSSelectorFromString(self.selectorName),@"aaaa%@,%@%@",@"aa",@"bb",@"cc");
+    }else{
+        NSMutableArray *argumentsList = [[NSMutableArray alloc] init];
+        [self.children enumerateObjectsUsingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            id result = [obj excuteWithCtx:ctx];
+            if (result == nil) {
+                result = [OCMethodNode nilObj];
+            }
+            [argumentsList addObject:result];
+        }];
+        return [[self class] invokeWithCaller:caller selectorName:self.selectorName.copy argments:[argumentsList copy]];
+    }
+ 
 }
 @end
 

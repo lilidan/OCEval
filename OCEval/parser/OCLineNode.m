@@ -117,7 +117,7 @@
         return nil;
     }
     if (self.type == OCLineNodeTypeCallMethod) {
-        EXCUTE(self.children[0],ctx);
+        [self.children[0] excuteWithCtx:ctx];
     }else if (self.type == OCLineNodeTypeReturn){
         return [self.children[0] excuteWithCtx:ctx];
     }else if (self.type == OCLineNodeTypeAssign){
