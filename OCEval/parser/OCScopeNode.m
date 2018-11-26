@@ -46,12 +46,12 @@
 {
 //    NSMutableArray *toRemove = [[NSMutableArray alloc] init];
     for (OCNode *node in self.children) {
-        if ([node isKindOfClass:[OCLineNode class]]) {
-            OCLineNode *lineNode = (OCLineNode *)node;
+//        if ([node isKindOfClass:[OCLineNode class]]) {
+//            OCLineNode *lineNode = (OCLineNode *)node;
 //            if (lineNode.isStatement == YES) {
 //                [toRemove addObject:lineNode.assigneeName];
 //            }
-        }
+//        }
         EXCUTE(node,ctx);
     }
     // block delays the object releasing
