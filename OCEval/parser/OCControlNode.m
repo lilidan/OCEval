@@ -36,7 +36,8 @@
 - (void)readIf
 {
     [self.logics addObject:@(OCWordSubTypeIf)];
-    [self.expressions addObject:[[OCReturnNode alloc] initWithReader:self.reader]];
+    OCReturnNode *returnNode = [[OCReturnNode alloc] initWithReader:self.reader];
+    [self.expressions addObject:returnNode];
     [self addChild:[[OCScopeNode alloc] initWithReader:self.reader]];
 }
 
@@ -99,8 +100,14 @@
         NSInteger logicType = [self.logics[i] integerValue];
         if (logicType == OCWordSubTypeIf) {
             id exp = [expression excuteWithCtx:ctx];
-            if ([exp boolValue]) {
-                EXCUTE(node,ctx);
+            if ([exp isKindOfClass:[NSNumber class]]) {
+                if ([exp boolValue]) {
+                    EXCUTE(node,ctx);
+                }
+            }else{
+                if (exp != nil) {
+                    EXCUTE(node,ctx);
+                }
             }
         }else if (logicType == OCWordSubTypeElse){
             EXCUTE(node,ctx);

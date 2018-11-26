@@ -7,232 +7,321 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01E4C761C6500B3C1EEACD1D22AF6EA9 /* Pods-OCEvalDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A4D67D3BD996135C06A8B406F04911 /* Pods-OCEvalDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DCE5B2720173E28162C70FA507472D7 /* OCReturnNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F81D673F3D363BC99C35DF74D6E7B3C /* OCReturnNode.m */; };
-		0F402E6605153705386C0FC39A02B1D4 /* OCLexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E42870234FB55E0E4328CBDCEC76F94 /* OCLexer.m */; };
-		103DB0FF51B9E1AA4A6273868CAC3505 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		10CF930CFD05343BAA8EF05754E4A6D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		12B09DA7D4F0CD599B058FF9CD1D3D94 /* ffi_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EC1B52385593E46CAB7A69F7BD19806 /* ffi_i386.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15B2FA598B7D348EDBC743180E102822 /* OCLiteralNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6222658EF4C5873321C1EA387B24215D /* OCLiteralNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EBA670216314770F4CF4D2518A4A309 /* Pods-OCEvalDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2C182B1551B68D637A433490EAF21C9 /* Pods-OCEvalDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E6775CB1AE986E0FD086D4193D33A47 /* OCMethodSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7EA8649E507D976535DF1E825F1C3F /* OCMethodSignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		363DECD132001829170FC33F5443BD95 /* OCEval.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F4081BC834D96815245BEDFBF9FCD2 /* OCEval.m */; };
-		3B19EFD6D16C416D2B8E86041829A3A6 /* OCBlockWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A032045FCE6AD00ADD3F3CB40567E41 /* OCBlockWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BA52FF6246F2BCC4547758D5E8D9396 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2028132A5B615D15AE5DC724C272CF9D /* Aspects.m */; };
-		3CAAE2D77E11AC927D7875F8A70843DA /* ffi_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = FC80DC29C351EF6C7D0B27A7B07D78AE /* ffi_arm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F928B65F45169DB1E9EEB53A65FE930 /* OCReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6B7C3FC4856CB279F85A0CB52FFED4 /* OCReader.m */; };
-		468D2A33AEAED7F8ABB66BC7930C8383 /* OCReturnNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E1E81A39140F72D4FAF2067B66530E /* OCReturnNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4953537B5F11908DC941FD95E0145F65 /* OCIterateNode.h in Headers */ = {isa = PBXBuildFile; fileRef = AC2D99F46BFBFE3DA3E8218AE58A68A8 /* OCIterateNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F057FB2C8F3E316B3CEF1D110E3A9E3 /* OCMethodNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 52572776977CB3619644EBE1FD9D477C /* OCMethodNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50AE98C06FEDCF8A5BA1C17E94FDC4F7 /* OCMethodNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EA787082DFA903C0129132B019E29F /* OCMethodNode.m */; };
-		58FDE599A81EE67B4F99410068EF36D9 /* OCCfuntionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5897F23BF70F7C1C3F64E8C8DBF9AF54 /* OCCfuntionHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B1D7326391B652014170B956FBEE446 /* FuntionSearch.c in Sources */ = {isa = PBXBuildFile; fileRef = 8799C51F800B377A8F597C1EC4500E7B /* FuntionSearch.c */; };
-		5CDE61DF54BF5182B54BD6B1260F8B68 /* ffi_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = E85CB6B03A543664921D477AB5750E9B /* ffi_arm64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		622C2F8B5E8614742A44BD2F4C2059EC /* OCCFuntionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3C23147636D0DB7A73A790D01772AC /* OCCFuntionWrapper.m */; };
-		623C83BA8D3AC6F2E1A965D2D5A6704A /* OCTokenReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B27FD5663CD44B1F328F49965E8407 /* OCTokenReader.m */; };
-		63FCC2B286CA1736419EE07B9B546BD4 /* OCControlNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F2AB16BCDD78D22F4A6BDA0643EFFF09 /* OCControlNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69576FF55544CC5C9C706D915C770ED9 /* OCEval.h in Headers */ = {isa = PBXBuildFile; fileRef = E22AC3EA88D61BD14AC865F92E86C705 /* OCEval.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F4F62962C44DC5442D1770188254559 /* OCExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 43405C529672C8F041F3A49B8B7EDA3D /* OCExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		727E63AA6AB4510E192482720CD112EC /* Aspects.h in Headers */ = {isa = PBXBuildFile; fileRef = E738794DF5171F812E085E2C03D81416 /* Aspects.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		735F592CF5D73E38163F0F392338BB94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		74ED3573D3BDCECE9BA1A22B06B30BA7 /* OCCFuntionWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B9E2458D818F329F1CEB2660A07AA01 /* OCCFuntionWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		777E0B546FDF3CF1892FB544A493DF04 /* OCEval-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BBD30677E06F0614367EA641CA7D49 /* OCEval-dummy.m */; };
-		7A4B55EEB3080058F5BBCDB9BDEB7B7D /* OCPropertyNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F80065B923722D9126CC21CF127526D /* OCPropertyNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B183D69338D8A9D02C46FDD467DADC2 /* ffitarget_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = 428BD41EFC717B5E81525A872C7EF0D3 /* ffitarget_arm64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C0BAD054C6D3E3FDDA518B7CE65A3AB /* OCLiteralNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6F389D2695286C0F5EA0DA4F0ED522 /* OCLiteralNode.m */; };
-		7CA4257E7ADC23B6AF25ADE604D82E31 /* ffitarget_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = 689316D874A5AE772A87251DB921885F /* ffitarget_i386.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		825F8A4F3FDA6DCECDD6ED18E89C03B2 /* OCEval-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD16B18CB3B31CF3677BEEC67DAE4B63 /* OCEval-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88D1C50B5B7A77580740CC0E4BAFF041 /* Pods-OCEvalDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC47D800DFCBD59FA732BE31C246269 /* Pods-OCEvalDemoTests-dummy.m */; };
-		8FB79F415EB0A2B4668624376136062E /* OCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 784F721BB5C0D7D95C13C99DE3FBCBC4 /* OCNode.m */; };
-		92B8A0C4C0E25FEB157BCA3F98A44B91 /* OCScopeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7375291724674AF8EE8CAAB8BED5AE90 /* OCScopeNode.m */; };
-		9608F00051C3643DE70DE9286E1B7329 /* OCLexer.h in Headers */ = {isa = PBXBuildFile; fileRef = B9183661AE792FEDC4B74055EAF1CEFD /* OCLexer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9878B0B4FF4FDE1DF0182905F82FCA78 /* OCToken.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8EAD1422F5B29B21CDCEFA50BDA5E4 /* OCToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3CB8837B57BF71398A2A7F107BBC586 /* OCLineNode.h in Headers */ = {isa = PBXBuildFile; fileRef = B51E6F0EA150FFDC4F143F0276A54D13 /* OCLineNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4EB4575969C4140A2F159A3E4C40B7A /* OCControlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DBBEB9B91A0B1A03C1D02C70A3E732 /* OCControlNode.m */; };
-		A4EF665B69AD74192ADE6906012FBC3E /* ffitarget.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9E83FB899DC14B33574B16CE20181D /* ffitarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A503BE312A0FABFCADD830206E261FE3 /* OCBlockWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F236FB3D9AE2B7E94190AA7AAAF7E9 /* OCBlockWrapper.m */; };
-		A9B056573131638619DFFFDDA359C52D /* OCBlockNode.h in Headers */ = {isa = PBXBuildFile; fileRef = CD473858CA4D5AFFA777DBCC08971FDF /* OCBlockNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA3706196A1DA6A342C568F998845248 /* OCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 164E9634B990A9F21F990C356FA95794 /* OCExtension.m */; };
-		B09D4C0421640A4495DA68EE00AA5719 /* OCPropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DFF741298187C484A1AE13010080F6 /* OCPropertyNode.m */; };
-		B63EF7329950AD0972B4E4C8F52DE6EB /* FuntionSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = C37E1400FD7821A5CB11839EAFBC8E9A /* FuntionSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA9736781BB3184947016354217190A5 /* OCMethodNode+invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = C804BAE15BCD6E884AE26A607E576899 /* OCMethodNode+invoke.m */; };
-		BDEE4CEFC30E0894DDB1631546F144E9 /* OCMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FD30C1F947DE9447DAF6381C132A8F /* OCMethodSignature.m */; };
-		C2DAEB05A63886C7EEAC602F265A6548 /* ffi_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = FAE67CAA0952D96CFED3A29772CFA7CB /* ffi_x86_64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6FE1744088F79216A1A02AB16261E97 /* ffitarget_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = A10B93688A614FDDF83F65274F41EA1D /* ffitarget_arm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0B002AAFD98A215026E4DF89F11FAC4 /* ffi.h in Headers */ = {isa = PBXBuildFile; fileRef = 56E3AB9772352A5399BEDF9E24AB0747 /* ffi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1D736B1A50864E8350DAE40DCFE0427 /* OCBlockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D413E187A60E3EF4DBC7EF584EDD642 /* OCBlockNode.m */; };
-		D1E899231A186A28DB8D692BAD1D8466 /* OCToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A5F1D6CA0B63772BAB67235B9483F9 /* OCToken.m */; };
-		D4E6EE6B2814F0824A2F60DB9811C2E1 /* OCCfuntionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD7AD4639110BE43C4C0C7BF61CE667 /* OCCfuntionHelper.m */; };
-		D684E89BE28266F315F12CBB8857A00D /* OCScopeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DD034461A0A68EA7F87992EF409B09 /* OCScopeNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA41B6F3B9E0DD097DEFA7E7B33AA644 /* OCMethodNode+invoke.h in Headers */ = {isa = PBXBuildFile; fileRef = B6F88647A09A61E511D30FAD668B68F5 /* OCMethodNode+invoke.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBEAF93ABC3B77DE0EA73D9FD57E3E01 /* OCLineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BEC7BAEFECE276858D963272BFB21D /* OCLineNode.m */; };
-		DEF057D688B052937F3924479F9001AF /* OCReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0168113EE69D9D7D02EFA516F91FF13A /* OCReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1D0C698828BC1A2A0115059F073399F /* OCIterateNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0D0A40A06D6CE2FBE20EF560BF8552 /* OCIterateNode.m */; };
-		E69610348AD22992E94B654D2F6064D8 /* ffitarget_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E8507D50025F3ADE8F7601916A843A /* ffitarget_x86_64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E79DBFF19B1F55ACADF0340FF4C0DCD4 /* OCTokenReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A34B6317347745A62E379D0D05E0D81 /* OCTokenReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE109FC69BB04AD560898114FEC3AF58 /* OCNode.h in Headers */ = {isa = PBXBuildFile; fileRef = DA93836252E9DC1E2957546D2B0866B2 /* OCNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF6AC2580B03E58CE6ECCB1F8DD4716D /* Pods-OCEvalDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9484C3FFDBC9DCC2F6A6E02661896FF4 /* Pods-OCEvalDemo-dummy.m */; };
+		00966DD9E286220D253D082E486AE660 /* OCReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D184E3D91B64AC0E3E39850E7C1926 /* OCReader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		029C56A1CAE38796C9A722F9F395922D /* FuntionSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADEB5FD52ECAB9E9F9BD7372D2256E0 /* FuntionSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		064E48D994112BC175E4457506CE8273 /* OCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E93FE204E0483C641691DAF1E50C7D /* OCExtension.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		06F53BBE39339700D8D1791F78BBB3B0 /* Aspects.h in Headers */ = {isa = PBXBuildFile; fileRef = 27BA9DEE873CAEE6D2E0EFA5DB6BD2C2 /* Aspects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07F445F08B5893931196FAFE337E52DE /* ffi_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = EDED882DA0F949F4CEF89548BB8E211D /* ffi_x86_64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0879676E7DF216FACDEB5172A7AD4469 /* OCLiteralNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F2148FCC6448FEFC3CC6C1D8447922 /* OCLiteralNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F97BBCC28969922DCF6A45189405094 /* OCMethodSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 799461C50FE6B38A13711DB3242645E6 /* OCMethodSignature.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0FC0B2A81E45D451A30DBFA5BF1BC387 /* Pods-OCEvalDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5715B8C425A3584C477A83223CC122A /* Pods-OCEvalDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CC6C3EFF8D84EC71C840695537D402E /* ffitarget_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = AEDFA648D730779BD9F225047D0AD70D /* ffitarget_i386.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FF6E10E57302785D599C2C0AE2076ED /* OCTokenReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1991FFF5FDD19268C46BE132070C8B /* OCTokenReader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2217B71FB0CFA5D95633D2EB203E41A0 /* OCScopeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 198704317C236D5E86B5D366AE1DD08B /* OCScopeNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		22C8AD74B29CA087881F07A2E2B2860A /* OCToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B278F6FB6C7F70D070DE877FA5BAFF7F /* OCToken.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		272545F70A96201FCDA9CA4E0DD08FA1 /* OCNode.h in Headers */ = {isa = PBXBuildFile; fileRef = B30A34AF258FA0364F88A0707633C842 /* OCNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E5163086812D1C0156B0B7CAB0F96A9 /* Pods-OCEvalDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A9A4D73B09AC5DC58404A95B8FC2CF /* Pods-OCEvalDemo-dummy.m */; };
+		30451BE14ADCCE642349EC1BB9300B2D /* ffi_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = 9582160DA8C2C008D934F691BE87C9C0 /* ffi_arm64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30BEEEE9DF953B05C0F0C9B1D11B7C39 /* ffi_i386.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D608EB621D71F7B11A2EB9C8CB9BD47 /* ffi_i386.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32856A61AB10A7B0DF5B2C9AAD769834 /* OCToken.h in Headers */ = {isa = PBXBuildFile; fileRef = EA76A196C5CD97B7B35A4AD16886ABF6 /* OCToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		365C5C891BB31C9845126119CE1EEA67 /* OCIterateNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B16ED246D81067D1DA22D877E627593 /* OCIterateNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3AF2284A0AA13BCD3AF8A1158E6DB0C6 /* FuntionSearch.c in Sources */ = {isa = PBXBuildFile; fileRef = EC157EBFC67C2623026F0AE81EF841D7 /* FuntionSearch.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3B7FA9FEE803D02CEC9B5F5F90DC3A89 /* OCLineNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D57052AB9987804A4C315D55C79262E1 /* OCLineNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C228235B7E449D864324B72EC5482AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		421D192C040D1759B540C377BEB4832F /* OCCfuntionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BD42625940814C900B72CB1B0E1149 /* OCCfuntionHelper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		429CC5FF2A9A5982433524E0F46A0253 /* OCBlockWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FC097826BB07DA8279392BA4DC1C67 /* OCBlockWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469213F3D7E87F231C32F5D3EDC70E69 /* OCLineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 986C88123B29A0CDF8C970FF804323AA /* OCLineNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4A5B6822CCB49E319723AAED8BEC61FA /* ffitarget_x86_64.h in Headers */ = {isa = PBXBuildFile; fileRef = 81D15398F505A795B12EE320D4D2F87D /* ffitarget_x86_64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C2F305F7D17325999A65281577F2EFD /* OCEval-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBC34B5F5A85956F0A1D52E54C7D63 /* OCEval-dummy.m */; };
+		572D0603C9EC3974FF1A004BE9456AB3 /* OCEval.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EE25C0A7A93811CC0043BC5D385FEE /* OCEval.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5ABBA27A79250D0D405364EA560C8C70 /* OCFastCalculateNode.h in Headers */ = {isa = PBXBuildFile; fileRef = B532D239BB59B464875A7106E499FD5A /* OCFastCalculateNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B33CC5612681A36B43DA441FA25043C /* ffi_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = 06BB796776A35315A86B304674F29354 /* ffi_arm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DBFE5B4253E3DCC870A93D5581CB84D /* OCReturnNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5913ADBE91F312D1C2544CF658AF2B46 /* OCReturnNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		61CE5E83DDBD75553FFC6EB689EDCDD4 /* OCBlockWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5217E781E3EE1557FB4D31057E399E63 /* OCBlockWrapper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		654E95D7CE54D5D96CD57B7919F124A7 /* OCMethodNode+invoke.h in Headers */ = {isa = PBXBuildFile; fileRef = 7338C57A39760D637E3F7352717BB87B /* OCMethodNode+invoke.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BA38FAB3621C5F54E2C686457B46DD9 /* OCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C4185A462F355A3DACED1FF463776A71 /* OCNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6F2E1AF14CF5D1069EA2742A381B7555 /* Pods-OCEvalDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A64FBB3A44898BCC65B0706DBD8B6C /* Pods-OCEvalDemoTests-dummy.m */; };
+		73B3DFBF29D2643CCDF8612AF4B0BA61 /* OCMethodNode+invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 494ADCE4E7007EBB85C618B6B19F4EB1 /* OCMethodNode+invoke.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		801346A99CD4D3F00234914D93A5CB9E /* ffitarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F3F3C48CC96ABD09CE44FD77F96E0C6 /* ffitarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		821242C369C87B021110FEF7B098642D /* OCMethodSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B865C6102A3709A5E95800B9682B8F /* OCMethodSignature.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		895C952CA83BD9189DA2AFD511CFCEFB /* OCControlNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A03E4B30D0ED1270160C04BEEB9098B /* OCControlNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8AA5857BCF026E7FBB5A5BA80FF4D9AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		8E862880954F036B7C910E8F38F9C75A /* OCEval-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E67AD21CD215364B99538126C188824 /* OCEval-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93EF2566FD0146BE10C194CB3C201DEF /* OCPropertyNode.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF190B75E39CDEBD81FB557228DBDEF /* OCPropertyNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		975A1F5FA18BAFA960D8470A1BEEB7CF /* OCTokenReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9816E14BF175086DBB2313DD16790FBA /* OCTokenReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B9EB035856F992DE2213EC87471AD7A /* OCCFuntionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2568E4A4E9A07BE2B13B8E9E91BE45 /* OCCFuntionWrapper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9DC2275DAFA7750AD36E365BE3426E1A /* OCIterateNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 82E673F6DAB88BF588588A115C9D2055 /* OCIterateNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA6D95C20B9AA04C3174900D90FC7504 /* OCEval.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A04EF2A2D7574069338282AEA3E3760 /* OCEval.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADA7BBA25B25CC412A5D87F18545C554 /* OCCfuntionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C78E3AE3CAB94E1FC92C852D0BACABE1 /* OCCfuntionHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF019D1CAA39D6876825AE5345A85BEF /* OCLexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F0700409BAA454EEB46400E50FA12F /* OCLexer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AF302C5ED46990104C16D2BF5EEBBD7E /* OCLiteralNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6598EA2567B4756FF8E5F1DCEDB0B0DE /* OCLiteralNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AF9E47846485F76A249955FC1B250457 /* Pods-OCEvalDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F3AF5F83422D48CA086C34B33DC92D /* Pods-OCEvalDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCE9A0E3D81A9E1C8ECDDBAD04304800 /* OCReader.h in Headers */ = {isa = PBXBuildFile; fileRef = E76450C9D21B9AC87A21D65CF79D2FC8 /* OCReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE6ABF7F47D15977BDD1F1193C3D1EC4 /* OCBlockNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 04984C9283E8B4836F405DD6D6E20276 /* OCBlockNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C18593576FEDA164036366497EC673F9 /* OCBlockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A71F62149AC701F2ADCA0E4CB51F2D24 /* OCBlockNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C2CAA71F0D886FAFCA1184A7CB7F9980 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		C418EAB056DD34FCA96DF4532F45F4C3 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FCEB1E1D33AB4DB14D426267961793 /* Aspects.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C50C93BC66B1B4C169131524F154F5CA /* ffitarget_arm64.h in Headers */ = {isa = PBXBuildFile; fileRef = D7210326398E3112348EDFABDDE005C1 /* ffitarget_arm64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C51D27DDF6E7D313E34064CE5FC490EA /* OCFastCalculateNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B864E6D7FF55AB8529820EAB7045CE /* OCFastCalculateNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C5C161B3E6FFBF8DC61C4D01E9366CC9 /* OCCFuntionWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 84E8BE074D125791CF94AFA481F634A0 /* OCCFuntionWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD1BFB3689CDF889E3CF2C9D22142867 /* OCScopeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F0396454858B7725A42285FB1C8B2851 /* OCScopeNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF06D13B6E9ED96A450D60DFA88C20AE /* OCMethodNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E09F4276979BBB19C1D89EC9A1C201 /* OCMethodNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D2E56021BF47C0487AEB5B63DB6C5B3A /* ffi.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A592A31CF491897BA5C33355349010 /* ffi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D56B77A93EB9C09D85EF2ADA82668C21 /* OCExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = DE828922E1499F06B4E5AA8EA7B74A59 /* OCExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB563ED03CFA99EA97BB69AA0F2039CE /* OCPropertyNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B491970AEC030DDA23F15E3EC32F05 /* OCPropertyNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E1B71E4F4337E7BD41073388FEB2F3FD /* OCReturnNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D62AD310B20E0477B42B0492295E3062 /* OCReturnNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBBCD045EE00502C20C3902DA424D81D /* OCControlNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 3417BFF66514727BFE6910C10C6B23C7 /* OCControlNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED6997FDA26CCC6CEF118379E0CE155C /* ffitarget_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CE96BC961CC256D4F4686CAAC605EE /* ffitarget_arm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F59292D1C106C36399D5B0D05EECAFD9 /* OCLexer.h in Headers */ = {isa = PBXBuildFile; fileRef = BB18F4F9A539B015AAECFEAA0F1E9E04 /* OCLexer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE87F3AD570EF37F5341F4398263AC7 /* OCMethodNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB7992EA329A7FBDD4D512D55E952DC /* OCMethodNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2415B54B6F25B1A10AB697C04B13E0D0 /* PBXContainerItemProxy */ = {
+		10B62D081E1301DEE3B005CBA0DC6531 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 48E7EF975DB32D84973D9E46E2315AD6;
+			remoteGlobalIDString = F4276F2270FCBD224C56C19C4F6AC538;
 			remoteInfo = OCEval;
 		};
-		B660AD802B877F9D6C3A2D92E3E62E13 /* PBXContainerItemProxy */ = {
+		75876F224A2B24437D1CA5E5F2D69F29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 48E7EF975DB32D84973D9E46E2315AD6;
+			remoteGlobalIDString = F4276F2270FCBD224C56C19C4F6AC538;
 			remoteInfo = OCEval;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0168113EE69D9D7D02EFA516F91FF13A /* OCReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCReader.h; sourceTree = "<group>"; };
-		0300208B57359C746A328178675CD56C /* OCEval.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = OCEval.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		0536B8685DEA21D1A9DB69D392539A17 /* Pods-OCEvalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCEvalDemo.release.xcconfig"; sourceTree = "<group>"; };
-		06CECEF6C75888C0EDA315AE7DFFB5D2 /* Pods-OCEvalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCEvalDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		0B9E2458D818F329F1CEB2660A07AA01 /* OCCFuntionWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCCFuntionWrapper.h; sourceTree = "<group>"; };
-		0E597ED458D58CA07FF38F0D5EE1BB47 /* Pods-OCEvalDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCEvalDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		164E9634B990A9F21F990C356FA95794 /* OCExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCExtension.m; sourceTree = "<group>"; };
-		16BBD30677E06F0614367EA641CA7D49 /* OCEval-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCEval-dummy.m"; sourceTree = "<group>"; };
-		188330039E1E60E3CBAD88D0912D5C5D /* Pods-OCEvalDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCEvalDemoTests-frameworks.sh"; sourceTree = "<group>"; };
-		1AA17FE668867462A1CE93D5B874DE66 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D0D0A40A06D6CE2FBE20EF560BF8552 /* OCIterateNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCIterateNode.m; sourceTree = "<group>"; };
-		1EC1B52385593E46CAB7A69F7BD19806 /* ffi_i386.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffi_i386.h; sourceTree = "<group>"; };
-		2028132A5B615D15AE5DC724C272CF9D /* Aspects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
-		20DD034461A0A68EA7F87992EF409B09 /* OCScopeNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCScopeNode.h; sourceTree = "<group>"; };
-		2B340AE3A21F08FF714372712416D818 /* Pods-OCEvalDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCEvalDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		31E1E81A39140F72D4FAF2067B66530E /* OCReturnNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCReturnNode.h; sourceTree = "<group>"; };
-		347C2888FB509B6C6F73C773F5F29DBB /* Pods-OCEvalDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCEvalDemo-resources.sh"; sourceTree = "<group>"; };
-		39A5F1D6CA0B63772BAB67235B9483F9 /* OCToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCToken.m; sourceTree = "<group>"; };
-		3A032045FCE6AD00ADD3F3CB40567E41 /* OCBlockWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCBlockWrapper.h; sourceTree = "<group>"; };
-		3D413E187A60E3EF4DBC7EF584EDD642 /* OCBlockNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCBlockNode.m; sourceTree = "<group>"; };
-		3F80065B923722D9126CC21CF127526D /* OCPropertyNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCPropertyNode.h; sourceTree = "<group>"; };
-		41EA787082DFA903C0129132B019E29F /* OCMethodNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCMethodNode.m; sourceTree = "<group>"; };
-		428BD41EFC717B5E81525A872C7EF0D3 /* ffitarget_arm64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm64.h; sourceTree = "<group>"; };
-		43405C529672C8F041F3A49B8B7EDA3D /* OCExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCExtension.h; sourceTree = "<group>"; };
-		4629910870139A2641E995042AB8E604 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AE89394341C604B82609A628D523671 /* Pods-OCEvalDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCEvalDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		04984C9283E8B4836F405DD6D6E20276 /* OCBlockNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCBlockNode.h; sourceTree = "<group>"; };
+		05CE96BC961CC256D4F4686CAAC605EE /* ffitarget_arm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm.h; sourceTree = "<group>"; };
+		06BB796776A35315A86B304674F29354 /* ffi_arm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffi_arm.h; sourceTree = "<group>"; };
+		14E09F4276979BBB19C1D89EC9A1C201 /* OCMethodNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCMethodNode.m; sourceTree = "<group>"; };
+		14EE25C0A7A93811CC0043BC5D385FEE /* OCEval.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCEval.m; path = OCEval/OCEval.m; sourceTree = "<group>"; };
+		155167E270C39098E4CD222399C40651 /* Pods-OCEvalDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCEvalDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		198704317C236D5E86B5D366AE1DD08B /* OCScopeNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCScopeNode.m; sourceTree = "<group>"; };
+		1BB7992EA329A7FBDD4D512D55E952DC /* OCMethodNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCMethodNode.h; sourceTree = "<group>"; };
+		1BBBC34B5F5A85956F0A1D52E54C7D63 /* OCEval-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCEval-dummy.m"; sourceTree = "<group>"; };
+		23D54F873E39F3A75581FAE69CCB3FB6 /* libffi.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libffi.a; path = OCEval/helper/libffi/libffi.a; sourceTree = "<group>"; };
+		27BA9DEE873CAEE6D2E0EFA5DB6BD2C2 /* Aspects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		2D608EB621D71F7B11A2EB9C8CB9BD47 /* ffi_i386.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffi_i386.h; sourceTree = "<group>"; };
+		2F5F3F46AFA6FF1F32C9BA53CCAAEF75 /* Pods-OCEvalDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCEvalDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		3417BFF66514727BFE6910C10C6B23C7 /* OCControlNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCControlNode.h; sourceTree = "<group>"; };
+		379B5288625E5A0DC5EDC99EE77A2CC6 /* Pods-OCEvalDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCEvalDemo-frameworks.sh"; sourceTree = "<group>"; };
+		39A9A4D73B09AC5DC58404A95B8FC2CF /* Pods-OCEvalDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCEvalDemo-dummy.m"; sourceTree = "<group>"; };
+		39C47B0976756614246AA7EFE332C510 /* Pods-OCEvalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCEvalDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3ADEB5FD52ECAB9E9F9BD7372D2256E0 /* FuntionSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FuntionSearch.h; sourceTree = "<group>"; };
+		3B16ED246D81067D1DA22D877E627593 /* OCIterateNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCIterateNode.m; sourceTree = "<group>"; };
+		3F2568E4A4E9A07BE2B13B8E9E91BE45 /* OCCFuntionWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCCFuntionWrapper.m; sourceTree = "<group>"; };
+		42F2148FCC6448FEFC3CC6C1D8447922 /* OCLiteralNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCLiteralNode.h; sourceTree = "<group>"; };
+		467B3B64FF811757C73A880824EABE92 /* Pods-OCEvalDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCEvalDemo-Info.plist"; sourceTree = "<group>"; };
+		494ADCE4E7007EBB85C618B6B19F4EB1 /* OCMethodNode+invoke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCMethodNode+invoke.m"; sourceTree = "<group>"; };
 		4BD6B3576B052EB4145CBA2AC0E899FE /* Pods_OCEvalDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OCEvalDemoTests.framework; path = "Pods-OCEvalDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F0924F2DA47E9472BBB8D0B37FC32B1 /* Pods-OCEvalDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCEvalDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4FD7AD4639110BE43C4C0C7BF61CE667 /* OCCfuntionHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCCfuntionHelper.m; sourceTree = "<group>"; };
-		52572776977CB3619644EBE1FD9D477C /* OCMethodNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCMethodNode.h; sourceTree = "<group>"; };
-		56E3AB9772352A5399BEDF9E24AB0747 /* ffi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
-		5897F23BF70F7C1C3F64E8C8DBF9AF54 /* OCCfuntionHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCCfuntionHelper.h; sourceTree = "<group>"; };
-		58E8507D50025F3ADE8F7601916A843A /* ffitarget_x86_64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffitarget_x86_64.h; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5E42870234FB55E0E4328CBDCEC76F94 /* OCLexer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCLexer.m; sourceTree = "<group>"; };
-		6222658EF4C5873321C1EA387B24215D /* OCLiteralNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCLiteralNode.h; sourceTree = "<group>"; };
-		63FD30C1F947DE9447DAF6381C132A8F /* OCMethodSignature.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCMethodSignature.m; sourceTree = "<group>"; };
-		689316D874A5AE772A87251DB921885F /* ffitarget_i386.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffitarget_i386.h; sourceTree = "<group>"; };
-		73032DF028239981D34514E095193F01 /* OCEval-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCEval-prefix.pch"; sourceTree = "<group>"; };
-		7375291724674AF8EE8CAAB8BED5AE90 /* OCScopeNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCScopeNode.m; sourceTree = "<group>"; };
-		784F721BB5C0D7D95C13C99DE3FBCBC4 /* OCNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCNode.m; sourceTree = "<group>"; };
-		7A34B6317347745A62E379D0D05E0D81 /* OCTokenReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCTokenReader.h; sourceTree = "<group>"; };
-		7F6F389D2695286C0F5EA0DA4F0ED522 /* OCLiteralNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCLiteralNode.m; sourceTree = "<group>"; };
-		8799C51F800B377A8F597C1EC4500E7B /* FuntionSearch.c */ = {isa = PBXFileReference; includeInIndex = 1; path = FuntionSearch.c; sourceTree = "<group>"; };
-		8C737C38F79D703F6EBF7F6DE4AE6FD5 /* Pods-OCEvalDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCEvalDemoTests.modulemap"; sourceTree = "<group>"; };
-		90BEC7BAEFECE276858D963272BFB21D /* OCLineNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCLineNode.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		947F45B61A4F0885B239C9CB88F75F6F /* Pods-OCEvalDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCEvalDemo-frameworks.sh"; sourceTree = "<group>"; };
-		9484C3FFDBC9DCC2F6A6E02661896FF4 /* Pods-OCEvalDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCEvalDemo-dummy.m"; sourceTree = "<group>"; };
-		9CC47D800DFCBD59FA732BE31C246269 /* Pods-OCEvalDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCEvalDemoTests-dummy.m"; sourceTree = "<group>"; };
-		9F81D673F3D363BC99C35DF74D6E7B3C /* OCReturnNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCReturnNode.m; sourceTree = "<group>"; };
-		A10B93688A614FDDF83F65274F41EA1D /* ffitarget_arm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm.h; sourceTree = "<group>"; };
-		A1DBBEB9B91A0B1A03C1D02C70A3E732 /* OCControlNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCControlNode.m; sourceTree = "<group>"; };
-		A8F236FB3D9AE2B7E94190AA7AAAF7E9 /* OCBlockWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCBlockWrapper.m; sourceTree = "<group>"; };
-		AC2D99F46BFBFE3DA3E8218AE58A68A8 /* OCIterateNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCIterateNode.h; sourceTree = "<group>"; };
-		B15F4B6D43807B9D524430EDB4DEE296 /* libffi.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libffi.a; path = OCEval/helper/libffi/libffi.a; sourceTree = "<group>"; };
-		B51E6F0EA150FFDC4F143F0276A54D13 /* OCLineNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCLineNode.h; sourceTree = "<group>"; };
-		B6F88647A09A61E511D30FAD668B68F5 /* OCMethodNode+invoke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMethodNode+invoke.h"; sourceTree = "<group>"; };
-		B9183661AE792FEDC4B74055EAF1CEFD /* OCLexer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCLexer.h; sourceTree = "<group>"; };
-		BB3C23147636D0DB7A73A790D01772AC /* OCCFuntionWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCCFuntionWrapper.m; sourceTree = "<group>"; };
-		BD16B18CB3B31CF3677BEEC67DAE4B63 /* OCEval-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCEval-umbrella.h"; sourceTree = "<group>"; };
-		BEFAA398310303660B8576079BA32B4C /* Pods-OCEvalDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCEvalDemo.modulemap"; sourceTree = "<group>"; };
-		C2C182B1551B68D637A433490EAF21C9 /* Pods-OCEvalDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCEvalDemo-umbrella.h"; sourceTree = "<group>"; };
-		C37E1400FD7821A5CB11839EAFBC8E9A /* FuntionSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FuntionSearch.h; sourceTree = "<group>"; };
-		C42402BA2C87A9B59DBEB35E66C5B2D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C804BAE15BCD6E884AE26A607E576899 /* OCMethodNode+invoke.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCMethodNode+invoke.m"; sourceTree = "<group>"; };
-		C9B27FD5663CD44B1F328F49965E8407 /* OCTokenReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCTokenReader.m; sourceTree = "<group>"; };
-		CB7EA8649E507D976535DF1E825F1C3F /* OCMethodSignature.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCMethodSignature.h; sourceTree = "<group>"; };
-		CD473858CA4D5AFFA777DBCC08971FDF /* OCBlockNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCBlockNode.h; sourceTree = "<group>"; };
+		5217E781E3EE1557FB4D31057E399E63 /* OCBlockWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCBlockWrapper.m; sourceTree = "<group>"; };
+		56B491970AEC030DDA23F15E3EC32F05 /* OCPropertyNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCPropertyNode.m; sourceTree = "<group>"; };
+		5913ADBE91F312D1C2544CF658AF2B46 /* OCReturnNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCReturnNode.m; sourceTree = "<group>"; };
+		59F0700409BAA454EEB46400E50FA12F /* OCLexer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCLexer.m; sourceTree = "<group>"; };
+		5D1991FFF5FDD19268C46BE132070C8B /* OCTokenReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCTokenReader.m; sourceTree = "<group>"; };
+		5F3F3C48CC96ABD09CE44FD77F96E0C6 /* ffitarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
+		6598EA2567B4756FF8E5F1DCEDB0B0DE /* OCLiteralNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCLiteralNode.m; sourceTree = "<group>"; };
+		6617D1962CE35240E9ACB0B8B0733933 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6A03E4B30D0ED1270160C04BEEB9098B /* OCControlNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCControlNode.m; sourceTree = "<group>"; };
+		7338C57A39760D637E3F7352717BB87B /* OCMethodNode+invoke.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMethodNode+invoke.h"; sourceTree = "<group>"; };
+		74BD42625940814C900B72CB1B0E1149 /* OCCfuntionHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCCfuntionHelper.m; sourceTree = "<group>"; };
+		77F3AF5F83422D48CA086C34B33DC92D /* Pods-OCEvalDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCEvalDemoTests-umbrella.h"; sourceTree = "<group>"; };
+		799461C50FE6B38A13711DB3242645E6 /* OCMethodSignature.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCMethodSignature.m; sourceTree = "<group>"; };
+		7E67AD21CD215364B99538126C188824 /* OCEval-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCEval-umbrella.h"; sourceTree = "<group>"; };
+		815B135D5FBAAACB8E7DA5CD80D17856 /* OCEval.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = OCEval.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		81D15398F505A795B12EE320D4D2F87D /* ffitarget_x86_64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffitarget_x86_64.h; sourceTree = "<group>"; };
+		82E673F6DAB88BF588588A115C9D2055 /* OCIterateNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCIterateNode.h; sourceTree = "<group>"; };
+		84E8BE074D125791CF94AFA481F634A0 /* OCCFuntionWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCCFuntionWrapper.h; sourceTree = "<group>"; };
+		887D011BED96F26AC5946EF2CC01D010 /* Pods-OCEvalDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCEvalDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		9582160DA8C2C008D934F691BE87C9C0 /* ffi_arm64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffi_arm64.h; sourceTree = "<group>"; };
+		9816E14BF175086DBB2313DD16790FBA /* OCTokenReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCTokenReader.h; sourceTree = "<group>"; };
+		986C88123B29A0CDF8C970FF804323AA /* OCLineNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCLineNode.m; sourceTree = "<group>"; };
+		99FC097826BB07DA8279392BA4DC1C67 /* OCBlockWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCBlockWrapper.h; sourceTree = "<group>"; };
+		9A04EF2A2D7574069338282AEA3E3760 /* OCEval.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCEval.h; path = OCEval/OCEval.h; sourceTree = "<group>"; };
+		9CAA275942B44705D15367635E176BC4 /* OCEval.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OCEval.xcconfig; sourceTree = "<group>"; };
+		A16069E1334BEBF5E219CBEBFF2BE641 /* Pods-OCEvalDemoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCEvalDemoTests-Info.plist"; sourceTree = "<group>"; };
+		A5A64FBB3A44898BCC65B0706DBD8B6C /* Pods-OCEvalDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCEvalDemoTests-dummy.m"; sourceTree = "<group>"; };
+		A5FCEB1E1D33AB4DB14D426267961793 /* Aspects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		A71F62149AC701F2ADCA0E4CB51F2D24 /* OCBlockNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCBlockNode.m; sourceTree = "<group>"; };
+		AEDFA648D730779BD9F225047D0AD70D /* ffitarget_i386.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffitarget_i386.h; sourceTree = "<group>"; };
+		B278F6FB6C7F70D070DE877FA5BAFF7F /* OCToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCToken.m; sourceTree = "<group>"; };
+		B30A34AF258FA0364F88A0707633C842 /* OCNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCNode.h; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B3D184E3D91B64AC0E3E39850E7C1926 /* OCReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCReader.m; sourceTree = "<group>"; };
+		B532D239BB59B464875A7106E499FD5A /* OCFastCalculateNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCFastCalculateNode.h; sourceTree = "<group>"; };
+		B6B864E6D7FF55AB8529820EAB7045CE /* OCFastCalculateNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCFastCalculateNode.m; sourceTree = "<group>"; };
+		B8003E1047C4F52D36E5894138462A17 /* Pods-OCEvalDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCEvalDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B92147DAB430CE1A23BF7388D9A29C1F /* Pods-OCEvalDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCEvalDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB18F4F9A539B015AAECFEAA0F1E9E04 /* OCLexer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCLexer.h; sourceTree = "<group>"; };
+		C4185A462F355A3DACED1FF463776A71 /* OCNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCNode.m; sourceTree = "<group>"; };
+		C4888569FF24C81F41C8B128A78288B1 /* Pods-OCEvalDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCEvalDemoTests.modulemap"; sourceTree = "<group>"; };
+		C78E3AE3CAB94E1FC92C852D0BACABE1 /* OCCfuntionHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCCfuntionHelper.h; sourceTree = "<group>"; };
+		CEF190B75E39CDEBD81FB557228DBDEF /* OCPropertyNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCPropertyNode.h; sourceTree = "<group>"; };
+		D3448E6CE6A4C33223787027E99EEF7F /* Pods-OCEvalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCEvalDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D3E93FE204E0483C641691DAF1E50C7D /* OCExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCExtension.m; sourceTree = "<group>"; };
+		D4E4730EBC779997FAAF3070D133424C /* OCEval-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OCEval-Info.plist"; sourceTree = "<group>"; };
+		D57052AB9987804A4C315D55C79262E1 /* OCLineNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCLineNode.h; sourceTree = "<group>"; };
+		D5715B8C425A3584C477A83223CC122A /* Pods-OCEvalDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCEvalDemo-umbrella.h"; sourceTree = "<group>"; };
+		D5E338042BD840C2FF5AC0DB13198757 /* OCEval.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OCEval.modulemap; sourceTree = "<group>"; };
+		D62AD310B20E0477B42B0492295E3062 /* OCReturnNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCReturnNode.h; sourceTree = "<group>"; };
 		D6D0CE940F700488B13DDBFC7D300205 /* Pods_OCEvalDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OCEvalDemo.framework; path = "Pods-OCEvalDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA93836252E9DC1E2957546D2B0866B2 /* OCNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCNode.h; sourceTree = "<group>"; };
-		DC8EAD1422F5B29B21CDCEFA50BDA5E4 /* OCToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCToken.h; sourceTree = "<group>"; };
-		DE6B7C3FC4856CB279F85A0CB52FFED4 /* OCReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCReader.m; sourceTree = "<group>"; };
-		DE8AE072D77845BA7E14A6D910EBB6DA /* OCEval.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OCEval.xcconfig; sourceTree = "<group>"; };
-		E22AC3EA88D61BD14AC865F92E86C705 /* OCEval.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCEval.h; path = OCEval/OCEval.h; sourceTree = "<group>"; };
-		E29682AEA630946E8E9D4F0FF246E880 /* Pods-OCEvalDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCEvalDemoTests-resources.sh"; sourceTree = "<group>"; };
-		E6F4081BC834D96815245BEDFBF9FCD2 /* OCEval.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCEval.m; path = OCEval/OCEval.m; sourceTree = "<group>"; };
-		E738794DF5171F812E085E2C03D81416 /* Aspects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
-		E7DFF741298187C484A1AE13010080F6 /* OCPropertyNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OCPropertyNode.m; sourceTree = "<group>"; };
-		E85CB6B03A543664921D477AB5750E9B /* ffi_arm64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffi_arm64.h; sourceTree = "<group>"; };
-		E8A4D67D3BD996135C06A8B406F04911 /* Pods-OCEvalDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OCEvalDemoTests-umbrella.h"; sourceTree = "<group>"; };
-		F2AB16BCDD78D22F4A6BDA0643EFFF09 /* OCControlNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCControlNode.h; sourceTree = "<group>"; };
-		F5DAE45BCAAA258E22B0278FD25D4687 /* Pods-OCEvalDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCEvalDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F66200A7DA4027EF0EA24AADC5E67485 /* OCEval.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OCEval.modulemap; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D7210326398E3112348EDFABDDE005C1 /* ffitarget_arm64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffitarget_arm64.h; sourceTree = "<group>"; };
+		DD16D1E8AF4D76092C857FF1FB3BBACE /* Pods-OCEvalDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCEvalDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE828922E1499F06B4E5AA8EA7B74A59 /* OCExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCExtension.h; sourceTree = "<group>"; };
+		E3B865C6102A3709A5E95800B9682B8F /* OCMethodSignature.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCMethodSignature.h; sourceTree = "<group>"; };
+		E76450C9D21B9AC87A21D65CF79D2FC8 /* OCReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCReader.h; sourceTree = "<group>"; };
+		EA76A196C5CD97B7B35A4AD16886ABF6 /* OCToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCToken.h; sourceTree = "<group>"; };
+		EC157EBFC67C2623026F0AE81EF841D7 /* FuntionSearch.c */ = {isa = PBXFileReference; includeInIndex = 1; path = FuntionSearch.c; sourceTree = "<group>"; };
+		EC66900F5FD7EB71A6AE08BA07230633 /* Pods-OCEvalDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OCEvalDemo.modulemap"; sourceTree = "<group>"; };
+		EDED882DA0F949F4CEF89548BB8E211D /* ffi_x86_64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffi_x86_64.h; sourceTree = "<group>"; };
+		F0396454858B7725A42285FB1C8B2851 /* OCScopeNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OCScopeNode.h; sourceTree = "<group>"; };
+		F0B4745ACA782F207348B154BF698E49 /* OCEval-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCEval-prefix.pch"; sourceTree = "<group>"; };
+		F32D75023721C343E17942976150CBCD /* Pods-OCEvalDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCEvalDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F7A592A31CF491897BA5C33355349010 /* ffi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
 		F9E017A683A460D4599A53910D4AAD2B /* OCEval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OCEval.framework; path = OCEval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA6D486FC859CE36B6798CAF8C4DEA4D /* Pods-OCEvalDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCEvalDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FA9E83FB899DC14B33574B16CE20181D /* ffitarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
-		FAE67CAA0952D96CFED3A29772CFA7CB /* ffi_x86_64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffi_x86_64.h; sourceTree = "<group>"; };
-		FC80DC29C351EF6C7D0B27A7B07D78AE /* ffi_arm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ffi_arm.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		30DA2CCE662FA8FA10E06ED8253982DF /* Frameworks */ = {
+		46FBFB1366CED117A744D2DC7F0AB3DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10CF930CFD05343BAA8EF05754E4A6D3 /* Foundation.framework in Frameworks */,
+				3C228235B7E449D864324B72EC5482AC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		477B871A4D30371752309242166D93BA /* Frameworks */ = {
+		5A784EF732FAC7365CAA2D328B3D83A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				103DB0FF51B9E1AA4A6273868CAC3505 /* Foundation.framework in Frameworks */,
+				C2CAA71F0D886FAFCA1184A7CB7F9980 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5A138D4CE8B65FF2A2FB2F7F93975B0 /* Frameworks */ = {
+		E266F669E49C8AB8E52127CD9A353DFA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				735F592CF5D73E38163F0F392338BB94 /* Foundation.framework in Frameworks */,
+				8AA5857BCF026E7FBB5A5BA80FF4D9AA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00F3694013B294FF2D1E2925443C48BA /* OCEval */ = {
+		06980CEC475C6457F0CB8D97EFB95607 /* parser */ = {
 			isa = PBXGroup;
 			children = (
-				E22AC3EA88D61BD14AC865F92E86C705 /* OCEval.h */,
-				E6F4081BC834D96815245BEDFBF9FCD2 /* OCEval.m */,
-				8E0150A2115617E4918C5A6AE79B9A1C /* Frameworks */,
-				CC50858484724FB67576464EBE8DACCF /* helper */,
-				AB7DFE3103381C0CF15B2240EF4AB005 /* lexer */,
-				9E97BE47CFCBCD33A726BD5A05A57D72 /* parser */,
-				FB0E3FC1BE14903241EEEFB7D33B8F82 /* Pod */,
-				BCD3CC033619CD4A651AF5E5D9A4083F /* Support Files */,
+				04984C9283E8B4836F405DD6D6E20276 /* OCBlockNode.h */,
+				A71F62149AC701F2ADCA0E4CB51F2D24 /* OCBlockNode.m */,
+				3417BFF66514727BFE6910C10C6B23C7 /* OCControlNode.h */,
+				6A03E4B30D0ED1270160C04BEEB9098B /* OCControlNode.m */,
+				DE828922E1499F06B4E5AA8EA7B74A59 /* OCExtension.h */,
+				D3E93FE204E0483C641691DAF1E50C7D /* OCExtension.m */,
+				B532D239BB59B464875A7106E499FD5A /* OCFastCalculateNode.h */,
+				B6B864E6D7FF55AB8529820EAB7045CE /* OCFastCalculateNode.m */,
+				82E673F6DAB88BF588588A115C9D2055 /* OCIterateNode.h */,
+				3B16ED246D81067D1DA22D877E627593 /* OCIterateNode.m */,
+				D57052AB9987804A4C315D55C79262E1 /* OCLineNode.h */,
+				986C88123B29A0CDF8C970FF804323AA /* OCLineNode.m */,
+				42F2148FCC6448FEFC3CC6C1D8447922 /* OCLiteralNode.h */,
+				6598EA2567B4756FF8E5F1DCEDB0B0DE /* OCLiteralNode.m */,
+				1BB7992EA329A7FBDD4D512D55E952DC /* OCMethodNode.h */,
+				14E09F4276979BBB19C1D89EC9A1C201 /* OCMethodNode.m */,
+				7338C57A39760D637E3F7352717BB87B /* OCMethodNode+invoke.h */,
+				494ADCE4E7007EBB85C618B6B19F4EB1 /* OCMethodNode+invoke.m */,
+				E3B865C6102A3709A5E95800B9682B8F /* OCMethodSignature.h */,
+				799461C50FE6B38A13711DB3242645E6 /* OCMethodSignature.m */,
+				B30A34AF258FA0364F88A0707633C842 /* OCNode.h */,
+				C4185A462F355A3DACED1FF463776A71 /* OCNode.m */,
+				CEF190B75E39CDEBD81FB557228DBDEF /* OCPropertyNode.h */,
+				56B491970AEC030DDA23F15E3EC32F05 /* OCPropertyNode.m */,
+				D62AD310B20E0477B42B0492295E3062 /* OCReturnNode.h */,
+				5913ADBE91F312D1C2544CF658AF2B46 /* OCReturnNode.m */,
+				F0396454858B7725A42285FB1C8B2851 /* OCScopeNode.h */,
+				198704317C236D5E86B5D366AE1DD08B /* OCScopeNode.m */,
 			);
-			name = OCEval;
-			path = ../../..;
+			name = parser;
+			path = OCEval/parser;
+			sourceTree = "<group>";
+		};
+		06C2B66E66B2B1F76EE1F5FF13ED6A11 /* libffi */ = {
+			isa = PBXGroup;
+			children = (
+				F7A592A31CF491897BA5C33355349010 /* ffi.h */,
+				06BB796776A35315A86B304674F29354 /* ffi_arm.h */,
+				9582160DA8C2C008D934F691BE87C9C0 /* ffi_arm64.h */,
+				2D608EB621D71F7B11A2EB9C8CB9BD47 /* ffi_i386.h */,
+				EDED882DA0F949F4CEF89548BB8E211D /* ffi_x86_64.h */,
+				5F3F3C48CC96ABD09CE44FD77F96E0C6 /* ffitarget.h */,
+				05CE96BC961CC256D4F4686CAAC605EE /* ffitarget_arm.h */,
+				D7210326398E3112348EDFABDDE005C1 /* ffitarget_arm64.h */,
+				AEDFA648D730779BD9F225047D0AD70D /* ffitarget_i386.h */,
+				81D15398F505A795B12EE320D4D2F87D /* ffitarget_x86_64.h */,
+			);
+			name = libffi;
+			path = libffi;
+			sourceTree = "<group>";
+		};
+		12D69B0A09B8EF9B98F3E3B203BF95A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5E338042BD840C2FF5AC0DB13198757 /* OCEval.modulemap */,
+				9CAA275942B44705D15367635E176BC4 /* OCEval.xcconfig */,
+				1BBBC34B5F5A85956F0A1D52E54C7D63 /* OCEval-dummy.m */,
+				D4E4730EBC779997FAAF3070D133424C /* OCEval-Info.plist */,
+				F0B4745ACA782F207348B154BF698E49 /* OCEval-prefix.pch */,
+				7E67AD21CD215364B99538126C188824 /* OCEval-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Demo/OCEvalDemo/Pods/Target Support Files/OCEval";
 			sourceTree = "<group>";
 		};
 		3AD1C9B9E44DFE9427B08D1550D93CF5 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				00F3694013B294FF2D1E2925443C48BA /* OCEval */,
+				6A7E62B6AC0F81DE7FB1D5486E6EEC5B /* OCEval */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3FDB06A7876FBEF5B19CD1171FC31D46 /* Pods-OCEvalDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EC66900F5FD7EB71A6AE08BA07230633 /* Pods-OCEvalDemo.modulemap */,
+				B8003E1047C4F52D36E5894138462A17 /* Pods-OCEvalDemo-acknowledgements.markdown */,
+				887D011BED96F26AC5946EF2CC01D010 /* Pods-OCEvalDemo-acknowledgements.plist */,
+				39A9A4D73B09AC5DC58404A95B8FC2CF /* Pods-OCEvalDemo-dummy.m */,
+				379B5288625E5A0DC5EDC99EE77A2CC6 /* Pods-OCEvalDemo-frameworks.sh */,
+				467B3B64FF811757C73A880824EABE92 /* Pods-OCEvalDemo-Info.plist */,
+				D5715B8C425A3584C477A83223CC122A /* Pods-OCEvalDemo-umbrella.h */,
+				39C47B0976756614246AA7EFE332C510 /* Pods-OCEvalDemo.debug.xcconfig */,
+				D3448E6CE6A4C33223787027E99EEF7F /* Pods-OCEvalDemo.release.xcconfig */,
+			);
+			name = "Pods-OCEvalDemo";
+			path = "Target Support Files/Pods-OCEvalDemo";
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5085432CA020673FAE80113A8BD63D44 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FDB06A7876FBEF5B19CD1171FC31D46 /* Pods-OCEvalDemo */,
+				DCE063671B4A4C69E50E3007DAE9E60E /* Pods-OCEvalDemoTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		5C877EF0448B7E79FCB90A24AF6283CA /* Products */ = {
@@ -245,190 +334,105 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		5CC2EF64C065DE2B404A481A71CFAE62 /* helper */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				3AD1C9B9E44DFE9427B08D1550D93CF5 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				5C877EF0448B7E79FCB90A24AF6283CA /* Products */,
-				85DA4F440B40E38B39DA75671E51ACDD /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		85DA4F440B40E38B39DA75671E51ACDD /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BB2E335D987E1E615BB7104C4E552CE0 /* Pods-OCEvalDemo */,
-				FD4807B183C20B8443AE745B2376835E /* Pods-OCEvalDemoTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		8E0150A2115617E4918C5A6AE79B9A1C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B15F4B6D43807B9D524430EDB4DEE296 /* libffi.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9E97BE47CFCBCD33A726BD5A05A57D72 /* parser */ = {
-			isa = PBXGroup;
-			children = (
-				CD473858CA4D5AFFA777DBCC08971FDF /* OCBlockNode.h */,
-				3D413E187A60E3EF4DBC7EF584EDD642 /* OCBlockNode.m */,
-				F2AB16BCDD78D22F4A6BDA0643EFFF09 /* OCControlNode.h */,
-				A1DBBEB9B91A0B1A03C1D02C70A3E732 /* OCControlNode.m */,
-				43405C529672C8F041F3A49B8B7EDA3D /* OCExtension.h */,
-				164E9634B990A9F21F990C356FA95794 /* OCExtension.m */,
-				AC2D99F46BFBFE3DA3E8218AE58A68A8 /* OCIterateNode.h */,
-				1D0D0A40A06D6CE2FBE20EF560BF8552 /* OCIterateNode.m */,
-				B51E6F0EA150FFDC4F143F0276A54D13 /* OCLineNode.h */,
-				90BEC7BAEFECE276858D963272BFB21D /* OCLineNode.m */,
-				6222658EF4C5873321C1EA387B24215D /* OCLiteralNode.h */,
-				7F6F389D2695286C0F5EA0DA4F0ED522 /* OCLiteralNode.m */,
-				52572776977CB3619644EBE1FD9D477C /* OCMethodNode.h */,
-				41EA787082DFA903C0129132B019E29F /* OCMethodNode.m */,
-				B6F88647A09A61E511D30FAD668B68F5 /* OCMethodNode+invoke.h */,
-				C804BAE15BCD6E884AE26A607E576899 /* OCMethodNode+invoke.m */,
-				CB7EA8649E507D976535DF1E825F1C3F /* OCMethodSignature.h */,
-				63FD30C1F947DE9447DAF6381C132A8F /* OCMethodSignature.m */,
-				DA93836252E9DC1E2957546D2B0866B2 /* OCNode.h */,
-				784F721BB5C0D7D95C13C99DE3FBCBC4 /* OCNode.m */,
-				3F80065B923722D9126CC21CF127526D /* OCPropertyNode.h */,
-				E7DFF741298187C484A1AE13010080F6 /* OCPropertyNode.m */,
-				31E1E81A39140F72D4FAF2067B66530E /* OCReturnNode.h */,
-				9F81D673F3D363BC99C35DF74D6E7B3C /* OCReturnNode.m */,
-				20DD034461A0A68EA7F87992EF409B09 /* OCScopeNode.h */,
-				7375291724674AF8EE8CAAB8BED5AE90 /* OCScopeNode.m */,
-			);
-			name = parser;
-			path = OCEval/parser;
-			sourceTree = "<group>";
-		};
-		A8F663B0EA7E5655358BCC393E34D4E1 /* libffi */ = {
-			isa = PBXGroup;
-			children = (
-				56E3AB9772352A5399BEDF9E24AB0747 /* ffi.h */,
-				FC80DC29C351EF6C7D0B27A7B07D78AE /* ffi_arm.h */,
-				E85CB6B03A543664921D477AB5750E9B /* ffi_arm64.h */,
-				1EC1B52385593E46CAB7A69F7BD19806 /* ffi_i386.h */,
-				FAE67CAA0952D96CFED3A29772CFA7CB /* ffi_x86_64.h */,
-				FA9E83FB899DC14B33574B16CE20181D /* ffitarget.h */,
-				A10B93688A614FDDF83F65274F41EA1D /* ffitarget_arm.h */,
-				428BD41EFC717B5E81525A872C7EF0D3 /* ffitarget_arm64.h */,
-				689316D874A5AE772A87251DB921885F /* ffitarget_i386.h */,
-				58E8507D50025F3ADE8F7601916A843A /* ffitarget_x86_64.h */,
-			);
-			name = libffi;
-			path = libffi;
-			sourceTree = "<group>";
-		};
-		AB7DFE3103381C0CF15B2240EF4AB005 /* lexer */ = {
-			isa = PBXGroup;
-			children = (
-				B9183661AE792FEDC4B74055EAF1CEFD /* OCLexer.h */,
-				5E42870234FB55E0E4328CBDCEC76F94 /* OCLexer.m */,
-				0168113EE69D9D7D02EFA516F91FF13A /* OCReader.h */,
-				DE6B7C3FC4856CB279F85A0CB52FFED4 /* OCReader.m */,
-				DC8EAD1422F5B29B21CDCEFA50BDA5E4 /* OCToken.h */,
-				39A5F1D6CA0B63772BAB67235B9483F9 /* OCToken.m */,
-				7A34B6317347745A62E379D0D05E0D81 /* OCTokenReader.h */,
-				C9B27FD5663CD44B1F328F49965E8407 /* OCTokenReader.m */,
-			);
-			name = lexer;
-			path = OCEval/lexer;
-			sourceTree = "<group>";
-		};
-		BB2E335D987E1E615BB7104C4E552CE0 /* Pods-OCEvalDemo */ = {
-			isa = PBXGroup;
-			children = (
-				1AA17FE668867462A1CE93D5B874DE66 /* Info.plist */,
-				BEFAA398310303660B8576079BA32B4C /* Pods-OCEvalDemo.modulemap */,
-				4F0924F2DA47E9472BBB8D0B37FC32B1 /* Pods-OCEvalDemo-acknowledgements.markdown */,
-				4AE89394341C604B82609A628D523671 /* Pods-OCEvalDemo-acknowledgements.plist */,
-				9484C3FFDBC9DCC2F6A6E02661896FF4 /* Pods-OCEvalDemo-dummy.m */,
-				947F45B61A4F0885B239C9CB88F75F6F /* Pods-OCEvalDemo-frameworks.sh */,
-				347C2888FB509B6C6F73C773F5F29DBB /* Pods-OCEvalDemo-resources.sh */,
-				C2C182B1551B68D637A433490EAF21C9 /* Pods-OCEvalDemo-umbrella.h */,
-				06CECEF6C75888C0EDA315AE7DFFB5D2 /* Pods-OCEvalDemo.debug.xcconfig */,
-				0536B8685DEA21D1A9DB69D392539A17 /* Pods-OCEvalDemo.release.xcconfig */,
-			);
-			name = "Pods-OCEvalDemo";
-			path = "Target Support Files/Pods-OCEvalDemo";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BCD3CC033619CD4A651AF5E5D9A4083F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C42402BA2C87A9B59DBEB35E66C5B2D3 /* Info.plist */,
-				F66200A7DA4027EF0EA24AADC5E67485 /* OCEval.modulemap */,
-				DE8AE072D77845BA7E14A6D910EBB6DA /* OCEval.xcconfig */,
-				16BBD30677E06F0614367EA641CA7D49 /* OCEval-dummy.m */,
-				73032DF028239981D34514E095193F01 /* OCEval-prefix.pch */,
-				BD16B18CB3B31CF3677BEEC67DAE4B63 /* OCEval-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Demo/OCEvalDemo/Pods/Target Support Files/OCEval";
-			sourceTree = "<group>";
-		};
-		CC50858484724FB67576464EBE8DACCF /* helper */ = {
-			isa = PBXGroup;
-			children = (
-				E738794DF5171F812E085E2C03D81416 /* Aspects.h */,
-				2028132A5B615D15AE5DC724C272CF9D /* Aspects.m */,
-				8799C51F800B377A8F597C1EC4500E7B /* FuntionSearch.c */,
-				C37E1400FD7821A5CB11839EAFBC8E9A /* FuntionSearch.h */,
-				3A032045FCE6AD00ADD3F3CB40567E41 /* OCBlockWrapper.h */,
-				A8F236FB3D9AE2B7E94190AA7AAAF7E9 /* OCBlockWrapper.m */,
-				5897F23BF70F7C1C3F64E8C8DBF9AF54 /* OCCfuntionHelper.h */,
-				4FD7AD4639110BE43C4C0C7BF61CE667 /* OCCfuntionHelper.m */,
-				0B9E2458D818F329F1CEB2660A07AA01 /* OCCFuntionWrapper.h */,
-				BB3C23147636D0DB7A73A790D01772AC /* OCCFuntionWrapper.m */,
-				A8F663B0EA7E5655358BCC393E34D4E1 /* libffi */,
+				27BA9DEE873CAEE6D2E0EFA5DB6BD2C2 /* Aspects.h */,
+				A5FCEB1E1D33AB4DB14D426267961793 /* Aspects.m */,
+				EC157EBFC67C2623026F0AE81EF841D7 /* FuntionSearch.c */,
+				3ADEB5FD52ECAB9E9F9BD7372D2256E0 /* FuntionSearch.h */,
+				99FC097826BB07DA8279392BA4DC1C67 /* OCBlockWrapper.h */,
+				5217E781E3EE1557FB4D31057E399E63 /* OCBlockWrapper.m */,
+				C78E3AE3CAB94E1FC92C852D0BACABE1 /* OCCfuntionHelper.h */,
+				74BD42625940814C900B72CB1B0E1149 /* OCCfuntionHelper.m */,
+				84E8BE074D125791CF94AFA481F634A0 /* OCCFuntionWrapper.h */,
+				3F2568E4A4E9A07BE2B13B8E9E91BE45 /* OCCFuntionWrapper.m */,
+				06C2B66E66B2B1F76EE1F5FF13ED6A11 /* libffi */,
 			);
 			name = helper;
 			path = OCEval/helper;
 			sourceTree = "<group>";
 		};
-		FB0E3FC1BE14903241EEEFB7D33B8F82 /* Pod */ = {
+		6A7E62B6AC0F81DE7FB1D5486E6EEC5B /* OCEval */ = {
 			isa = PBXGroup;
 			children = (
-				0300208B57359C746A328178675CD56C /* OCEval.podspec */,
+				9A04EF2A2D7574069338282AEA3E3760 /* OCEval.h */,
+				14EE25C0A7A93811CC0043BC5D385FEE /* OCEval.m */,
+				C4DAE2F3EADD4AB190A0A4767A4DFF47 /* Frameworks */,
+				5CC2EF64C065DE2B404A481A71CFAE62 /* helper */,
+				8A194FA27D51D174A6E764E536C5DFE6 /* lexer */,
+				06980CEC475C6457F0CB8D97EFB95607 /* parser */,
+				7853B867269CA7703028032F82069A25 /* Pod */,
+				12D69B0A09B8EF9B98F3E3B203BF95A8 /* Support Files */,
+			);
+			name = OCEval;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		7853B867269CA7703028032F82069A25 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				815B135D5FBAAACB8E7DA5CD80D17856 /* OCEval.podspec */,
+				6617D1962CE35240E9ACB0B8B0733933 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		FD4807B183C20B8443AE745B2376835E /* Pods-OCEvalDemoTests */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				4629910870139A2641E995042AB8E604 /* Info.plist */,
-				8C737C38F79D703F6EBF7F6DE4AE6FD5 /* Pods-OCEvalDemoTests.modulemap */,
-				2B340AE3A21F08FF714372712416D818 /* Pods-OCEvalDemoTests-acknowledgements.markdown */,
-				FA6D486FC859CE36B6798CAF8C4DEA4D /* Pods-OCEvalDemoTests-acknowledgements.plist */,
-				9CC47D800DFCBD59FA732BE31C246269 /* Pods-OCEvalDemoTests-dummy.m */,
-				188330039E1E60E3CBAD88D0912D5C5D /* Pods-OCEvalDemoTests-frameworks.sh */,
-				E29682AEA630946E8E9D4F0FF246E880 /* Pods-OCEvalDemoTests-resources.sh */,
-				E8A4D67D3BD996135C06A8B406F04911 /* Pods-OCEvalDemoTests-umbrella.h */,
-				F5DAE45BCAAA258E22B0278FD25D4687 /* Pods-OCEvalDemoTests.debug.xcconfig */,
-				0E597ED458D58CA07FF38F0D5EE1BB47 /* Pods-OCEvalDemoTests.release.xcconfig */,
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
+				3AD1C9B9E44DFE9427B08D1550D93CF5 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				5C877EF0448B7E79FCB90A24AF6283CA /* Products */,
+				5085432CA020673FAE80113A8BD63D44 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A194FA27D51D174A6E764E536C5DFE6 /* lexer */ = {
+			isa = PBXGroup;
+			children = (
+				BB18F4F9A539B015AAECFEAA0F1E9E04 /* OCLexer.h */,
+				59F0700409BAA454EEB46400E50FA12F /* OCLexer.m */,
+				E76450C9D21B9AC87A21D65CF79D2FC8 /* OCReader.h */,
+				B3D184E3D91B64AC0E3E39850E7C1926 /* OCReader.m */,
+				EA76A196C5CD97B7B35A4AD16886ABF6 /* OCToken.h */,
+				B278F6FB6C7F70D070DE877FA5BAFF7F /* OCToken.m */,
+				9816E14BF175086DBB2313DD16790FBA /* OCTokenReader.h */,
+				5D1991FFF5FDD19268C46BE132070C8B /* OCTokenReader.m */,
+			);
+			name = lexer;
+			path = OCEval/lexer;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4DAE2F3EADD4AB190A0A4767A4DFF47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23D54F873E39F3A75581FAE69CCB3FB6 /* libffi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCE063671B4A4C69E50E3007DAE9E60E /* Pods-OCEvalDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4888569FF24C81F41C8B128A78288B1 /* Pods-OCEvalDemoTests.modulemap */,
+				155167E270C39098E4CD222399C40651 /* Pods-OCEvalDemoTests-acknowledgements.markdown */,
+				F32D75023721C343E17942976150CBCD /* Pods-OCEvalDemoTests-acknowledgements.plist */,
+				A5A64FBB3A44898BCC65B0706DBD8B6C /* Pods-OCEvalDemoTests-dummy.m */,
+				2F5F3F46AFA6FF1F32C9BA53CCAAEF75 /* Pods-OCEvalDemoTests-frameworks.sh */,
+				A16069E1334BEBF5E219CBEBFF2BE641 /* Pods-OCEvalDemoTests-Info.plist */,
+				77F3AF5F83422D48CA086C34B33DC92D /* Pods-OCEvalDemoTests-umbrella.h */,
+				B92147DAB430CE1A23BF7388D9A29C1F /* Pods-OCEvalDemoTests.debug.xcconfig */,
+				DD16D1E8AF4D76092C857FF1FB3BBACE /* Pods-OCEvalDemoTests.release.xcconfig */,
 			);
 			name = "Pods-OCEvalDemoTests";
 			path = "Target Support Files/Pods-OCEvalDemoTests";
@@ -437,73 +441,113 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		83CD9841D6587AC053AFE583050E3B41 /* Headers */ = {
+		7B861E5699B7992B9F76DAD36CBF2D8A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01E4C761C6500B3C1EEACD1D22AF6EA9 /* Pods-OCEvalDemoTests-umbrella.h in Headers */,
+				06F53BBE39339700D8D1791F78BBB3B0 /* Aspects.h in Headers */,
+				D2E56021BF47C0487AEB5B63DB6C5B3A /* ffi.h in Headers */,
+				5B33CC5612681A36B43DA441FA25043C /* ffi_arm.h in Headers */,
+				30451BE14ADCCE642349EC1BB9300B2D /* ffi_arm64.h in Headers */,
+				30BEEEE9DF953B05C0F0C9B1D11B7C39 /* ffi_i386.h in Headers */,
+				07F445F08B5893931196FAFE337E52DE /* ffi_x86_64.h in Headers */,
+				801346A99CD4D3F00234914D93A5CB9E /* ffitarget.h in Headers */,
+				ED6997FDA26CCC6CEF118379E0CE155C /* ffitarget_arm.h in Headers */,
+				C50C93BC66B1B4C169131524F154F5CA /* ffitarget_arm64.h in Headers */,
+				1CC6C3EFF8D84EC71C840695537D402E /* ffitarget_i386.h in Headers */,
+				4A5B6822CCB49E319723AAED8BEC61FA /* ffitarget_x86_64.h in Headers */,
+				029C56A1CAE38796C9A722F9F395922D /* FuntionSearch.h in Headers */,
+				BE6ABF7F47D15977BDD1F1193C3D1EC4 /* OCBlockNode.h in Headers */,
+				429CC5FF2A9A5982433524E0F46A0253 /* OCBlockWrapper.h in Headers */,
+				ADA7BBA25B25CC412A5D87F18545C554 /* OCCfuntionHelper.h in Headers */,
+				C5C161B3E6FFBF8DC61C4D01E9366CC9 /* OCCFuntionWrapper.h in Headers */,
+				EBBCD045EE00502C20C3902DA424D81D /* OCControlNode.h in Headers */,
+				8E862880954F036B7C910E8F38F9C75A /* OCEval-umbrella.h in Headers */,
+				AA6D95C20B9AA04C3174900D90FC7504 /* OCEval.h in Headers */,
+				D56B77A93EB9C09D85EF2ADA82668C21 /* OCExtension.h in Headers */,
+				5ABBA27A79250D0D405364EA560C8C70 /* OCFastCalculateNode.h in Headers */,
+				9DC2275DAFA7750AD36E365BE3426E1A /* OCIterateNode.h in Headers */,
+				F59292D1C106C36399D5B0D05EECAFD9 /* OCLexer.h in Headers */,
+				3B7FA9FEE803D02CEC9B5F5F90DC3A89 /* OCLineNode.h in Headers */,
+				0879676E7DF216FACDEB5172A7AD4469 /* OCLiteralNode.h in Headers */,
+				654E95D7CE54D5D96CD57B7919F124A7 /* OCMethodNode+invoke.h in Headers */,
+				FAE87F3AD570EF37F5341F4398263AC7 /* OCMethodNode.h in Headers */,
+				821242C369C87B021110FEF7B098642D /* OCMethodSignature.h in Headers */,
+				272545F70A96201FCDA9CA4E0DD08FA1 /* OCNode.h in Headers */,
+				93EF2566FD0146BE10C194CB3C201DEF /* OCPropertyNode.h in Headers */,
+				BCE9A0E3D81A9E1C8ECDDBAD04304800 /* OCReader.h in Headers */,
+				E1B71E4F4337E7BD41073388FEB2F3FD /* OCReturnNode.h in Headers */,
+				CD1BFB3689CDF889E3CF2C9D22142867 /* OCScopeNode.h in Headers */,
+				32856A61AB10A7B0DF5B2C9AAD769834 /* OCToken.h in Headers */,
+				975A1F5FA18BAFA960D8470A1BEEB7CF /* OCTokenReader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E05B51E362491E95D9E6093578BF9EA /* Headers */ = {
+		80DBFC8ED0D9EFE8C3B643D8764002BF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EBA670216314770F4CF4D2518A4A309 /* Pods-OCEvalDemo-umbrella.h in Headers */,
+				0FC0B2A81E45D451A30DBFA5BF1BC387 /* Pods-OCEvalDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4BD6FCE504CE94EDD144B8B0E3DA7F6 /* Headers */ = {
+		C063191912BFF9F3794EF8FBB0596E16 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				727E63AA6AB4510E192482720CD112EC /* Aspects.h in Headers */,
-				D0B002AAFD98A215026E4DF89F11FAC4 /* ffi.h in Headers */,
-				3CAAE2D77E11AC927D7875F8A70843DA /* ffi_arm.h in Headers */,
-				5CDE61DF54BF5182B54BD6B1260F8B68 /* ffi_arm64.h in Headers */,
-				12B09DA7D4F0CD599B058FF9CD1D3D94 /* ffi_i386.h in Headers */,
-				C2DAEB05A63886C7EEAC602F265A6548 /* ffi_x86_64.h in Headers */,
-				A4EF665B69AD74192ADE6906012FBC3E /* ffitarget.h in Headers */,
-				C6FE1744088F79216A1A02AB16261E97 /* ffitarget_arm.h in Headers */,
-				7B183D69338D8A9D02C46FDD467DADC2 /* ffitarget_arm64.h in Headers */,
-				7CA4257E7ADC23B6AF25ADE604D82E31 /* ffitarget_i386.h in Headers */,
-				E69610348AD22992E94B654D2F6064D8 /* ffitarget_x86_64.h in Headers */,
-				B63EF7329950AD0972B4E4C8F52DE6EB /* FuntionSearch.h in Headers */,
-				A9B056573131638619DFFFDDA359C52D /* OCBlockNode.h in Headers */,
-				3B19EFD6D16C416D2B8E86041829A3A6 /* OCBlockWrapper.h in Headers */,
-				58FDE599A81EE67B4F99410068EF36D9 /* OCCfuntionHelper.h in Headers */,
-				74ED3573D3BDCECE9BA1A22B06B30BA7 /* OCCFuntionWrapper.h in Headers */,
-				63FCC2B286CA1736419EE07B9B546BD4 /* OCControlNode.h in Headers */,
-				825F8A4F3FDA6DCECDD6ED18E89C03B2 /* OCEval-umbrella.h in Headers */,
-				69576FF55544CC5C9C706D915C770ED9 /* OCEval.h in Headers */,
-				6F4F62962C44DC5442D1770188254559 /* OCExtension.h in Headers */,
-				4953537B5F11908DC941FD95E0145F65 /* OCIterateNode.h in Headers */,
-				9608F00051C3643DE70DE9286E1B7329 /* OCLexer.h in Headers */,
-				A3CB8837B57BF71398A2A7F107BBC586 /* OCLineNode.h in Headers */,
-				15B2FA598B7D348EDBC743180E102822 /* OCLiteralNode.h in Headers */,
-				DA41B6F3B9E0DD097DEFA7E7B33AA644 /* OCMethodNode+invoke.h in Headers */,
-				4F057FB2C8F3E316B3CEF1D110E3A9E3 /* OCMethodNode.h in Headers */,
-				2E6775CB1AE986E0FD086D4193D33A47 /* OCMethodSignature.h in Headers */,
-				EE109FC69BB04AD560898114FEC3AF58 /* OCNode.h in Headers */,
-				7A4B55EEB3080058F5BBCDB9BDEB7B7D /* OCPropertyNode.h in Headers */,
-				DEF057D688B052937F3924479F9001AF /* OCReader.h in Headers */,
-				468D2A33AEAED7F8ABB66BC7930C8383 /* OCReturnNode.h in Headers */,
-				D684E89BE28266F315F12CBB8857A00D /* OCScopeNode.h in Headers */,
-				9878B0B4FF4FDE1DF0182905F82FCA78 /* OCToken.h in Headers */,
-				E79DBFF19B1F55ACADF0340FF4C0DCD4 /* OCTokenReader.h in Headers */,
+				AF9E47846485F76A249955FC1B250457 /* Pods-OCEvalDemoTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		48E7EF975DB32D84973D9E46E2315AD6 /* OCEval */ = {
+		79B0F50A54D4BF26B85C17569835EDDD /* Pods-OCEvalDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3425A097F91ADDD0AE1CA90177EF176 /* Build configuration list for PBXNativeTarget "OCEval" */;
+			buildConfigurationList = 604D9B56C5D24AE63CA3DB5C868017A6 /* Build configuration list for PBXNativeTarget "Pods-OCEvalDemoTests" */;
 			buildPhases = (
-				BEBCD5D8753B1A1150D63C70E57CD0FB /* Sources */,
-				477B871A4D30371752309242166D93BA /* Frameworks */,
-				F4BD6FCE504CE94EDD144B8B0E3DA7F6 /* Headers */,
+				C063191912BFF9F3794EF8FBB0596E16 /* Headers */,
+				BFD2A5EA46AD96D1963D2F24C653EE6E /* Sources */,
+				46FBFB1366CED117A744D2DC7F0AB3DB /* Frameworks */,
+				59F96830195077B9F2DDB5A4D8273670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB6342268DEA471A718931302A2F43AE /* PBXTargetDependency */,
+			);
+			name = "Pods-OCEvalDemoTests";
+			productName = "Pods-OCEvalDemoTests";
+			productReference = 4BD6B3576B052EB4145CBA2AC0E899FE /* Pods_OCEvalDemoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8FCA2E3D421C38264AE3EA3D4B2411DD /* Pods-OCEvalDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A1677F15D5585D94A52BA9A7EC4F8A /* Build configuration list for PBXNativeTarget "Pods-OCEvalDemo" */;
+			buildPhases = (
+				80DBFC8ED0D9EFE8C3B643D8764002BF /* Headers */,
+				62754B2DED2B9C2038B2534531E94A4D /* Sources */,
+				E266F669E49C8AB8E52127CD9A353DFA /* Frameworks */,
+				9AB183A04B450123DCEFED13A6306294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF7D066B6EF0B54DC174C3F9BACD5552 /* PBXTargetDependency */,
+			);
+			name = "Pods-OCEvalDemo";
+			productName = "Pods-OCEvalDemo";
+			productReference = D6D0CE940F700488B13DDBFC7D300205 /* Pods_OCEvalDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4276F2270FCBD224C56C19C4F6AC538 /* OCEval */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 019BE3FC79744D08DB073C518E1EEAE8 /* Build configuration list for PBXNativeTarget "OCEval" */;
+			buildPhases = (
+				7B861E5699B7992B9F76DAD36CBF2D8A /* Headers */,
+				9741679010F3575F28B9DBEEA2CA6977 /* Sources */,
+				5A784EF732FAC7365CAA2D328B3D83A4 /* Frameworks */,
+				A479E2C88E1525B873EC573BD93474A8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -512,42 +556,6 @@
 			name = OCEval;
 			productName = OCEval;
 			productReference = F9E017A683A460D4599A53910D4AAD2B /* OCEval.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DB9A1CBFC4041AB2FDF359ABAE35458B /* Pods-OCEvalDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 73FB32DF3A2B2D9AEC754193E11A69FC /* Build configuration list for PBXNativeTarget "Pods-OCEvalDemoTests" */;
-			buildPhases = (
-				884CB34410DB12E05A13C101F784A680 /* Sources */,
-				A5A138D4CE8B65FF2A2FB2F7F93975B0 /* Frameworks */,
-				83CD9841D6587AC053AFE583050E3B41 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BD82BF63707A4CBA4963185B287FBCEB /* PBXTargetDependency */,
-			);
-			name = "Pods-OCEvalDemoTests";
-			productName = "Pods-OCEvalDemoTests";
-			productReference = 4BD6B3576B052EB4145CBA2AC0E899FE /* Pods_OCEvalDemoTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		EE4589B056EF423C3C7E02AB62178B0E /* Pods-OCEvalDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 85BEC25837D29C6E07646E43CE0CCC03 /* Build configuration list for PBXNativeTarget "Pods-OCEvalDemo" */;
-			buildPhases = (
-				7EE16BFD0847AF8237887BAA26239C4D /* Sources */,
-				30DA2CCE662FA8FA10E06ED8253982DF /* Frameworks */,
-				9E05B51E362491E95D9E6093578BF9EA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B452407AB11B106BB8B2D7CFFABE5750 /* PBXTargetDependency */,
-			);
-			name = "Pods-OCEvalDemo";
-			productName = "Pods-OCEvalDemo";
-			productReference = D6D0CE940F700488B13DDBFC7D300205 /* Pods_OCEvalDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -571,82 +579,142 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				48E7EF975DB32D84973D9E46E2315AD6 /* OCEval */,
-				EE4589B056EF423C3C7E02AB62178B0E /* Pods-OCEvalDemo */,
-				DB9A1CBFC4041AB2FDF359ABAE35458B /* Pods-OCEvalDemoTests */,
+				F4276F2270FCBD224C56C19C4F6AC538 /* OCEval */,
+				8FCA2E3D421C38264AE3EA3D4B2411DD /* Pods-OCEvalDemo */,
+				79B0F50A54D4BF26B85C17569835EDDD /* Pods-OCEvalDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		59F96830195077B9F2DDB5A4D8273670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB183A04B450123DCEFED13A6306294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A479E2C88E1525B873EC573BD93474A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		7EE16BFD0847AF8237887BAA26239C4D /* Sources */ = {
+		62754B2DED2B9C2038B2534531E94A4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6AC2580B03E58CE6ECCB1F8DD4716D /* Pods-OCEvalDemo-dummy.m in Sources */,
+				2E5163086812D1C0156B0B7CAB0F96A9 /* Pods-OCEvalDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		884CB34410DB12E05A13C101F784A680 /* Sources */ = {
+		9741679010F3575F28B9DBEEA2CA6977 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88D1C50B5B7A77580740CC0E4BAFF041 /* Pods-OCEvalDemoTests-dummy.m in Sources */,
+				C418EAB056DD34FCA96DF4532F45F4C3 /* Aspects.m in Sources */,
+				3AF2284A0AA13BCD3AF8A1158E6DB0C6 /* FuntionSearch.c in Sources */,
+				C18593576FEDA164036366497EC673F9 /* OCBlockNode.m in Sources */,
+				61CE5E83DDBD75553FFC6EB689EDCDD4 /* OCBlockWrapper.m in Sources */,
+				421D192C040D1759B540C377BEB4832F /* OCCfuntionHelper.m in Sources */,
+				9B9EB035856F992DE2213EC87471AD7A /* OCCFuntionWrapper.m in Sources */,
+				895C952CA83BD9189DA2AFD511CFCEFB /* OCControlNode.m in Sources */,
+				4C2F305F7D17325999A65281577F2EFD /* OCEval-dummy.m in Sources */,
+				572D0603C9EC3974FF1A004BE9456AB3 /* OCEval.m in Sources */,
+				064E48D994112BC175E4457506CE8273 /* OCExtension.m in Sources */,
+				C51D27DDF6E7D313E34064CE5FC490EA /* OCFastCalculateNode.m in Sources */,
+				365C5C891BB31C9845126119CE1EEA67 /* OCIterateNode.m in Sources */,
+				AF019D1CAA39D6876825AE5345A85BEF /* OCLexer.m in Sources */,
+				469213F3D7E87F231C32F5D3EDC70E69 /* OCLineNode.m in Sources */,
+				AF302C5ED46990104C16D2BF5EEBBD7E /* OCLiteralNode.m in Sources */,
+				73B3DFBF29D2643CCDF8612AF4B0BA61 /* OCMethodNode+invoke.m in Sources */,
+				CF06D13B6E9ED96A450D60DFA88C20AE /* OCMethodNode.m in Sources */,
+				0F97BBCC28969922DCF6A45189405094 /* OCMethodSignature.m in Sources */,
+				6BA38FAB3621C5F54E2C686457B46DD9 /* OCNode.m in Sources */,
+				DB563ED03CFA99EA97BB69AA0F2039CE /* OCPropertyNode.m in Sources */,
+				00966DD9E286220D253D082E486AE660 /* OCReader.m in Sources */,
+				5DBFE5B4253E3DCC870A93D5581CB84D /* OCReturnNode.m in Sources */,
+				2217B71FB0CFA5D95633D2EB203E41A0 /* OCScopeNode.m in Sources */,
+				22C8AD74B29CA087881F07A2E2B2860A /* OCToken.m in Sources */,
+				1FF6E10E57302785D599C2C0AE2076ED /* OCTokenReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEBCD5D8753B1A1150D63C70E57CD0FB /* Sources */ = {
+		BFD2A5EA46AD96D1963D2F24C653EE6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA52FF6246F2BCC4547758D5E8D9396 /* Aspects.m in Sources */,
-				5B1D7326391B652014170B956FBEE446 /* FuntionSearch.c in Sources */,
-				D1D736B1A50864E8350DAE40DCFE0427 /* OCBlockNode.m in Sources */,
-				A503BE312A0FABFCADD830206E261FE3 /* OCBlockWrapper.m in Sources */,
-				D4E6EE6B2814F0824A2F60DB9811C2E1 /* OCCfuntionHelper.m in Sources */,
-				622C2F8B5E8614742A44BD2F4C2059EC /* OCCFuntionWrapper.m in Sources */,
-				A4EB4575969C4140A2F159A3E4C40B7A /* OCControlNode.m in Sources */,
-				777E0B546FDF3CF1892FB544A493DF04 /* OCEval-dummy.m in Sources */,
-				363DECD132001829170FC33F5443BD95 /* OCEval.m in Sources */,
-				AA3706196A1DA6A342C568F998845248 /* OCExtension.m in Sources */,
-				E1D0C698828BC1A2A0115059F073399F /* OCIterateNode.m in Sources */,
-				0F402E6605153705386C0FC39A02B1D4 /* OCLexer.m in Sources */,
-				DBEAF93ABC3B77DE0EA73D9FD57E3E01 /* OCLineNode.m in Sources */,
-				7C0BAD054C6D3E3FDDA518B7CE65A3AB /* OCLiteralNode.m in Sources */,
-				BA9736781BB3184947016354217190A5 /* OCMethodNode+invoke.m in Sources */,
-				50AE98C06FEDCF8A5BA1C17E94FDC4F7 /* OCMethodNode.m in Sources */,
-				BDEE4CEFC30E0894DDB1631546F144E9 /* OCMethodSignature.m in Sources */,
-				8FB79F415EB0A2B4668624376136062E /* OCNode.m in Sources */,
-				B09D4C0421640A4495DA68EE00AA5719 /* OCPropertyNode.m in Sources */,
-				3F928B65F45169DB1E9EEB53A65FE930 /* OCReader.m in Sources */,
-				0DCE5B2720173E28162C70FA507472D7 /* OCReturnNode.m in Sources */,
-				92B8A0C4C0E25FEB157BCA3F98A44B91 /* OCScopeNode.m in Sources */,
-				D1E899231A186A28DB8D692BAD1D8466 /* OCToken.m in Sources */,
-				623C83BA8D3AC6F2E1A965D2D5A6704A /* OCTokenReader.m in Sources */,
+				6F2E1AF14CF5D1069EA2742A381B7555 /* Pods-OCEvalDemoTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B452407AB11B106BB8B2D7CFFABE5750 /* PBXTargetDependency */ = {
+		AF7D066B6EF0B54DC174C3F9BACD5552 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OCEval;
-			target = 48E7EF975DB32D84973D9E46E2315AD6 /* OCEval */;
-			targetProxy = B660AD802B877F9D6C3A2D92E3E62E13 /* PBXContainerItemProxy */;
+			target = F4276F2270FCBD224C56C19C4F6AC538 /* OCEval */;
+			targetProxy = 10B62D081E1301DEE3B005CBA0DC6531 /* PBXContainerItemProxy */;
 		};
-		BD82BF63707A4CBA4963185B287FBCEB /* PBXTargetDependency */ = {
+		EB6342268DEA471A718931302A2F43AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OCEval;
-			target = 48E7EF975DB32D84973D9E46E2315AD6 /* OCEval */;
-			targetProxy = 2415B54B6F25B1A10AB697C04B13E0D0 /* PBXContainerItemProxy */;
+			target = F4276F2270FCBD224C56C19C4F6AC538 /* OCEval */;
+			targetProxy = 75876F224A2B24437D1CA5E5F2D69F29 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		19EF732132AA1D36688D84D1D9DD20BA /* Debug */ = {
+		2AC40AA127218049F2C11E93C3F8B3DA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5DAE45BCAAA258E22B0278FD25D4687 /* Pods-OCEvalDemoTests.debug.xcconfig */;
+			baseConfigurationReference = 9CAA275942B44705D15367635E176BC4 /* OCEval.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OCEval/OCEval-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCEval/OCEval-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OCEval/OCEval.modulemap";
+				PRODUCT_MODULE_NAME = OCEval;
+				PRODUCT_NAME = OCEval;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4C031D0384A3E47C6F617864B0E757FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39C47B0976756614246AA7EFE332C510 /* Pods-OCEvalDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -658,7 +726,82 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OCEvalDemoTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCEvalDemo/Pods-OCEvalDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OCEvalDemo/Pods-OCEvalDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E1B09B7F902E35A63CE9910023C2065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD16D1E8AF4D76092C857FF1FB3BBACE /* Pods-OCEvalDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCEvalDemoTests/Pods-OCEvalDemoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OCEvalDemoTests/Pods-OCEvalDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B63D730700CF0F4ACE6C0CF78AD0B4EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B92147DAB430CE1A23BF7388D9A29C1F /* Pods-OCEvalDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCEvalDemoTests/Pods-OCEvalDemoTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -681,7 +824,7 @@
 			};
 			name = Debug;
 		};
-		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
+		BE01AF5D395AE305A54D518A9B774D2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -713,8 +856,66 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -735,18 +936,55 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		307E5C3B135F3E529739C5AE34D03277 /* Release */ = {
+		ED1C453168463DB4369B8D02E5759734 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0536B8685DEA21D1A9DB69D392539A17 /* Pods-OCEvalDemo.release.xcconfig */;
+			baseConfigurationReference = 9CAA275942B44705D15367635E176BC4 /* OCEval.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OCEval/OCEval-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCEval/OCEval-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OCEval/OCEval.modulemap";
+				PRODUCT_MODULE_NAME = OCEval;
+				PRODUCT_NAME = OCEval;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F435215866A04E7BAED89C9E934ECD48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3448E6CE6A4C33223787027E99EEF7F /* Pods-OCEvalDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -758,7 +996,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OCEvalDemo/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-OCEvalDemo/Pods-OCEvalDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -779,246 +1017,44 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		61C7BF44208E19C83D470A17C0C26B01 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06CECEF6C75888C0EDA315AE7DFFB5D2 /* Pods-OCEvalDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OCEvalDemo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OCEvalDemo/Pods-OCEvalDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		817C007CAC38138B4B32EC369209DE4B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE8AE072D77845BA7E14A6D910EBB6DA /* OCEval.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OCEval/OCEval-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OCEval/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/OCEval/OCEval.modulemap";
-				PRODUCT_MODULE_NAME = OCEval;
-				PRODUCT_NAME = OCEval;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EAEB656103559034994ACD15B25249D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E597ED458D58CA07FF38F0D5EE1BB47 /* Pods-OCEvalDemoTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-OCEvalDemoTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OCEvalDemoTests/Pods-OCEvalDemoTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F43941C91A1FE14A7DC51225BDC57788 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE8AE072D77845BA7E14A6D910EBB6DA /* OCEval.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/OCEval/OCEval-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OCEval/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/OCEval/OCEval.modulemap";
-				PRODUCT_MODULE_NAME = OCEval;
-				PRODUCT_NAME = OCEval;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		019BE3FC79744D08DB073C518E1EEAE8 /* Build configuration list for PBXNativeTarget "OCEval" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED1C453168463DB4369B8D02E5759734 /* Debug */,
+				2AC40AA127218049F2C11E93C3F8B3DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
-				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+				CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */,
+				BE01AF5D395AE305A54D518A9B774D2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73FB32DF3A2B2D9AEC754193E11A69FC /* Build configuration list for PBXNativeTarget "Pods-OCEvalDemoTests" */ = {
+		46A1677F15D5585D94A52BA9A7EC4F8A /* Build configuration list for PBXNativeTarget "Pods-OCEvalDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19EF732132AA1D36688D84D1D9DD20BA /* Debug */,
-				EAEB656103559034994ACD15B25249D9 /* Release */,
+				4C031D0384A3E47C6F617864B0E757FB /* Debug */,
+				F435215866A04E7BAED89C9E934ECD48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85BEC25837D29C6E07646E43CE0CCC03 /* Build configuration list for PBXNativeTarget "Pods-OCEvalDemo" */ = {
+		604D9B56C5D24AE63CA3DB5C868017A6 /* Build configuration list for PBXNativeTarget "Pods-OCEvalDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61C7BF44208E19C83D470A17C0C26B01 /* Debug */,
-				307E5C3B135F3E529739C5AE34D03277 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B3425A097F91ADDD0AE1CA90177EF176 /* Build configuration list for PBXNativeTarget "OCEval" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F43941C91A1FE14A7DC51225BDC57788 /* Debug */,
-				817C007CAC38138B4B32EC369209DE4B /* Release */,
+				B63D730700CF0F4ACE6C0CF78AD0B4EC /* Debug */,
+				4E1B09B7F902E35A63CE9910023C2065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

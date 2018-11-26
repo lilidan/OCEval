@@ -19,7 +19,7 @@ typedef NS_ENUM(NSUInteger, OCTokenType) {
 };
 
 #define SUB_TYPES @[@"if",@"else",@"do",@"while",@"for",@"in",@"continue",@"break",@"return",@"selector",@"self",@"super",@"nil",@"YES",@"NO",@"__weak",@"__strong",@"__block",@"_Nonnull",@"_Nullable",\
-@"(",@")",@"[",@"]",@"{",@"}",@";",@"=",@".",@",",@":",@"+",@"-",@"*",@"/",@"&",@"|",@"!",@">",@">=",@"<",@"<=",@"==",@"!=",@"&&",@"||",@"@",@"^" \
+@"(",@")",@"[",@"]",@"{",@"}",@";",@"=",@".",@",",@":",@"+",@"-",@"*",@"/",@"&",@"|",@"!",@">",@">=",@"<",@"<=",@"==",@"!=",@"&&",@"||",@"@",@"^",@"++",@"--",@"+=",@"-="\
 ]
 
 typedef NS_ENUM(NSUInteger, OCTokenSubType) {
@@ -72,7 +72,11 @@ typedef NS_ENUM(NSUInteger, OCTokenSubType) {
     OCSymbolSubTypeAmpAmp,
     OCSymbolSubTypePipepipe,
     OCSymbolSubTypeAt,
-    OCSymbolSubTypeCaret
+    OCSymbolSubTypeCaret,
+    OCSymbolSubTypeAddAdd,
+    OCSymbolSubTypeMinusMinus,
+    OCSymbolSubTypeAddEqual,
+    OCSymbolSubTypeMinusEqual,
 };
 
 

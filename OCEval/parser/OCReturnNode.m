@@ -19,7 +19,6 @@
 
 @property (nonatomic,assign) BOOL canBeWord;
 @property (nonatomic,assign) BOOL hasParen;
-@property (nonatomic,assign) OCReturnNodeType type;
 
 @end
 
@@ -103,9 +102,9 @@
         [self addChild:[[OCSimpleNode alloc] initWithReader:self.reader]];
         self.canBeWord = NO;
     }else if (token.tokenType == OCTokenTypeSymbol){
-        if ((token.tokenSubType <= OCSymbolSubTypeExclaim && token.tokenSubType >= OCSymbolSubTypeAdd)) {
+        if ((token.tokenSubType <= OCSymbolSubTypePipe && token.tokenSubType >= OCSymbolSubTypeAdd)) {
             self.type |= OCReturnNodeTypeExpression;
-        }else if (token.tokenSubType <= OCSymbolSubTypePipepipe && token.tokenSubType >= OCSymbolSubTypeGreaterThan){
+        }else if (token.tokenSubType <= OCSymbolSubTypePipepipe && token.tokenSubType >= OCSymbolSubTypeExclaim){
             self.type |= OCReturnNodeTypeNSPredicate; //current not supports (a > 0)&&(b > 0)
         }else if (token.tokenSubType == OCTokenSubTypeNone){
             self.type |= OCReturnNodeTypeNSPredicate; //current not supports (a > 0)&&(b > 0)
@@ -138,7 +137,7 @@
                 [mutablestr appendFormat:@"%@ ",result];
             }else{
                 //if not number and not symbol, then must be objects compare.Objects compare with address.
-                [mutablestr appendFormat:@"%p ",result];
+                [mutablestr appendFormat:@"%p ",result]; // a == nil
             }
         }
         

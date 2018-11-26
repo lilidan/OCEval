@@ -12,8 +12,11 @@ typedef NS_OPTIONS(NSUInteger, OCReturnNodeType) {
     OCReturnNodeTypeSimple = 1 << 0,
     OCReturnNodeTypeExpression = 1 << 1,
     OCReturnNodeTypeNSPredicate = 1 << 2,
+    OCReturnNodeTypeObjectNotNil = 1 << 3,
 };
 
 @interface OCReturnNode : OCNode
+
+@property (nonatomic,assign) OCReturnNodeType type;
 
 @end

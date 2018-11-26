@@ -261,7 +261,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-OCEvalDemoTests/Pods-OCEvalDemoTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-OCEvalDemoTests/Pods-OCEvalDemoTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OCEval/OCEval.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -270,7 +270,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCEvalDemoTests/Pods-OCEvalDemoTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCEvalDemoTests/Pods-OCEvalDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5C7CEC587419BA17D6CF2F8D /* [CP] Check Pods Manifest.lock */ = {
@@ -315,7 +315,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-OCEvalDemo/Pods-OCEvalDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-OCEvalDemo/Pods-OCEvalDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OCEval/OCEval.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -324,7 +324,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCEvalDemo/Pods-OCEvalDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCEvalDemo/Pods-OCEvalDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

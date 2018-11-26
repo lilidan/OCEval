@@ -36,6 +36,8 @@
             return @(YES);
         case OCWordSubTypeNO:
             return @(NO);
+        case OCWordSubTypeSuper:
+            return [ctx valueForKey:@"self"];
         default:
             break;
     }

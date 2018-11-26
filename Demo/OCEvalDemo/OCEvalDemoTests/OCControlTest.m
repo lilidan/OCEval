@@ -26,6 +26,25 @@
     NSAssert([result isEqualToString:@""], nil);
 }
 
+- (void)testIf2{
+    NSString *inputStr = @"{    NSString *str = [NSString string];\
+    if (str) {\
+    return str;\
+    }}";
+    NSString *result = [OCEval eval:inputStr];
+    NSAssert([result isEqualToString:@""], nil);
+}
+
+//- (void)testIf3{
+//    NSString *inputStr = @"{    NSString *str = [NSString string];\
+//    if (!str) {\
+//    return str;\
+//    }}";
+//    NSString *result = [OCEval eval:inputStr];
+//    NSAssert(result == nil, nil);
+//}
+
+
 - (void)testIfElse{
     NSString *inputStr = @"{    NSString *str = [NSString string];\
     if (str.length == 2) {\
@@ -50,7 +69,7 @@
 }
 
 - (void)testDoWhile{
-    NSString *inputStr = @"{    int j = 4;\
+    NSString *inputStr = @"{    int i = 4;\
     do {\
         i = i + 1;\
     } while (i < 10);\
@@ -90,7 +109,59 @@
     return j;}";
     NSNumber *result = [OCEval eval:inputStr];
     NSAssert(result.integerValue == -1, nil);
+}
+
+
+
+- (void)testFor2{
+    NSString *inputStr = @"{     NSArray *nums = @[@(1),@(2),@(3)];\
+    int j = -4;\
+    for (int i = 0; i< nums.count; i++) {\
+    j += 1;\
+    }\
+    return j;}";
+    NSNumber *result = [OCEval eval:inputStr];
+    NSAssert(result.integerValue == -1, nil);
+}
+
+- (void)testFor3{
+    NSString *inputStr = @"{   \
+    int j = -4;\
+    for (int i = 0; i< 6; i++) {\
+    j += i;\
+    }\
+    return j;}";
+    NSNumber *result = [OCEval eval:inputStr];
+    NSAssert(result.integerValue == 11, nil);
+}
+
+
+
+- (void)testFor4{
+    NSString *inputStr = @"{     NSArray *nums = @[@(1),@(2),@(3)];\
+    int j = -4;\
+    for (int i = 0; i< nums.count; i++) {\
+    j = j + i;\
+    }\
+    return j;}";
+    NSNumber *result = [OCEval eval:inputStr];
+    NSAssert(result.integerValue == -1, nil);
+}
+
+
+
+- (void)testFor5{
+    NSString *inputStr = @"{  \
+    int j = -4;\
+    for (int i = 5; i > 0; i--) {\
+    j -= i;\
+    }\
+    return j;}";
+    NSNumber *result = [OCEval eval:inputStr];
+    NSAssert(result.integerValue == -19, nil);
     //TODO i++,i+=1
 }
+
+
 
 @end

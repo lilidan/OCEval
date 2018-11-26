@@ -12,6 +12,7 @@
 #import "OCReturnNode.h"
 #import "OCPropertyNode.h"
 #import "OCBlockNode.h"
+#import "OCFastCalculateNode.h"
 
 @interface OCLineNode()
 
@@ -50,6 +51,9 @@
         self.type = OCLineNodeTypeReturn;
         [self.reader read];
         [self addChild:[[OCReturnNode alloc] initWithReader:self.reader]];
+    }else if (token.tokenSubType == OCSymbolSubTypeAddAdd || token.tokenSubType == OCSymbolSubTypeMinusMinus){
+        self.type = OCLineNodeTypeCallMethod;
+        [self addChild:[[OCFastCalculateNode alloc] initWithReader:self.reader]];
     }else{
         OCToken *token1 = [self.reader read];
         if (token1.tokenSubType <= OCWordSubTypeBlock && token1.tokenSubType >= OCWordSubTypeWeak) {
@@ -107,6 +111,10 @@
                 self.type = OCLineNodeTypeCallMethod;
                 [self addChild:[[OCBlockCallNode alloc] initWithReader:self.reader]];
             }
+        }else if (token2.tokenSubType >= OCSymbolSubTypeAddAdd || token2.tokenSubType <= OCSymbolSubTypeMinusEqual){
+            [self.reader unread:2];
+            self.type = OCLineNodeTypeCallMethod;
+            [self addChild:[[OCFastCalculateNode alloc] initWithReader:self.reader]];
         }
     }
 }

@@ -14,6 +14,8 @@ typedef NS_ENUM(NSUInteger, OCLineNodeType) {
     OCLineNodeTypeAssign,
     OCLineNodeTypeAssignPoint,
     OCLineNodeTypeReturn,
+    OCLineNodeTypeAddAdd,
+    OCLineNodeTypeMinusMinus
 };
 
 @interface OCLineNode : OCNode
@@ -23,3 +25,6 @@ typedef NS_ENUM(NSUInteger, OCLineNodeType) {
 @property (nonatomic,assign) BOOL isStatement;
 
 @end
+
+
+

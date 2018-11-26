@@ -263,7 +263,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-OCEvalMacTest/Pods-OCEvalMacTest-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-OCEvalMacTest/Pods-OCEvalMacTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OCEval/OCEval.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -272,7 +272,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OCEvalMacTest/Pods-OCEvalMacTest-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCEvalMacTest/Pods-OCEvalMacTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FFD2C4CDFFD50C8C110E96E5 /* [CP] Check Pods Manifest.lock */ = {

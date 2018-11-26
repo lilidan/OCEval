@@ -65,6 +65,21 @@
 }
 
 - (void)testAddMethod{
+
+#if TARGET_OS_IPHONE
+    NSString *inputStr = @"{\
+    [OCCfuntionHelper defineCFunction:@\"NSClassFromString\" types:@\"Class, NSString *\"];\
+    [OCCfuntionHelper defineCFunction:@\"NSSelectorFromString\" types:@\"SEL,NSString *\"];\
+    [OCCfuntionHelper defineCFunction:@\"class_getMethodImplementation\" types:@\"IMP,Class,SEL\"];\
+    [OCCfuntionHelper defineCFunction:@\"class_addMethod\" types:@\"BOOL,Class,SEL,IMP,char *\"];\
+    Class cls = NSClassFromString(@\"UIView\");\
+    SEL sel = NSSelectorFromString(@\"setNeedsDisplay\");\
+    IMP imp = class_getMethodImplementation(cls,sel);\
+    Class cls2 = NSClassFromString(@\"NSObject\");\
+    BOOL didAdd = class_addMethod(cls2,sel,imp,\"v:\")\
+    return didAdd;\
+    }";
+#else
     NSString *inputStr = @"{\
     [OCCfuntionHelper defineCFunction:@\"NSClassFromString\" types:@\"Class, NSString *\"];\
     [OCCfuntionHelper defineCFunction:@\"NSSelectorFromString\" types:@\"SEL,NSString *\"];\
@@ -77,10 +92,18 @@
     BOOL didAdd = class_addMethod(cls2,sel,imp,\"v:\")\
     return didAdd;\
     }";
+#endif
+
     NSNumber* didAdd2 = [OCEval eval:inputStr];
     NSAssert(didAdd2.boolValue, nil);
 //    NSObject *obj = [[NSObject alloc] init];
+
+#if TARGET_OS_IPHONE
+    NSMethodSignature *methodSignature = [NSObject instanceMethodSignatureForSelector:NSSelectorFromString(@"setNeedsDisplay")];
+#else
     NSMethodSignature *methodSignature = [NSObject instanceMethodSignatureForSelector:NSSelectorFromString(@"display")];
+#endif
+
     NSAssert(methodSignature != nil, nil);
 
 //    [obj performSelector:@selector(setNeedsLayout)];
@@ -91,7 +114,12 @@
     CGPoint point = CGPointMake(1, 2);\
     return point;\
     }";
+#if TARGET_OS_IPHONE
+    CGPoint result = [[OCEval eval:inputStr] CGPointValue];
+#else
     CGPoint result = [[OCEval eval:inputStr] pointValue];
+#endif
+
     NSAssert(result.x == 1, nil);
 }
 

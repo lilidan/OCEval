@@ -28,43 +28,43 @@
     CGFloat b = 0;
     CGFloat c = 0;
     
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 10000; i++) {
         
-        NSDate *date = [NSDate date];
-
-        NSMutableString *mutaStr = [[NSMutableString alloc] init];
-        [mutaStr appendFormat:@"1"];
-        [mutaStr appendFormat:@"+"];
-        [mutaStr appendFormat:@"%d",1];
-        
-        NSMutableString *mutaStr2 = [[NSMutableString alloc] init];
-        [mutaStr2 appendFormat:@"1"];
-        [mutaStr2 appendFormat:@"=="];
-        [mutaStr2 appendFormat:@"%d",1];
-        
-        a += [[NSDate date] timeIntervalSinceDate:date];
-        date = [NSDate date];
-        
-        NSExpression *exp = [NSExpression expressionWithFormat:[mutaStr copy]];
-        NSNumber *number = [exp expressionValueWithObject:nil context:nil];
-        
-        b += [[NSDate date] timeIntervalSinceDate:date];
-        date = [NSDate date];
-
-        NSPredicate *pre = [NSPredicate predicateWithFormat:[mutaStr2 copy]];
-        [pre evaluateWithObject:nil];
-        c += [[NSDate date] timeIntervalSinceDate:date];
+//        NSDate *date = [NSDate date];
+//
+//        NSMutableString *mutaStr = [[NSMutableString alloc] init];
+//        [mutaStr appendFormat:@"1"];
+//        [mutaStr appendFormat:@"+"];
+//        [mutaStr appendFormat:@"%d",1];
+//
+//        NSMutableString *mutaStr2 = [[NSMutableString alloc] init];
+//        [mutaStr2 appendFormat:@"1"];
+//        [mutaStr2 appendFormat:@"=="];
+//        [mutaStr2 appendFormat:@"%d",1];
+//
+//        a += [[NSDate date] timeIntervalSinceDate:date];
+//        date = [NSDate date];
+//
+//        NSExpression *exp = [NSExpression expressionWithFormat:[mutaStr copy]];
+//        NSNumber *number = [exp expressionValueWithObject:nil context:nil];
+//
+//        b += [[NSDate date] timeIntervalSinceDate:date];
+//        date = [NSDate date];
+//
+//        NSPredicate *pre = [NSPredicate predicateWithFormat:[mutaStr2 copy]];
+//        [pre evaluateWithObject:nil];
+//        c += [[NSDate date] timeIntervalSinceDate:date];
 
 //        j++;
     }
-    NSLog(@"------%f----%f----%f",a,b,c);
-    
+    NSLog(@"=====%f",[[NSDate date] timeIntervalSinceDate:date]);
+
     
     NSString *inputStr = @"{\
     [OCCfuntionHelper defineCFunction:@\"NSLog\" types:@\"void, NSString *,float\"];\
     NSDate *date = [NSDate date];\
     int j = 0;\
-    for (int i = 0; i < 100; i = i + 1) {\
+    for (int i = 0; i < 10000; i++) {\
     }\
     return [[NSDate date] timeIntervalSinceDate:date];\
     }";

@@ -14,6 +14,7 @@
 
 @property (nonatomic,strong) OCNode *caller;
 @property (nonatomic,strong) NSMutableString *selectorName;
+@property (nonatomic,assign) BOOL isSuper;
 
 @end
 

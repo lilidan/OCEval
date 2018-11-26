@@ -67,11 +67,24 @@
 }
 
 - (void)testPointGetter{
+#if TARGET_OS_IPHONE
+    NSString *inputStr = @"{     UIView *view = [[UIView alloc] init];\
+    CGRect frame = [view bounds];\
+    return frame;}";
+    NSValue *result = [OCEval eval:inputStr];
+#else
     NSString *inputStr = @"{     NSView *view = [[NSView alloc] init];\
     NSRect frame = [view bounds];\
     return frame;}";
     NSValue *result = [OCEval eval:inputStr];
+#endif
+
+#if TARGET_OS_IPHONE
+    NSAssert([result CGRectValue].origin.x == 0, nil);
+#else
     NSAssert([result rectValue].origin.x == 0, nil);
+#endif
+
 }
 
 

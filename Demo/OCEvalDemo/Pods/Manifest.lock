@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  OCEval: ffd7c46d6598309d5fb2de9024e2e85173922adb
+  OCEval: 5ebf81afa2b3c08465a2f099eecda6ef896a977d
 
 PODFILE CHECKSUM: de0f0becebe87b887832c97aee75c3baabfcce3c
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.2

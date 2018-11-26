@@ -32,6 +32,10 @@
         if (token.tokenSubType == OCSymbolSubTypeLeftSquare) {
             //call method
             [self.reader read];
+            OCToken *current = [self.reader current];
+            if (current.tokenSubType == OCWordSubTypeSuper) {
+                self.isSuper = YES;
+            }
             self.caller = [[OCReturnNode alloc] initWithReader:self.reader];
             while (!self.isFinished) {
                 [self read];
@@ -74,14 +78,10 @@
 }
 
 
-static id (*new_msgSend1)(id, SEL,...) = (id (*)(id, SEL, ...)) objc_msgSend;
-
 - (id)excuteWithCtx:(NSDictionary *)ctx
 {
     id caller = [self.caller excuteWithCtx:ctx];
-    if (caller == NSString.class) {
-        return new_msgSend1(caller,NSSelectorFromString(self.selectorName),@"aaaa%@,%@%@",@"aa",@"bb",@"cc");
-    }else{
+    if (!self.isSuper) {
         NSMutableArray *argumentsList = [[NSMutableArray alloc] init];
         [self.children enumerateObjectsUsingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             id result = [obj excuteWithCtx:ctx];
@@ -91,8 +91,29 @@ static id (*new_msgSend1)(id, SEL,...) = (id (*)(id, SEL, ...)) objc_msgSend;
             [argumentsList addObject:result];
         }];
         return [[self class] invokeWithCaller:caller selectorName:self.selectorName.copy argments:[argumentsList copy]];
+    }else{
+        SEL selector = NSSelectorFromString(self.selectorName);
+        id obj = [ctx valueForKey:@"self"];
+        Class cls = [obj class];
+        NSString *superClassName = nil;
+        NSString *superSelectorName = [NSString stringWithFormat:@"SUPER_%@", self.selectorName];
+        SEL superSelector = NSSelectorFromString(superSelectorName);
+        Class superCls = [cls superclass];
+        Method superMethod = class_getInstanceMethod(superCls, selector); //only instance method?
+        IMP superIMP = method_getImplementation(superMethod);
+        class_addMethod(cls, superSelector, superIMP, method_getTypeEncoding(superMethod));
+        selector = superSelector;
+        superClassName = NSStringFromClass(superCls);
+        NSMutableArray *argumentsList = [[NSMutableArray alloc] init];
+        [self.children enumerateObjectsUsingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            id result = [obj excuteWithCtx:ctx];
+            if (result == nil) {
+                result = [OCMethodNode nilObj];
+            }
+            [argumentsList addObject:result];
+        }];
+        return [[self class] invokeWithCaller:caller selectorName:superSelectorName argments:[argumentsList copy]];
     }
- 
 }
 @end
 

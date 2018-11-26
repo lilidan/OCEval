@@ -33,6 +33,7 @@
 #import "OCBlockNode.h"
 #import "OCControlNode.h"
 #import "OCExtension.h"
+#import "OCFastCalculateNode.h"
 #import "OCIterateNode.h"
 #import "OCLineNode.h"
 #import "OCLiteralNode.h"
