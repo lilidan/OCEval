@@ -9,7 +9,7 @@
 * [x] block
 * [x] call C external function
 * [x] support Mac
-* [x] Memory management: 声明在作用域里的变量，作用域结束的时候才被释放; 因为都是堆变量，block不会强引用self，所以strong-weak dance 没有意义?
+* [ ] Memory management: 声明在作用域里的变量，作用域结束的时候才被释放; 因为都是堆变量，block不会强引用self，所以strong-weak dance 没有意义?
 * [x] i++,++i,i+=1
 * [x] if(a)
 * [ ] 解引用和取地址。
