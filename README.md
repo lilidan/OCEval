@@ -13,7 +13,6 @@
 * [x] i++,++i,i+=1
 * [x] if(a)
 * [ ] 解引用和取地址。
-* [ ] [super dosth];
 * [ ] C struct: frame.origin.x  look at YYModel。
 
 ### harder part
@@ -26,7 +25,7 @@
 * [ ] performance: CPU time/Memory:  普通遍历很慢，远远慢于native和js，需要优化。字符串拼接和表达式都很慢。单个方法调用比js快一点，比native慢很多。 多个重复调用因为没有缓存，也比较慢。后期考虑采用msgsend而不是invocation。
 * [ ] 表达式计算引擎: if(!a)等等，都还没支持。
 * [ ] [super dosth]; NSInvocation 全转成ObjcMsgsend才好。关键是parse的时候拿不到methodsignature。不知道返回值的类型。必须要依赖全局编译器，知道每个返回值的类型才好办。不然就只有runtime时再判断返回值的类型。
-* [ ] 内存管理，非常复杂。
+* [ ] 内存管理，非常复杂。尤其是block的内存管理。
 
 ### easy part
 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1FD66C5EE8BA853461837D41 /* Pods_OCEvalDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6D9EA5F9D6E665B2D672CC /* Pods_OCEvalDemo.framework */; };
 		560EE94A7BFD7D63123DECD4 /* Pods_OCEvalDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26C5F0D7EC33E37BE725630 /* Pods_OCEvalDemoTests.framework */; };
-		D676805C21A80DAD007BBDDE /* FuntionSearch.c in Sources */ = {isa = PBXBuildFile; fileRef = D676805B21A80DAD007BBDDE /* FuntionSearch.c */; };
 		D68703B221A575830005D457 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703B121A575830005D457 /* AppDelegate.m */; };
 		D68703B521A575830005D457 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68703B421A575830005D457 /* ViewController.m */; };
 		D68703B821A575830005D457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68703B621A575830005D457 /* Main.storyboard */; };
@@ -40,8 +39,6 @@
 		CB6D9EA5F9D6E665B2D672CC /* Pods_OCEvalDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCEvalDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB4B04E90C6D4922411FE05 /* Pods-OCEvalDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCEvalDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCEvalDemoTests/Pods-OCEvalDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		D26C5F0D7EC33E37BE725630 /* Pods_OCEvalDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCEvalDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D676805A21A80DAD007BBDDE /* FuntionSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FuntionSearch.h; path = ../../../OCEval/helper/FuntionSearch.h; sourceTree = "<group>"; };
-		D676805B21A80DAD007BBDDE /* FuntionSearch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = FuntionSearch.c; path = ../../../OCEval/helper/FuntionSearch.c; sourceTree = "<group>"; };
 		D68703AD21A575830005D457 /* OCEvalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCEvalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D68703B021A575830005D457 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D68703B121A575830005D457 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,8 +118,6 @@
 				D68703B121A575830005D457 /* AppDelegate.m */,
 				D68703B321A575830005D457 /* ViewController.h */,
 				D68703B421A575830005D457 /* ViewController.m */,
-				D676805A21A80DAD007BBDDE /* FuntionSearch.h */,
-				D676805B21A80DAD007BBDDE /* FuntionSearch.c */,
 				D68703B621A575830005D457 /* Main.storyboard */,
 				D68703B921A575830005D457 /* Assets.xcassets */,
 				D68703BB21A575830005D457 /* LaunchScreen.storyboard */,
@@ -335,7 +330,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D68703B521A575830005D457 /* ViewController.m in Sources */,
-				D676805C21A80DAD007BBDDE /* FuntionSearch.c in Sources */,
 				D68703C021A575830005D457 /* main.m in Sources */,
 				D68703B221A575830005D457 /* AppDelegate.m in Sources */,
 			);
