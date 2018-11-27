@@ -12,9 +12,9 @@
 * [ ] Memory management: 声明在作用域里的变量，作用域结束的时候才被释放; 因为都是堆变量，block不会强引用self，所以strong-weak dance 没有意义?
 * [x] i++,++i,i+=1
 * [x] if(a)
-* [ ] C struct: frame.origin.x  look at YYModel。
-* [ ] UITableViewCell 的strange bug?
+* [x] C struct: frame.origin.x  look at YYModel。
 * [x] block局部参数被回收的bug:scope不能回收参数
+* [ ] UITableViewCell 的strange bug?
 
 ### harder part
 
