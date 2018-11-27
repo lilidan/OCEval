@@ -23,6 +23,7 @@
 #import "ffi_arm64.h"
 #import "ffi_i386.h"
 #import "ffi_x86_64.h"
+#import "NSValue+struct.h"
 #import "OCBlockWrapper.h"
 #import "OCCfuntionHelper.h"
 #import "OCCFuntionWrapper.h"

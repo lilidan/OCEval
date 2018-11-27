@@ -76,7 +76,7 @@
     NSString *cellForRowAtIndexPath = @"{\
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@\"cell\"];\
     if (cell == nil) {\
-        cell = [[UITableViewCell alloc] initWithStyle:3 reuseIdentifier:@\"cell\"];\
+        cell = [[UITableViewCell alloc] initWithStyle:1 reuseIdentifier:@\"cell\"];\
     }\
     NSArray *array = objc_getAssociatedObject(self, @\"data\");\
     NSDictionary *model = array[indexPath.row];\

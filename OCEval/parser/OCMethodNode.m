@@ -237,17 +237,49 @@
 - (id)excuteWithCtx:(NSDictionary *)ctx
 {
     NSArray *children = self.children;
+    id returnvalue = [self.returnNode excuteWithCtx:ctx];
+    id setterResult = [self invokeSetterWithIndex:1 returnObj:returnvalue withCtx:ctx];
+    if (setterResult != nil) {
+        //struct setter
+        if (children.count == 2) {
+            //like origin.x = 1;
+            OCVariableNode *variableNode = children[0];
+            [ctx setValue:setterResult forKey:variableNode.token.value];
+        }else{
+            //like frame.origin.x = 1; or view.frame.origin = CGPoint(1,1);
+            id setterResult2 = [self invokeSetterWithIndex:2 returnObj:setterResult withCtx:ctx];
+            if (setterResult2 != nil) {
+                if (children.count == 3) {
+                    //like origin.x = 1;
+                    OCVariableNode *variableNode = children[0];
+                    [ctx setValue:setterResult2 forKey:variableNode.token.value];
+                }else{
+                    //like view.frame.origin.x = 1
+                    id setterResult3 = [self invokeSetterWithIndex:3 returnObj:setterResult2 withCtx:ctx];
+                    if (setterResult3 != nil) {
+                        abort();
+                    }
+                }
+                // if gretter than 3 ? TODO//
+            }
+        }
+    }
+    return nil;
+}
+
+
+- (id)invokeSetterWithIndex:(NSInteger)index returnObj:(id)returnObj withCtx:(NSDictionary *)ctx
+{
+    NSArray *children = self.children;
     id obj = [children[0] excuteWithCtx:ctx];
-    for (int i = 1; i < children.count - 1; i++) {
+    for (int i = 1; i < children.count - index; i++) {
         OCSimpleNode *node = children[i];
         obj = [OCMethodNode invokeWithCaller:obj selectorName:node.token.value argments:@[]];
     }
-    
-    OCToken *selName = [children.lastObject token];
+    OCToken *selName = [children[children.count - index] token];
     NSString *firstStr = [selName.value substringToIndex:1];
     NSString *selectorName = [[NSString stringWithFormat:@"set%@%@:",firstStr.uppercaseString,[selName.value substringFromIndex:1]] mutableCopy];
-    id returnvalue = [self.returnNode excuteWithCtx:ctx];
-    return [OCMethodNode invokeWithCaller:obj selectorName:selectorName argments:@[returnvalue]];
+    return [OCMethodNode invokeWithCaller:obj selectorName:selectorName argments:@[returnObj]];
 }
 
 @end

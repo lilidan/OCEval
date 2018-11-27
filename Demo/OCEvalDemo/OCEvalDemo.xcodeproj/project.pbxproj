@@ -161,7 +161,7 @@
 				D68703A921A575830005D457 /* Sources */,
 				D68703AA21A575830005D457 /* Frameworks */,
 				D68703AB21A575830005D457 /* Resources */,
-				26C05EFA05843228B427D211 /* [CP] Embed Pods Frameworks */,
+				541F5607A892917D318B36B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,7 +180,7 @@
 				D68703C121A575830005D457 /* Sources */,
 				D68703C221A575830005D457 /* Frameworks */,
 				D68703C321A575830005D457 /* Resources */,
-				E956C3B10B191C58A11E856B /* [CP] Embed Pods Frameworks */,
+				53F57ED8EA8A399528C21E9E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,7 +250,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		26C05EFA05843228B427D211 /* [CP] Embed Pods Frameworks */ = {
+		53F57ED8EA8A399528C21E9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCEvalDemoTests/Pods-OCEvalDemoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OCEval/OCEval.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCEval.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCEvalDemoTests/Pods-OCEvalDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		541F5607A892917D318B36B7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -306,28 +328,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E956C3B10B191C58A11E856B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OCEvalDemoTests/Pods-OCEvalDemoTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/OCEval/OCEval.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCEval.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCEvalDemoTests/Pods-OCEvalDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

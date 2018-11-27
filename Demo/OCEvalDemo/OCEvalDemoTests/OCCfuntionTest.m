@@ -136,4 +136,44 @@
 }
 
 
+- (void)testCGPointSetterGetter{
+    NSString *inputStr = @"{\
+    CGPoint point = CGPointMake(1, 2);\
+    point.x = 3;\
+    return point.x;\
+    }";
+    NSNumber *result = [OCEval eval:inputStr];
+    NSAssert(result.doubleValue == 3, nil);
+}
+
+
+- (void)testCGRectSetterGetter{
+    NSString *inputStr = @"{\
+    CGRect rect = CGRectMake(1, 2, 3, 4);\
+    rect.size.width = 4;\
+    return rect.size.width;\
+    }";
+    NSNumber *result = [OCEval eval:inputStr];
+    NSAssert(result.doubleValue == 4, nil);
+}
+
+- (void)testViewFrameSetterGetter{
+#if TARGET_OS_IPHONE
+    NSString *inputStr = @"{ UIView *view = [UIView new];\
+    view.frame.size.width = 4;\
+    return view.frame.size.width;\
+    }";
+#else
+    NSString *inputStr = @"{ NSView *view = [NSView new];\
+    view.frame.size.width = 4;\
+    return view.frame.size.width;\
+    }";
+#endif
+
+    
+    NSNumber *result = [OCEval eval:inputStr];
+    NSAssert(result.doubleValue == 4, nil);
+}
+
+
 @end
