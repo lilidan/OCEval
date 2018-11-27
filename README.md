@@ -16,18 +16,19 @@
 * [x] block局部参数被回收的bug:scope不能回收参数
 * [ ] UITableViewCell 的strange bug?
 
+
 ### harder part
 
-* [ ] @interface @property @implementation
-* [ ] -(void)foo
-* [ ] K线demo。如果性能不行，就开源。
-* [ ] 解引用和取地址。
+* [ ] function操作: @interface @property @implementation.-(void)foo
+
+* [ ] K线demo?
 * [ ] call C inline function
 * [ ] macro like #define xx or typedef.
 * [ ] performance: CPU time/Memory:  普通遍历很慢，远远慢于native和js，需要优化。字符串拼接和表达式都很慢。单个方法调用比js快一点，比native慢很多。 多个重复调用因为没有缓存，也比较慢。后期考虑采用msgsend而不是invocation。
 * [ ] 表达式计算引擎: if(!a)等等，都还没支持。
 * [ ] [super dosth]; NSInvocation 全转成ObjcMsgsend才好。关键是parse的时候拿不到methodsignature。不知道返回值的类型。必须要依赖全局编译器，知道每个返回值的类型才好办。不然就只有runtime时再判断返回值的类型。
 * [ ] 内存管理，非常复杂。尤其是block的内存管理。
+* [ ] 解引用和取地址。
 
 ### easy part
 
@@ -36,8 +37,3 @@
 * [ ] [stringformat:@"%d",aInt] : use `[stringformat:@"%@",[NSNumber numberWithInt:aInt]]` instead
 * [ ] ?:   :  use `if else` instead
 * [ ] _propertyName :  use `self.propertyName` instead
-* [ ] demo 做一个60fps的K线的列表出来。
-
-
-### Can't support
-* [ ] macro like #define xx or typedef:  use original word/value instead
