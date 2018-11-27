@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"GitHub Jobs";
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:0];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
