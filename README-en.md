@@ -85,6 +85,9 @@ pod 'OCEval'
 * [ ] _propertyName :  use `self.propertyName` instead
 * [ ] if (!a): use `if(a == nil)` instead
 
+# Warning
+
+An app submission to Appstore including this framework will likely be rejected.
 
 # Dependency
 
