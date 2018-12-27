@@ -72,7 +72,7 @@
 #endif
 }
 
-+ (id)NSRangeMake:(NSArray *)arguments
++ (id)NSMakeRange:(NSArray *)arguments
 {
     return [NSValue valueWithRange:NSMakeRange([arguments[0] integerValue], [arguments[1] integerValue])];
 }

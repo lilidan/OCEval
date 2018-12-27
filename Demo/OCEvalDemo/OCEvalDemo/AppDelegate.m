@@ -42,11 +42,10 @@
     tableView.dataSource = self;\
     tableView.tableFooterView = [UIView new];\
     tableView.tableHeaderView = [UIView new];\
-    NSURL *url = [NSURL URLWithString:@\"https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22nome%2C%20ak%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys\"];\
+    NSURL *url = [NSURL URLWithString:@\"https://jobs.github.com/positions.json?page=1&search=iOS\"];\
     NSURLRequest *request = [NSURLRequest requestWithURL:url];\
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {\
-    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];\
-    NSArray *array = dic[@\"query\"][@\"results\"][@\"channel\"][@\"item\"][@\"forecast\"];\
+    NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];\
     objc_setAssociatedObject(self, @\"data\", array, 1);\
     [tableView reloadData];\
     }];}\
@@ -74,17 +73,23 @@
        implementation:numberOfRowsInSection];
     
     NSString *cellForRowAtIndexPath = @"{\
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@\"cell\"];\
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@\"aCell\"];\
     if (cell == nil) {\
-        cell = [[UITableViewCell alloc] initWithStyle:1 reuseIdentifier:@\"cell\"];\
+        cell = [[UITableViewCell alloc] initWithStyle:3 reuseIdentifier:@\"aCell\"];\
     }\
     NSArray *array = objc_getAssociatedObject(self, @\"data\");\
     NSDictionary *model = array[indexPath.row];\
-    cell.textLabel.text = model[@\"date\"];\
-    cell.detailTextLabel.text = [NSString stringWithFormat:@\"%@~%@ %@\",model[@\"low\"],model[@\"high\"],model[@\"text\"]];\
+    NSString *title = model[@\"title\"];\
+    if (title.length > 30) {\
+        title = [title substringWithRange:NSMakeRange(0, 30)];\
+    }\
+    cell.textLabel.text = title;\
+    cell.detailTextLabel.text = [NSString stringWithFormat:@\"%@,%@,%@\",model[@\"company\"],model[@\"location\"],model[@\"created_at\"]];\
     return cell;\
     ";
     
+//    NSString *title = @"";
+
     [OCEval hookClass:@"ViewController"
              selector:@"tableView:cellForRowAtIndexPath:"
              argNames:@[@"tableView",@"indexPath"]
