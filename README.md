@@ -1,5 +1,8 @@
 # OCEval
 
+ [![Travis](https://travis-ci.org/lilidan/OCEval.svg?branch=master)](https://travis-ci.org/lilidan/OCEval)
+ ![support](https://img.shields.io/badge/support-macOS%20%7C%20iOS-orange.svg)
+ 
 A tiny JIT Interpreter of Objective-C, dynamically run your code like `eval()`.
 
 ### Features
