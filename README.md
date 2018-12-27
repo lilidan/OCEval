@@ -4,7 +4,7 @@
  ![support](https://img.shields.io/badge/support-macOS%20%7C%20iOS-orange.svg)
 
 A tiny JIT Interpreter of Objective-C, dynamically run your code like `eval()`.
-![中文介绍](https://github.com/lilidan/OCEval/blob/master/README-CN.md)
+[中文介绍](https://github.com/lilidan/OCEval/blob/master/README-CN.md)
 
 ### Features
 
