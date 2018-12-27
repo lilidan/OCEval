@@ -1,0 +1,4 @@
+language: objective-c
+xcode_workspace: ./Demo/OCEvalDemo/OCEvalDemo.xcworkspace # path to your xcodeproj folder
+xcode_scheme: OCEvalDemoTests
+xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
