@@ -3,20 +3,21 @@
  [![Travis](https://travis-ci.org/lilidan/OCEval.svg?branch=master)](https://travis-ci.org/lilidan/OCEval)
  ![support](https://img.shields.io/badge/support-macOS%20%7C%20iOS-orange.svg)
 
-一个Objective-C解释器, 能够像 `eval()` 一样动态执行OC代码.
+A tiny JIT Interpreter of Objective-C, dynamically run your code like `eval()`.
 
-### Features
+[中文介绍](https://github.com/lilidan/OCEval/blob/master/README.md)
 
-- 动态执行OC代码
-- 支持 iOS & OS X.
-- 用 Objective-C 编写的.
-- 集成单元测试
-- 支持 block 和 C 函数调用.
+## Features
+
+- Run Objective-C code dynamically.
+- Support iOS & OS X.
+- Written by Objective-C.
+- Driven By Unit Tests.
+- Support part of Low-level APIs like block and C funtion.
 
 # Usage
 
-### 动态执行OC代码
-
+### Dynamically call Objective-C method
 ```Objective-C
 //Example 1
 NSString *inputStr = @"return 1 + 3 <= 4 && [NSString string] != nil;";
@@ -36,9 +37,7 @@ NSArray *result = [OCEval eval:inputStr];
 NSAssert([result[6] intValue] == 8, nil);
 ```
 
-### 替换现有的OC方法
-
-通过Aspect的帮助可以替换现有的OC方法。(从而可以实现类似热修复)
+### Replace method implementation dynamically
 
 ```Objective-C
 
@@ -54,9 +53,9 @@ NSString *viewDidLoad2 = @"{\
    implementation:viewDidLoad2];
 ```
 
-### 甚至编写一个完全动态的App
+### Even make a dynamical app
 
-理论上可以编写一个完全动态的Objective-C的App，然后通过网络下发。当然目前还需要做很多工作。
+ Theoretically we could make a whole application written by Objective-C and deliver it through the network. You could read the iOS demo for details.
 
 # Installation
 
@@ -68,8 +67,7 @@ pod 'OCEval'
 
 # TO-DO List
 
-### 已经支持的语法
-
+### Already supported syntax
 
 * [x] if..else..,do..while..
 * [x] for..in,for
@@ -79,12 +77,11 @@ pod 'OCEval'
 * [x] call C external function
 * [x] mac application
 * [x] i++,++i,i+=1
-* [x] if(a){}
-* [x] C struct: frame.origin.x。
+* [x] if(a){} : means if(a == nil){}
+* [x] C struct: including CGRect,CGPoint,CGSize,NSRange etc.
+* [x] [super doSth]
 
-部分语法糖的支持尤其是C结构体的支持不太完善。
-
-### 目前不支持的语法
+### Not support yet
 
 * [ ] call C inline function
 * [ ] macro like #define xx or typedef: use original value instead.
@@ -96,7 +93,7 @@ pod 'OCEval'
 
 # Warning
 
-仅作为研究学习使用，提交AppStore审核可能会被拒绝。
+An app submission to Appstore including this framework will likely be rejected.
 
 # Dependency
 
