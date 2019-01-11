@@ -102,7 +102,13 @@
         [self addChild:[[OCSimpleNode alloc] initWithReader:self.reader]];
         self.canBeWord = NO;
     }else if (token.tokenType == OCTokenTypeSymbol){
-        if ((token.tokenSubType <= OCSymbolSubTypePipe && token.tokenSubType >= OCSymbolSubTypeAdd)) {
+        if (token.tokenSubType == OCSymbolSubTypeAmp && self.children.count == 0){
+            token = [self.reader read];
+            OCVariableNode *node = [[OCVariableNode alloc] initWithReader:self.reader];
+            [self addChild:node];
+            self.finished = YES;
+            return;
+        }else if ((token.tokenSubType <= OCSymbolSubTypePipe && token.tokenSubType >= OCSymbolSubTypeAdd)) {
             self.type |= OCReturnNodeTypeExpression;
         }else if (token.tokenSubType <= OCSymbolSubTypePipepipe && token.tokenSubType >= OCSymbolSubTypeExclaim){
             self.type |= OCReturnNodeTypeNSPredicate; //current not supports (a > 0)&&(b > 0)

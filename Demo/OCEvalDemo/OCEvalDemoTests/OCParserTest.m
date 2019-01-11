@@ -94,6 +94,26 @@
 }
 
 
+- (void)testPointerToPointer{
+    
+//    NSData *data = [@"{[]{{{{}" dataUsingEncoding:4];
+//    NSError *error = [NSError errorWithDomain:@"error" code:0 userInfo:@{}];
+//    id result2 = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+//
+    NSString *input = @"\
+    NSData *data = [@\"{[]{{{{}\" dataUsingEncoding:4];\
+        NSError *error = [NSError errorWithDomain:@\"error\" code:0 userInfo:@{}];\
+        id result = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];\
+        return error;\
+    ";
+    id result = [OCEval eval:input];
+#if TARGET_OS_IPHONE
+    NSAssert([NSStringFromClass([result class]) isEqualToString:@"NSError"], nil);
+#else
+    NSAssert([[result className] isEqualToString:@"NSError"], nil);
+#endif
+    
+}
 
 
 @end

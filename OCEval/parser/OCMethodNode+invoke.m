@@ -88,6 +88,14 @@ static NSObject *_nilObj;
                 [invocation setArgument:&pointer atIndex:i];
                 break;
             }
+            case '^': {
+                char type = argumentType[1];
+                if (type == '@') {
+                    id __strong *error = &valObj;
+                    [invocation setArgument:&error atIndex:i];
+                    break;
+                }
+            }
             default: {
                 if (valObj == _nilObj ||
                     ([valObj isKindOfClass:[NSNumber class]] && strcmp([valObj objCType], "c") == 0 && ![valObj boolValue])) {
