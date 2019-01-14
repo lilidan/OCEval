@@ -45,9 +45,11 @@
     NSURL *url = [NSURL URLWithString:@\"https://jobs.github.com/positions.json?page=1&search=iOS\"];\
     NSURLRequest *request = [NSURLRequest requestWithURL:url];\
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {\
-    NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];\
-    objc_setAssociatedObject(self, @\"data\", array, 1);\
-    [tableView reloadData];\
+    if(data){\
+        NSArray *array = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];\
+        objc_setAssociatedObject(self, @\"data\", array, 1);\
+        [tableView reloadData];\
+    }\
     }];}\
 ";
     
